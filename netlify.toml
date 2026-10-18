@@ -22,12 +22,12 @@
 
 [[redirects]]
   from = "https://automatisation-ia-pme.cloud/*"
-  to = "https://automatisation-ia-pme.fr/:splat"
+  to = "https://www.automatisation-ia-pme.fr/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "https://www.automatisation-ia-pme.cloud/*"
-  to = "https://automatisation-ia-pme.fr/:splat"
+  to = "https://www.automatisation-ia-pme.fr/:splat"
   status = 301
   force = true
