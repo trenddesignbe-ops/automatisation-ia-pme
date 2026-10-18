@@ -12,6 +12,7 @@ OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(REPO, 'public')
 FONTS = sys.argv[2] if len(sys.argv) > 2 else 'self'
 SITE = "https://www.automatisation-ia-pme.fr"
 LEGAL_DATE = '2026-10-18'
+INDEXNOW_KEY = '05797ebba808f37ca89c168a6782eaf3'
 MOIS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre']
 
 def fr_date(iso):
@@ -377,6 +378,7 @@ def main():
     open(os.path.join(OUT, 'index.html'), 'w').write(build_index())
     if FONTS == 'self':
         open(os.path.join(OUT, '404.html'), 'w').write(notfound_page())
+        open(os.path.join(OUT, INDEXNOW_KEY + '.txt'), 'w').write(INDEXNOW_KEY)
         open(os.path.join(OUT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n')
         last = max(a['date'] for a in ARTICLES)
         urls = [('', '1.0', last), ('blog.html', '0.7', last), ('mentions-legales.html', '0.2', LEGAL_DATE)] + [(f'blog/{a["slug"]}.html', '0.8', a['date']) for a in ARTICLES]
