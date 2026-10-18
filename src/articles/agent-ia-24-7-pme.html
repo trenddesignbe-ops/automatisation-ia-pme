@@ -1,0 +1,81 @@
+<h2 id="definition">Qu'est-ce qu'un agent IA 24/7 pour PME ?</h2>
+<p>Un agent IA 24/7, c'est une automatisation qui sait lire et rédiger. Elle tourne en continu, reçoit ce qui arrive dans votre entreprise (un formulaire, un e-mail, un message WhatsApp), comprend de quoi il s'agit, puis agit dans vos outils : elle crée la fiche client, prépare une réponse, propose un créneau, vous prévient si c'est urgent.</p>
+<p>Trois briques le composent :</p>
+<ul>
+<li><strong>Un modèle d'intelligence artificielle</strong> (Claude, ChatGPT ou Mistral) qui comprend le message et rédige.</li>
+<li><strong>Un outil d'automatisation</strong> (n8n, Make ou Zapier) qui orchestre les étapes et se connecte à vos logiciels.</li>
+<li><strong>Vos règles</strong> : ce que l'agent a le droit de faire seul, ce qu'il doit vous soumettre, et ce qu'il ne doit jamais faire.</li>
+</ul>
+<p>La différence avec un simple chatbot ? Un chatbot discute. Un agent IA agit : il écrit dans votre CRM, votre agenda ou votre tableau de suivi, comme le ferait un assistant.</p>
+
+<h2 id="taches">Ce qu'un agent IA peut faire la nuit et le week-end</h2>
+<p>Dans une TPE ou une PME, les demandes n'arrivent pas aux heures de bureau. Elles arrivent le soir, quand vos clients ont enfin le temps de chercher un prestataire. Voici les tâches qu'un agent IA prend en charge sans risque :</p>
+<ol>
+<li><strong>Lire et classer chaque demande</strong> : devis, question, réclamation, candidature, spam.</li>
+<li><strong>Créer la fiche dans votre CRM</strong> avec les bonnes informations : nom, besoin, budget, délai, ville. Fini la ressaisie depuis la boîte mail.</li>
+<li><strong>Préparer un brouillon de réponse</strong> personnalisé, dans votre ton, que vous validez le matin en un clic.</li>
+<li><strong>Répondre aux questions simples</strong> qui reviennent sans cesse : horaires, zone d'intervention, délais habituels, documents à fournir.</li>
+<li><strong>Proposer un rendez-vous</strong> à partir des créneaux libres de votre agenda.</li>
+<li><strong>Vous alerter</strong> par SMS ou WhatsApp quand une demande est vraiment urgente.</li>
+</ol>
+<p>Le matin, vous ne découvrez plus 15 e-mails en vrac : vous trouvez des demandes triées, des fiches remplies et des réponses prêtes à partir.</p>
+
+<h2 id="limites">Ce qu'il ne doit pas faire seul</h2>
+<p>Un agent IA bien conçu a des limites claires. C'est ce qui fait la différence entre une automatisation qui vous fait gagner du temps et une automatisation qui vous fait perdre un client.</p>
+<ul>
+<li><strong>Envoyer un devis ou un prix qui vous engage</strong> sans votre validation. L'IA prépare, vous décidez.</li>
+<li><strong>Promettre un délai ou une remise</strong> qui n'est pas dans vos règles.</li>
+<li><strong>Gérer un litige ou une réclamation</strong> : il la repère et vous la transmet en priorité, c'est tout.</li>
+<li><strong>Se faire passer pour un humain.</strong> Depuis le 2 août 2026, le règlement européen sur l'IA (AI Act) impose d'informer les personnes qu'elles échangent avec une intelligence artificielle. Une simple mention suffit, et elle rassure plus qu'elle ne gêne.</li>
+<li><strong>Traiter des données sensibles</strong> (santé, données bancaires complètes) sans cadre prévu pour cela.</li>
+</ul>
+<div class="note"><p><strong>Ma règle de base :</strong> tout ce qui sort de l'entreprise et engage votre nom passe par une validation humaine, au moins pendant les premières semaines. On ouvre ensuite l'envoi automatique, tâche par tâche, quand les réponses sont fiables.</p></div>
+
+<h2 id="exemple">Exemple : une demande reçue un samedi à 23 h</h2>
+<p>Prenons un scénario type : un artisan en rénovation, sans secrétariat.</p>
+<ul class="timeline">
+<li><b>Samedi 23:04</b> Une cliente remplit le formulaire du site : « Devis pour refaire une salle de bain, avant l'été si possible. »</li>
+<li><b>23:04</b> L'agent lit la demande, crée la fiche dans le CRM (besoin, délai, ville) et la classe « devis, priorité normale ».</li>
+<li><b>23:05</b> Il envoie un accusé de réception honnête : « Merci, votre demande est bien reçue. Nous vous répondons lundi matin avec des créneaux de visite. » Le message précise qu'il est envoyé par un assistant automatique.</li>
+<li><b>23:05</b> Il prépare un brouillon de réponse avec deux créneaux libres pris dans l'agenda.</li>
+<li><b>Lundi 8:30</b> L'artisan relit, ajuste une phrase, clique sur « Valider et envoyer ». La cliente a sa réponse avant même d'avoir appelé un concurrent.</li>
+</ul>
+<p>Rien de magique : chaque étape est simple. C'est leur enchaînement, sans oubli et à toute heure, qui change le quotidien.</p>
+
+<h2 id="fonctionnement">Comment ça marche techniquement</h2>
+<p>Sans entrer dans le jargon, un agent IA 24/7 suit toujours le même circuit :</p>
+<ol>
+<li><strong>Un déclencheur</strong> : un nouveau formulaire, un e-mail reçu, un message WhatsApp Business.</li>
+<li><strong>L'orchestrateur</strong> : n8n, Make ou Zapier récupère le message et lance le scénario. Pour un agent IA qui doit raisonner sur plusieurs étapes, je privilégie souvent n8n, qui peut être hébergé sur un serveur en Europe.</li>
+<li><strong>Le modèle d'IA</strong> lit, classe, extrait les informations et rédige. On lui donne des consignes précises et des exemples tirés de vos vraies réponses.</li>
+<li><strong>Vos outils</strong> : CRM (HubSpot, Pipedrive, Airtable, Google Sheets…), agenda, messagerie, outil de devis.</li>
+<li><strong>La validation</strong> : un bouton dans un e-mail, sur Slack ou dans un tableau, pour envoyer, modifier ou refuser.</li>
+</ol>
+<p>Vous n'avez pas à changer de logiciels : l'agent se branche sur ceux que vous utilisez déjà. Si vous hésitez entre les outils, j'ai détaillé les différences dans mon comparatif <a href="zapier-make-n8n-choisir.html">Zapier, Make ou n8n</a>.</p>
+
+<h2 id="cout">Combien coûte un agent IA pour une PME ?</h2>
+<p>Il y a deux postes de coût, à bien distinguer :</p>
+<ul>
+<li><strong>La mise en place</strong> : l'analyse de vos demandes, la construction du scénario, les tests sur vos vrais cas et la documentation. Chez moi, c'est un prix fixe annoncé avant de commencer, à partir de 590 € pour une automatisation simple.</li>
+<li><strong>Le fonctionnement mensuel</strong> : l'abonnement à l'outil d'automatisation et la consommation du modèle d'IA, facturée à l'usage. Pour le volume d'une TPE ou d'une petite PME (quelques centaines de demandes par mois), cela reste généralement de l'ordre de quelques dizaines d'euros par mois. Le chiffre exact dépend du volume et de l'outil choisi : je vous le donne avant de commencer.</li>
+</ul>
+<p>Le bon calcul n'est pas « combien ça coûte » mais « combien d'heures par semaine cela libère ». Si l'agent vous rend deux heures de saisie et de relance chaque semaine, il est rentabilisé en quelques semaines.</p>
+
+<h2 id="rgpd">RGPD et AI Act : les points à respecter</h2>
+<p>Automatiser avec l'IA ne dispense pas des règles de protection des données. Les bonnes pratiques que j'applique sur chaque projet :</p>
+<ul>
+<li><strong>Transparence</strong> : les messages automatiques indiquent qu'ils sont préparés ou envoyés par un assistant IA.</li>
+<li><strong>Minimisation</strong> : l'agent ne reçoit que les informations utiles à sa tâche.</li>
+<li><strong>Hébergement</strong> : priorité aux services qui proposent un hébergement en Europe, et aux contrats de sous-traitance (DPA) signés avec chaque fournisseur.</li>
+<li><strong>Accès à votre nom</strong> : les comptes (outil d'automatisation, IA, CRM) vous appartiennent. Si nous arrêtons de travailler ensemble, tout reste chez vous.</li>
+</ul>
+<p>La CNIL publie des recommandations claires sur l'usage de l'IA en entreprise : elles sont listées dans les sources en bas de page.</p>
+
+<h2 id="demarrer">Par où commencer</h2>
+<ol>
+<li><strong>Listez vos tâches répétitives</strong> pendant une semaine : chaque fois que vous recopiez, relancez ou triez, notez-le.</li>
+<li><strong>Choisissez une seule tâche</strong>, celle qui vous coûte le plus de temps. Souvent : la saisie des demandes ou les relances de devis.</li>
+<li><strong>Testez deux semaines en mode validation</strong> : l'agent prépare tout, vous validez tout.</li>
+<li><strong>Élargissez</strong> quand les résultats sont bons : nouvelles tâches, envoi automatique sur les cas simples.</li>
+</ol>
+<p>Si vous voulez savoir en 20 minutes si votre tâche s'automatise, c'est exactement l'objet de l'audit offert.</p>

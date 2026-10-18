@@ -1,0 +1,177 @@
+[
+ {
+  "slug": "agent-ia-24-7-pme",
+  "cat": "Guide",
+  "title_tag": "Agent IA 24/7 pour PME : rôle, limites et mise en place",
+  "meta": "Un agent IA 24/7 pour PME répond, trie et prépare vos réponses la nuit et le week-end. Ce qu'il fait, ses limites, son coût et comment le mettre en place.",
+  "h1": "Agent IA 24/7 pour PME : ce qu'il fait vraiment, et ce qu'il ne doit pas faire",
+  "short": "Agent IA 24/7 pour PME : ce qu'il fait vraiment",
+  "eyebrow": "Guide · Agent IA",
+  "lead": "Un agent IA qui répond à vos clients la nuit et le week-end : la promesse est séduisante. Voici ce qu'il fait concrètement dans une TPE ou une PME, où sont ses limites, et comment le mettre en place sans perdre la main.",
+  "summary": [
+   "Un agent IA 24/7 lit chaque demande, remplit votre CRM et prépare la réponse, à toute heure.",
+   "Il n'envoie rien qui vous engage sans votre validation : devis, prix, délais.",
+   "Il se branche sur vos outils actuels via n8n, Make ou Zapier, pour quelques dizaines d'euros par mois de fonctionnement.",
+   "Depuis le 2 août 2026, l'AI Act impose de signaler qu'un message vient d'une IA."
+  ],
+  "faq": [
+   [
+    "Un agent IA peut-il remplacer une secrétaire ?",
+    "Non, il la soulage. Il prend en charge la saisie, le tri et les brouillons de réponse, pour que le temps humain aille aux échanges qui comptent : rappeler un client, négocier, gérer une situation délicate."
+   ],
+   [
+    "Faut-il un site internet pour avoir un agent IA ?",
+    "Non. L'agent peut partir d'une boîte mail, d'un compte WhatsApp Business ou d'un formulaire en ligne. Si vous avez déjà un site Wix, WordPress, Framer, Webflow ou Shopify, son formulaire se connecte sans le refaire."
+   ],
+   [
+    "Mes clients sauront-ils qu'ils échangent avec une IA ?",
+    "Oui, et c'est une obligation : le règlement européen sur l'IA impose depuis le 2 août 2026 d'informer les personnes qu'elles échangent avec une intelligence artificielle. Une phrase suffit, et les messages importants restent validés par vous."
+   ],
+   [
+    "Combien de temps faut-il pour le mettre en place ?",
+    "Le délai est annoncé avec le prix fixe, avant de commencer. Pour une première tâche bien délimitée, comme la réception des demandes, cela se compte en jours ou en semaines, pas en mois."
+   ]
+  ],
+  "sources": [
+   [
+    "Règlement (UE) 2024/1689 sur l'intelligence artificielle (AI Act), EUR-Lex",
+    "https://eur-lex.europa.eu/eli/reg/2024/1689/oj?locale=fr"
+   ],
+   [
+    "Cadre réglementaire de l'IA, Commission européenne",
+    "https://digital-strategy.ec.europa.eu/fr/policies/regulatory-framework-ai"
+   ],
+   [
+    "Intelligence artificielle : les recommandations de la CNIL",
+    "https://www.cnil.fr/fr/intelligence-artificielle"
+   ],
+   [
+    "Documentation n8n : le nœud AI Agent",
+    "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/"
+   ]
+  ],
+  "related": [
+   "zapier-make-n8n-choisir",
+   "crm-mal-rempli-pme-ia"
+  ],
+  "date": "2026-10-18"
+ },
+ {
+  "slug": "zapier-make-n8n-choisir",
+  "cat": "Comparatif",
+  "title_tag": "Zapier, Make ou n8n : lequel choisir pour votre PME ?",
+  "meta": "Zapier, Make ou n8n pour automatiser une TPE ou une PME ? Comparatif honnête : prise en main, prix au volume, IA, RGPD, et quand passer par une agence n8n.",
+  "h1": "Zapier, Make ou n8n : lequel choisir pour automatiser votre PME ?",
+  "short": "Zapier, Make ou n8n : lequel choisir pour votre PME ?",
+  "eyebrow": "Comparatif · Outils d'automatisation",
+  "lead": "Trois outils dominent l'automatisation des PME, et tous savent désormais intégrer l'intelligence artificielle. Leurs différences portent sur la simplicité, le coût quand le volume augmente et l'hébergement des données. Voici comment choisir sans vous tromper.",
+  "summary": [
+   "Zapier : le plus simple et le plus grand catalogue, mais le plus cher au volume.",
+   "Make : visuel et puissant, bon rapport puissance et prix, facturé en crédits.",
+   "n8n : le plus flexible, auto-hébergeable en Europe, idéal pour les agents IA.",
+   "Le bon choix dépend de votre volume, de vos données et de qui maintiendra l'automatisation."
+  ],
+  "faq": [
+   [
+    "Peut-on changer d'outil plus tard ?",
+    "Oui, mais il faut reconstruire les scénarios : il n'existe pas d'export direct de Zapier vers n8n, par exemple. Le choix initial mérite donc 20 minutes de réflexion, surtout si le volume va augmenter."
+   ],
+   [
+    "n8n est-il vraiment gratuit ?",
+    "L'édition communautaire de n8n peut être auto-hébergée gratuitement, sous licence Sustainable Use. Il faut en revanche payer le serveur, souvent quelques euros par mois, et assurer la maintenance. La version cloud, elle, est payante."
+   ],
+   [
+    "Quel outil choisir pour un agent IA ?",
+    "Les trois savent appeler un modèle d'IA. Pour un véritable agent, qui raisonne sur plusieurs étapes et utilise des outils seul, n8n offre aujourd'hui le plus de contrôle, notamment sur le choix du modèle et l'hébergement des données."
+   ],
+   [
+    "Faut-il passer par une agence n8n ?",
+    "Pas forcément. Pour une TPE ou une PME, un freelance spécialisé suffit souvent et coûte moins cher. Une agence se justifie pour les gros projets qui demandent une équipe et un support dédié."
+   ]
+  ],
+  "sources": [
+   [
+    "Tarifs Zapier",
+    "https://zapier.com/pricing"
+   ],
+   [
+    "Tarifs Make",
+    "https://www.make.com/en/pricing"
+   ],
+   [
+    "Make : le passage des opérations aux crédits",
+    "https://www.make.com/en/credits"
+   ],
+   [
+    "Tarifs n8n",
+    "https://n8n.io/pricing/"
+   ],
+   [
+    "Licence de n8n (Sustainable Use License)",
+    "https://github.com/n8n-io/n8n/blob/master/LICENSE.md"
+   ],
+   [
+    "n8n sur GitHub : code source et auto-hébergement",
+    "https://github.com/n8n-io/n8n"
+   ]
+  ],
+  "related": [
+   "agent-ia-24-7-pme",
+   "crm-mal-rempli-pme-ia"
+  ],
+  "date": "2026-10-18"
+ },
+ {
+  "slug": "crm-mal-rempli-pme-ia",
+  "cat": "CRM",
+  "title_tag": "CRM mal rempli en PME : 5 problèmes que l'IA règle",
+  "meta": "Fiches incomplètes, doublons, relances oubliées : 5 problèmes de CRM fréquents en PME, et comment l'IA et l'automatisation les règlent sans changer d'outil.",
+  "h1": "CRM mal rempli : 5 problèmes que l'IA règle dans une PME",
+  "short": "CRM mal rempli : 5 problèmes que l'IA règle dans une PME",
+  "eyebrow": "CRM · Intelligence artificielle",
+  "lead": "Un CRM n'a de valeur que s'il est à jour. Dans la plupart des PME, il est pourtant rempli à moitié, en retard, quand on y pense. La solution n'est pas de changer d'outil, mais d'arrêter la saisie manuelle.",
+  "summary": [
+   "Le problème vient rarement du CRM, presque toujours de la saisie manuelle.",
+   "L'IA capte les demandes, remplit les champs, évite les doublons et met les statuts à jour.",
+   "Les relances et le résumé du matin se préparent automatiquement.",
+   "Inutile de changer de CRM : HubSpot, Pipedrive, Airtable ou Google Sheets se connectent."
+  ],
+  "faq": [
+   [
+    "Quel CRM choisir pour une petite entreprise ?",
+    "Celui que vous utiliserez vraiment. HubSpot en version gratuite, Pipedrive, Airtable ou même Google Sheets suffisent pour démarrer. L'essentiel est qu'il se connecte à un outil d'automatisation comme Zapier, Make ou n8n, ce qui est le cas des plus courants."
+   ],
+   [
+    "L'IA peut-elle se tromper en remplissant le CRM ?",
+    "Oui, parfois, surtout si le message du client est ambigu. On limite ce risque avec des consignes précises, des champs à choix fixes et une vérification humaine sur les premiers cas. Quand une information est incertaine, l'IA la signale au lieu de l'inventer."
+   ],
+   [
+    "Mes données clients sont-elles envoyées à l'IA ?",
+    "Seules les informations nécessaires à la tâche le sont, via des fournisseurs qui proposent des contrats de sous-traitance conformes au RGPD. Pour les données sensibles, un modèle hébergé en Europe ou une instance n8n auto-hébergée sont possibles."
+   ]
+  ],
+  "sources": [
+   [
+    "CNIL : le RGPD, de quoi parle-t-on ?",
+    "https://www.cnil.fr/fr/rgpd-de-quoi-parle-t-on"
+   ],
+   [
+    "Intelligence artificielle : les recommandations de la CNIL",
+    "https://www.cnil.fr/fr/intelligence-artificielle"
+   ],
+   [
+    "Documentation de l'API HubSpot",
+    "https://developers.hubspot.com/docs/api/overview"
+   ],
+   [
+    "Documentation n8n : nœuds et intégrations",
+    "https://docs.n8n.io/integrations/"
+   ]
+  ],
+  "related": [
+   "agent-ia-24-7-pme",
+   "zapier-make-n8n-choisir"
+  ],
+  "date": "2026-10-18"
+ }
+]

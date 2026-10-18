@@ -1,0 +1,77 @@
+<h2 id="resume">Les trois outils en une phrase</h2>
+<ul>
+<li><strong>Zapier</strong> : le plus simple à prendre en main, avec le plus grand catalogue d'applications. Idéal pour démarrer, plus cher quand le volume grimpe.</li>
+<li><strong>Make</strong> (anciennement Integromat) : un éditeur visuel très lisible, plus puissant que Zapier pour les scénarios avec conditions, avec un bon rapport puissance et prix.</li>
+<li><strong>n8n</strong> : le plus flexible, open source et auto-hébergeable en Europe. Le meilleur choix pour les agents IA et les données sensibles, mais il demande plus de technique.</li>
+</ul>
+<p>Il n'y a pas de meilleur outil dans l'absolu. Il y a le bon outil pour votre volume, votre budget et vos contraintes. Je les utilise tous les trois pour mes clients, et je choisis selon le besoin, jamais l'inverse.</p>
+
+<h2 id="comparatif">Le tableau comparatif</h2>
+<div class="tbl"><table>
+<thead><tr><th scope="col">Critère</th><th scope="col">Zapier</th><th scope="col">Make</th><th scope="col">n8n</th></tr></thead>
+<tbody>
+<tr><th scope="row">Prise en main</th><td>Très facile</td><td>Facile après quelques heures</td><td>Plus technique</td></tr>
+<tr><th scope="row">Applications connectées</th><td>Le plus grand catalogue (plusieurs milliers)</td><td>Très large catalogue</td><td>Moins de connecteurs natifs, mais tout service avec une API via le nœud HTTP</td></tr>
+<tr><th scope="row">Facturation</th><td>À la tâche : chaque action réussie compte</td><td>Aux crédits (anciennement « opérations ») : chaque module exécuté compte</td><td>Cloud : à l'exécution complète d'un workflow. Auto-hébergé : édition communautaire gratuite</td></tr>
+<tr><th scope="row">IA et agents</th><td>Étapes IA et agents intégrés</td><td>Modules IA et agents</td><td>Nœuds d'agents IA natifs, mémoire, outils, choix libre du modèle</td></tr>
+<tr><th scope="row">Hébergement des données</th><td>Cloud</td><td>Cloud, avec choix d'une région européenne</td><td>Cloud ou sur votre propre serveur en Europe</td></tr>
+<tr><th scope="row">Idéal pour</th><td>Besoins simples, petite équipe, démarrage rapide</td><td>Scénarios avec conditions, volume moyen</td><td>Agents IA, gros volumes, données sensibles</td></tr>
+</tbody>
+</table></div>
+<p class="small">Les grilles tarifaires changent souvent : vérifiez toujours les prix à jour sur les pages officielles listées en sources.</p>
+
+<h2 id="zapier">Zapier : pour démarrer vite</h2>
+<p>Zapier est souvent la première porte d'entrée dans l'automatisation, et pour de bonnes raisons. On crée un « Zap » en quelques minutes : un déclencheur (nouveau formulaire, nouvel e-mail), puis une ou plusieurs actions (créer une ligne dans Google Sheets, envoyer un message, ajouter un contact dans le CRM).</p>
+<p><strong>Ses points forts :</strong> la simplicité, le catalogue d'applications le plus complet du marché, une interface pensée pour les non-techniciens.</p>
+<p><strong>Ses limites :</strong> la facturation à la tâche. Une automatisation de 5 actions qui tourne 300 fois par mois consomme environ 1 500 tâches. Pour une TPE avec peu de volume, ce n'est pas un problème. Pour une PME qui automatise beaucoup, la facture monte vite.</p>
+
+<h2 id="make">Make : le bon compromis</h2>
+<p>Make affiche chaque scénario comme un schéma : des bulles reliées entre elles, avec des filtres, des routeurs et des boucles. On voit tout de suite ce qui se passe, ce qui facilite la maintenance.</p>
+<p><strong>Ses points forts :</strong> la gestion fine des conditions et des données, un coût généralement plus bas que Zapier à volume égal, la possibilité de choisir une région européenne pour l'hébergement.</p>
+<p><strong>Ses limites :</strong> depuis 2025, Make facture en crédits plutôt qu'en opérations, et certains modules (notamment IA) consomment plus qu'un crédit par exécution. Il faut donc estimer la consommation avant de choisir son abonnement.</p>
+
+<h2 id="n8n">n8n : pour les agents IA et les données sensibles</h2>
+<p>n8n est l'outil qui monte le plus vite chez les intégrateurs, et pour cause : c'est aujourd'hui l'un des plus complets pour construire des agents IA. On y assemble un modèle (Claude, ChatGPT, Mistral…), une mémoire et des outils que l'agent peut utiliser seul : chercher dans votre CRM, consulter l'agenda, créer un brouillon.</p>
+<p><strong>Ses points forts :</strong></p>
+<ul>
+<li><strong>Le coût au volume</strong> : en version cloud, n8n facture l'exécution complète d'un workflow, quel que soit son nombre d'étapes. Une automatisation de 5 étapes qui tourne 300 fois par mois, c'est 300 exécutions.</li>
+<li><strong>L'auto-hébergement</strong> : l'édition communautaire peut tourner sur votre propre serveur, en France ou en Europe. Vos données ne transitent pas par un service américain, un vrai plus pour le RGPD.</li>
+<li><strong>La liberté</strong> : du code JavaScript ou Python quand il le faut, et n'importe quelle API via le nœud HTTP.</li>
+</ul>
+<p><strong>Ses limites :</strong> la courbe d'apprentissage, et le fait qu'un serveur auto-hébergé doit être maintenu (mises à jour, sauvegardes, sécurité). C'est souvent là qu'un accompagnement fait la différence.</p>
+
+<h2 id="volume">Le vrai critère : le coût au volume</h2>
+<p>Prenons un scénario type : chaque nouvelle demande de devis déclenche 5 étapes (lecture par l'IA, création de la fiche CRM, brouillon de réponse, notification, ligne de suivi). L'entreprise reçoit 300 demandes par mois.</p>
+<div class="tbl"><table>
+<thead><tr><th scope="col">Outil</th><th scope="col">Ce qui est compté</th><th scope="col">Consommation estimée par mois</th></tr></thead>
+<tbody>
+<tr><th scope="row">Zapier</th><td>Chaque action réussie</td><td>Environ 1 500 tâches</td></tr>
+<tr><th scope="row">Make</th><td>Chaque module exécuté</td><td>Environ 1 500 à 1 800 crédits, davantage avec des modules IA</td></tr>
+<tr><th scope="row">n8n cloud</th><td>Chaque workflow complet</td><td>300 exécutions</td></tr>
+</tbody>
+</table></div>
+<p>À faible volume, l'écart est négligeable et la simplicité de Zapier peut l'emporter. À fort volume, ou dès que l'on ajoute de l'IA à chaque étape, n8n et Make deviennent nettement plus économiques.</p>
+
+<h2 id="prestataire">Agence n8n, freelance ou faire soi-même ?</h2>
+<p>Une fois l'outil choisi, reste la question du « qui ». Trois options, honnêtement :</p>
+<ul>
+<li><strong>Le faire vous-même</strong> : très bien pour une automatisation simple sur Zapier (un formulaire vers un tableau, par exemple). Comptez quelques heures d'apprentissage.</li>
+<li><strong>Un freelance spécialisé</strong> : le bon format pour une TPE ou une PME. Un seul interlocuteur, un prix fixe, des délais courts. C'est ce que je propose.</li>
+<li><strong>Une agence d'automatisation n8n</strong> : pertinente pour les gros projets qui mobilisent plusieurs profils (développeurs, chef de projet, data) et une équipe de support dédiée.</li>
+</ul>
+<p>Quel que soit votre choix, posez ces cinq questions avant de signer :</p>
+<ol>
+<li>Les comptes (outil d'automatisation, IA, CRM) seront-ils à mon nom ?</li>
+<li>Vais-je recevoir une documentation compréhensible de ce qui a été construit ?</li>
+<li>Où seront hébergées mes données, et avec quels contrats de sous-traitance ?</li>
+<li>Que se passe-t-il quand une automatisation tombe en panne ? Qui est prévenu, et sous quel délai ?</li>
+<li>Les messages envoyés à mes clients passent-ils par une validation humaine ?</li>
+</ol>
+
+<h2 id="recommandation">Ma recommandation selon votre situation</h2>
+<ul>
+<li><strong>Vous démarrez, avec peu de volume</strong> et des besoins simples : Zapier.</li>
+<li><strong>Vous avez des scénarios avec conditions</strong> et un volume moyen : Make.</li>
+<li><strong>Vous voulez un agent IA</strong>, vous traitez des données sensibles ou beaucoup de volume : n8n, idéalement hébergé en Europe.</li>
+</ul>
+<p>Et si vous ne savez pas dans quelle case vous êtes, c'est normal : c'est la première question que l'on règle pendant l'audit offert. Pour voir ce qu'un agent IA peut faire concrètement, lisez aussi <a href="agent-ia-24-7-pme.html">Agent IA 24/7 pour PME : ce qu'il fait vraiment</a>.</p>

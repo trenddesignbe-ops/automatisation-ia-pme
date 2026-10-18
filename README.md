@@ -1,16 +1,25 @@
 # automatisation-ia-pme.fr
 
-Site statique (HTML/CSS, sans build) de l'offre Automatisation IA PME d'Alexandre Cottret.
+Site statique de l'offre Automatisation IA PME d'Alexandre Cottret. Domaine principal : https://www.automatisation-ia-pme.fr
 
-## Contenu
-- `index.html` : page d'accueil (landing)
-- `blog.html` et `blog/*.html` : articles
-- `mentions-legales.html` : mentions légales, confidentialité, cookies
-- `assets/` : styles, polices auto-hébergées, images, images de partage
-- `netlify.toml` : en-têtes de cache et de sécurité, redirections www et .cloud vers le .fr
-- `sitemap.xml`, `robots.txt`, `404.html`
+## Structure
+- `src/` : sources (à modifier)
+  - `index.html` : page d'accueil (le bloc des 3 derniers articles est régénéré automatiquement)
+  - `articles/<slug>.html` : corps de chaque article (h2 avec un id, sans titre h1)
+  - `articles.json` : métadonnées des articles (title_tag, meta, h1, short, cat, eyebrow, lead, summary, faq, sources, related, date)
+  - `site.css`, `consent.html` (bandeau cookies et GA4), `assets/` (images, polices)
+  - `build.py` : génère `public/`, `netlify.toml`, le sitemap et le fichier robots
+  - `og.py` : génère les images de partage manquantes (`assets/og-<slug>.jpg`)
+  - `editorial.md` : plan éditorial et statut des articles
+- `public/` : site généré, publié par Netlify (ne pas modifier à la main)
+
+## Ajouter un article
+1. Écrire `src/articles/<slug>.html` et ajouter son entrée dans `src/articles.json`
+2. `python3 src/og.py` puis `python3 src/build.py`
+3. Vérifier : aucun tiret cadratin ou demi-cadratin, pas de « min de lecture », liens internes valides
+
+## Règles de rédaction
+Vouvoiement, phrases simples, aucun chiffre inventé, sources officielles vérifiées, jamais de tiret cadratin (—) ni demi-cadratin (–).
 
 ## Hébergement
-Netlify, déploiement automatique à chaque push sur `main` (dossier publié : racine).
-
-Domaine principal : `automatisation-ia-pme.fr`. Le domaine `automatisation-ia-pme.cloud` est ajouté en alias sur Netlify et redirigé en 301 vers le .fr.
+Netlify (projet automatisation-ia-pme, dossier publié : `public`). Domaines : www.automatisation-ia-pme.fr (principal), automatisation-ia-pme.fr et automatisation-ia-pme.cloud redirigent vers lui.

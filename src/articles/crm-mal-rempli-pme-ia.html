@@ -1,0 +1,56 @@
+<h2 id="pourquoi">Pourquoi le CRM finit toujours mal rempli</h2>
+<p>Le problème n'est presque jamais l'outil. HubSpot, Pipedrive, Airtable ou un simple Google Sheets font très bien leur travail. Le problème, c'est la saisie : elle est manuelle, elle arrive en fin de journée, et elle passe toujours après les clients.</p>
+<p>Résultat : des demandes qui restent dans la boîte mail, des fiches à moitié vides, des devis dont personne ne connaît le statut. Et un CRM que l'on finit par ne plus ouvrir, parce qu'on ne lui fait plus confiance.</p>
+<p>La bonne nouvelle : la quasi-totalité de cette saisie peut être confiée à l'automatisation et à l'intelligence artificielle. Voici les cinq problèmes que je rencontre le plus souvent en PME, et comment les régler.</p>
+
+<h2 id="probleme-1">Problème 1 : les demandes n'arrivent jamais dans le CRM</h2>
+<p>Un formulaire sur le site, un e-mail direct, un message WhatsApp, un appel : les demandes arrivent par quatre canaux différents, et une partie se perd en route.</p>
+<p><strong>La solution :</strong> une automatisation capte chaque nouvelle demande, quel que soit le canal, et crée la fiche dans le CRM en quelques secondes. Avec Zapier, Make ou n8n, c'est la première brique que je mets en place, parce que tout le reste en dépend.</p>
+
+<h2 id="probleme-2">Problème 2 : des fiches incomplètes</h2>
+<p>Un nom, une adresse e-mail, et c'est tout. Le besoin, le budget, le délai ou la ville sont pourtant écrits dans le message du client, mais personne ne prend le temps de les recopier.</p>
+<p><strong>La solution :</strong> un modèle d'IA lit le message et en extrait les informations utiles pour les ranger dans les bons champs. Exemple : « Bonjour, je cherche quelqu'un pour refaire ma cuisine à Lille, budget autour de 15 000 €, idéalement en septembre. » devient automatiquement :</p>
+<div class="tbl"><table>
+<tbody>
+<tr><th scope="row">Besoin</th><td>Rénovation de cuisine</td></tr>
+<tr><th scope="row">Ville</th><td>Lille</td></tr>
+<tr><th scope="row">Budget</th><td>15 000 €</td></tr>
+<tr><th scope="row">Délai</th><td>Septembre</td></tr>
+</tbody>
+</table></div>
+<p>Quand une information manque, l'IA peut aussi préparer la question à poser au client dans le brouillon de réponse.</p>
+
+<h2 id="probleme-3">Problème 3 : les doublons</h2>
+<p>Le même client écrit deux fois, une fois par e-mail et une fois par le formulaire, avec une faute dans son nom. Vous voilà avec deux fiches, deux historiques, et parfois deux devis.</p>
+<p><strong>La solution :</strong> avant chaque création, l'automatisation cherche si le contact existe déjà (par adresse e-mail ou numéro de téléphone). S'il existe, elle met la fiche à jour au lieu d'en créer une nouvelle. Elle peut aussi normaliser les formats : majuscules, numéros de téléphone, codes postaux.</p>
+
+<h2 id="probleme-4">Problème 4 : le statut n'est jamais à jour</h2>
+<p>Le devis est-il parti ? A-t-il été relancé ? Signé ? Le CRM indique encore « nouveau contact » alors que le chantier est terminé.</p>
+<p><strong>La solution :</strong> les statuts se mettent à jour tout seuls à partir des événements réels. Le devis est envoyé depuis votre outil de facturation : la fiche passe à « devis envoyé ». Le client signe : « gagné ». La facture est payée : « client ». Vous n'avez plus rien à cocher, et votre tableau de suivi reflète enfin la réalité.</p>
+
+<h2 id="probleme-5">Problème 5 : les relances oubliées</h2>
+<p>C'est le problème qui coûte le plus cher. Un devis sans réponse au bout de quelques jours est souvent un devis perdu, simplement parce que le client a oublié ou hésite.</p>
+<p><strong>La solution :</strong> une relance personnalisée préparée automatiquement après 3 jours sans réponse, que vous validez ou qui part seule si vous le souhaitez. Et chaque matin, un court résumé : les nouvelles demandes, les devis à relancer, les rendez-vous du jour.</p>
+
+<h2 id="bonus">Bonus : le résumé des échanges dans la fiche</h2>
+<p>Après un appel ou un long échange d'e-mails, l'IA peut rédiger un résumé de trois lignes et l'ajouter à la fiche client : ce que le client veut, ce qui a été promis, la prochaine étape. Quand vous reprenez le dossier trois semaines plus tard, tout est là.</p>
+
+<h2 id="changer-crm">Faut-il changer de CRM ?</h2>
+<p>Dans la grande majorité des cas, non. Les outils d'automatisation se connectent aux CRM les plus courants : HubSpot, Pipedrive, Salesforce, Zoho, Airtable, Notion, et même un simple Google Sheets. Changer de CRM sans changer la façon dont il est alimenté ne règle rien : dans six mois, le nouveau sera aussi vide que l'ancien.</p>
+<p>Commencez par automatiser l'alimentation de celui que vous avez. Si, une fois les données propres, il montre vraiment ses limites, la migration sera d'ailleurs beaucoup plus simple.</p>
+
+<h2 id="garde-fous">Les garde-fous à prévoir</h2>
+<ul>
+<li><strong>Validation humaine</strong> pour tout message envoyé à un client, au moins au début.</li>
+<li><strong>Minimisation des données</strong> : l'IA ne reçoit que ce dont elle a besoin. Pas de données de santé ni de coordonnées bancaires dans les prompts.</li>
+<li><strong>Durée de conservation</strong> : un prospect sans réponse n'a pas vocation à rester dans le CRM indéfiniment. La CNIL recommande en général trois ans après le dernier contact.</li>
+<li><strong>Comptes à votre nom</strong>, et une documentation simple de chaque automatisation.</li>
+</ul>
+
+<h2 id="demarrer">Mettre en place en trois étapes</h2>
+<ol>
+<li><strong>Capter</strong> : toutes les demandes arrivent automatiquement dans le CRM.</li>
+<li><strong>Enrichir</strong> : l'IA remplit les champs et évite les doublons.</li>
+<li><strong>Suivre</strong> : statuts automatiques, relances et résumé du matin.</li>
+</ol>
+<p>Chaque étape apporte un gain visible dès la première semaine. Pour aller plus loin, voyez comment un <a href="agent-ia-24-7-pme.html">agent IA 24/7</a> prend le relais la nuit et le week-end, ou quel outil choisir dans mon <a href="zapier-make-n8n-choisir.html">comparatif Zapier, Make et n8n</a>.</p>
