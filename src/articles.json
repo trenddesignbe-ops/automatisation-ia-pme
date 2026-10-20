@@ -173,5 +173,66 @@
    "zapier-make-n8n-choisir"
   ],
   "date": "2026-10-18"
+ },
+ {
+  "slug": "agence-n8n-pme",
+  "cat": "Guide",
+  "title_tag": "Agence n8n : rôle, prix et quand un freelance suffit",
+  "meta": "Agence n8n ou freelance pour automatiser votre PME ? Ce que fait une agence n8n, ce qui compose son prix et les 7 questions à poser avant de signer.",
+  "h1": "Agence n8n : ce qu'elle fait, combien ça coûte, et quand un freelance suffit",
+  "short": "Agence n8n : ce qu'elle fait et quand un freelance suffit",
+  "eyebrow": "Guide · Prestataire n8n",
+  "lead": "Vous voulez automatiser une partie de votre activité avec n8n et vous cherchez une agence n8n ? Voici ce qu'un tel prestataire fait vraiment, ce qui compose son prix, les questions à poser avant de signer, et les cas où un freelance spécialisé suffit largement.",
+  "summary": [
+   "Une agence n8n cadre, construit, teste, héberge et maintient vos automatisations.",
+   "Un devis complet couvre quatre postes : mise en place, outil n8n, modèle d'IA et maintenance.",
+   "Pour une TPE ou une PME avec quelques automatisations, un freelance spécialisé suffit souvent.",
+   "Exigez des comptes à votre nom, des workflows exportables et une documentation écrite."
+  ],
+  "faq": [
+   [
+    "Combien coûte une agence n8n ?",
+    "Il n'existe pas de grille officielle. Comparez les quatre postes : la mise en place (payée une fois), l'abonnement n8n ou le serveur, la consommation du modèle d'IA et la maintenance. Chez moi, la mise en place démarre à 590 €, avec un prix fixe annoncé avant de commencer."
+   ],
+   [
+    "Une agence d'automatisation n8n est-elle obligatoire pour utiliser n8n ?",
+    "Non. n8n peut être pris en main seul, surtout en version cloud. Un prestataire fait gagner du temps sur le cadrage, la connexion des outils, les consignes données à l'IA et la maintenance, et évite les automatisations fragiles."
+   ],
+   [
+    "Que se passe-t-il si mon prestataire n8n arrête son activité ?",
+    "Si les comptes sont à votre nom et que les workflows sont documentés, un autre spécialiste peut reprendre le travail. Les workflows n8n s'exportent en fichiers JSON, sans les mots de passe : il suffit de reconnecter vos comptes."
+   ],
+   [
+    "Faut-il héberger n8n soi-même ?",
+    "Pas forcément. Le cloud de n8n évite toute gestion de serveur. L'auto-hébergement donne plus de contrôle sur les données, mais l'installation, l'infrastructure et la maintenance sont alors à votre charge ou à celle de votre prestataire."
+   ]
+  ],
+  "sources": [
+   [
+    "Tarifs n8n",
+    "https://n8n.io/pricing/"
+   ],
+   [
+    "Documentation n8n : choisir entre cloud et auto-hébergement",
+    "https://docs.n8n.io/choose-how-to-use-n8n"
+   ],
+   [
+    "Documentation n8n : exporter et importer des workflows",
+    "https://docs.n8n.io/build/manage-workflows/export-and-import"
+   ],
+   [
+    "Licence de n8n (Sustainable Use License)",
+    "https://github.com/n8n-io/n8n/blob/master/LICENSE.md"
+   ],
+   [
+    "Responsable de traitement et sous-traitant : 6 bonnes pratiques, CNIL",
+    "https://cnil.fr/fr/responsable-de-traitement-et-sous-traitant-6-bonnes-pratiques-pour-respecter-les-donnees"
+   ]
+  ],
+  "related": [
+   "zapier-make-n8n-choisir",
+   "crm-mal-rempli-pme-ia"
+  ],
+  "date": "2026-10-20"
  }
 ]

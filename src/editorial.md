@@ -6,12 +6,14 @@ Règle de choix : prendre le premier sujet « à faire ». Difficulté (KD Semru
 
 Source des chiffres : captures Semrush (base France, octobre 2026) fournies par Alexandre. Volume = recherches mensuelles.
 
+Note du 20/10/2026 : revérification Semrush impossible (unités API Semrush épuisées), chiffres du plan conservés pour le sujet 4.
+
 | # | Statut | Mot-clé principal (secondaires) | Volume | KD | Angle / titre de travail |
 |---|---|---|---|---|---|
 | 1 | publié 18/10/2026 | agent ia 24/7 pour pme | 260 | 6 % | Agent IA 24/7 pour PME : ce qu'il fait vraiment |
 | 2 | publié 18/10/2026 | problèmes crm ia pour pme | 210 | 6 % | CRM mal rempli : 5 problèmes que l'IA règle |
 | 3 | publié 18/10/2026 | zapier make (comparatif) | 70 | 20 % | Zapier, Make ou n8n : lequel choisir |
-| 4 | à faire | agence n8n (agence automatisation n8n) | 390 (+320) | 13 % (11 %) | Agence n8n : ce qu'elle fait, combien ça coûte, et quand un freelance suffit |
+| 4 | publié 20/10/2026 | agence n8n (agence automatisation n8n) | 390 (+320) | 13 % (11 %) | Agence n8n : ce qu'elle fait, combien ça coûte, et quand un freelance suffit |
 | 5 | à faire | n8n gratuit | 480 | 13 % | n8n gratuit : ce qui est vraiment gratuit, et ce que ça coûte vraiment à une PME |
 | 6 | à faire | meilleure plateforme d'automatisation marketing pour pme | 3 600 | 14 % | Quelle plateforme d'automatisation marketing pour une PME ? Comparatif honnête |
 | 7 | à faire | pme france automatisation problèmes répétitifs | 210 | 7 % | Tâches répétitives en PME : les 10 à automatiser en premier |
