@@ -240,3 +240,13 @@ img { max-width: 100%; height: auto; }
   .grid3, .mods, .checks, .steps { grid-template-columns: minmax(0,1fr); }
   .price__amt { font-size: 48px; }
 }
+.trainer { display: grid; grid-template-columns: minmax(0,320px) minmax(0,1fr); gap: 48px; align-items: center; max-width: 1100px; }
+.trainer img { width: 100%; height: auto; aspect-ratio: 768 / 865; object-fit: cover; border-radius: 12px; }
+.trainer__txt { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.trainer__txt p { margin: 0; max-width: 62ch; font-size: 17px; line-height: 1.6; color: var(--taupe); }
+.trainer__txt .trainer__name { font: 400 36px/1.05 var(--serif); letter-spacing: -.03em; color: var(--brown); }
+.trainer__txt .trainer__role { font-size: 16px; font-weight: 500; color: var(--deep); }
+.trainer__stats { list-style: none; margin: 8px 0 0; padding: 20px 0 0; border-top: 1px solid var(--cream-line); display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; }
+.trainer__stats b { display: block; font: 400 40px/1 var(--serif); letter-spacing: -.03em; color: var(--brown); }
+.trainer__stats span { display: block; margin-top: 6px; font-size: 14px; line-height: 1.35; color: var(--taupe); }
+@media (max-width: 809.98px) { .trainer { grid-template-columns: minmax(0,1fr); gap: 24px; } .trainer img { max-width: 280px; } .trainer__stats b { font-size: 32px; } }

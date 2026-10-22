@@ -444,11 +444,12 @@ def formation_page():
     out += sec('choisir', 'Comparatif', 'Comment choisir la meilleure formation automatisation IA ?',
                "Trois formats coexistent. Aucun n'est meilleur dans l'absolu : tout dépend de votre objectif, de votre budget et du temps dont vous disposez.",
                tbl(cmp_rows) + '<p class="fnote">Prix relevés en octobre 2026 sur des formations publiées en ligne, à titre indicatif. Quel que soit le format, vérifiez trois choses : que vous pratiquez sur vos propres outils, que le programme va jusqu\'à l\'IA dans les scénarios (pas seulement ChatGPT), et, si vous cherchez la meilleure formation n8n, qu\'elle couvre les agents IA et l\'hébergement des données.</p>')
-    out += sec('formateur', 'Votre formateur', 'Alexandre Cottret', None,
-               f'''<div class="author"><img src="assets/alexandre-160.webp" alt="Alexandre Cottret" width="96" height="96" loading="lazy"><div>
-<p class="author__name">Intégrateur en automatisation IA et webdesigner</p>
-<p>Je crée des sites internet depuis 2021 (plus de 165 sites livrés) et j'automatise aujourd'hui les demandes, devis et relances des TPE et PME avec n8n, Make et Zapier. Je donne aussi des cours en visio depuis 2023 : je suis Professeur Ambassadeur sur Superprof (5/5), et noté 4,97/5 sur 91 avis Malt.</p>
-<p>Mon approche : pas de théorie inutile. On construit ensemble, sur vos outils, et vous repartez avec quelque chose qui fonctionne.</p>
+    out += sec('formateur', 'Qui vous forme', 'Votre formateur automatisation IA', None,
+               f'''<div class="trainer"><img src="assets/alexandre.webp" alt="Alexandre Cottret, formateur en automatisation IA" width="768" height="865" loading="lazy">
+<div class="trainer__txt"><p class="trainer__name">Alexandre Cottret</p><p class="trainer__role">Intégrateur en automatisation IA (n8n, Make, Zapier) et webdesigner</p>
+<p>Je crée des sites internet depuis 2021 et j'automatise aujourd'hui les demandes, devis et relances des TPE et PME avec n8n, Make, Zapier, Claude et ChatGPT. Ce que j'enseigne, je l'utilise chaque semaine chez mes clients : vous apprenez des méthodes testées sur de vrais projets, pas des démonstrations.</p>
+<p>Je donne aussi des cours en visio depuis 2023, avec une règle simple : pas de théorie inutile. On construit ensemble, sur vos outils, et vous repartez avec quelque chose qui fonctionne.</p>
+<ul class="trainer__stats"><li><b>165+</b><span>sites livrés depuis 2021</span></li><li><b>4,97/5</b><span>sur 91 avis Malt</span></li><li><b>5/5</b><span>Professeur Ambassadeur Superprof</span></li></ul>
 </div></div>''')
     out += sec('faq', 'Questions fréquentes', 'Vos questions sur la formation', None,
                '<div class="faq">' + ''.join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q, a in faqs) + '</div>')

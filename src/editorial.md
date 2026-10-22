@@ -35,3 +35,5 @@ Note du 20/10/2026 : revérification Semrush impossible (unités API Semrush ép
 Réserve (volume non mesuré, à vérifier avec Semrush avant de les traiter) : automatiser ses devis avec l'IA · agent IA WhatsApp Business · saisie des factures fournisseurs · relance automatique des devis · rendez-vous et rappels pour coachs et instituts · prix d'une automatisation IA pour PME · IA et RGPD en PME · automatiser HubSpot gratuit.
 
 Écartés : requêtes de marque ou locales hors cible (linknova, julien ctr, Madagascar, Toulouse), affiliation, « formation n8n » (KD 24 %, à reprendre plus tard), « automatisation ia » (KD 40 %, visée par la page d'accueil).
+
+Bonus hors cible (22/10/2026) : « vinted automatisation » (590, KD 6 %). À traiter seulement en fin de liste, sous l'angle « vendeurs professionnels » (suivi des ventes, stock, comptabilité, réponses types), et jamais comme un tutoriel de bot : les conditions d'utilisation de Vinted interdisent les outils automatisés (republication, likes, abonnements), avec un risque de suspension du compte.
