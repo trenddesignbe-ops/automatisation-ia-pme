@@ -19,6 +19,9 @@ items=[('og-home',"L'automatisation IA qui gère vos demandes de A à Z","Agents
 items+=[('og-'+a['slug'], a['short'], a['cat']) for a in ARTS]
 import sys as _s; _s.path.insert(0, HERE); from tools_data import TOOLS
 items+=[('og-'+t['slug'], t['menu'][0], t['eyebrow']) for t in TOOLS]
+from solutions_data import SOLUTIONS, METIERS
+items+=[('og-'+t['slug'], t['menu'][0], t['eyebrow'].split(' · ')[-1]) for t in SOLUTIONS+METIERS]
+items+=[('og-tarifs','Des prix fixes, annoncés avant de commencer','Tarifs'),('og-a-propos','Alexandre Cottret, intégrateur automatisation IA','À propos')]
 items=[it for it in items if ALL or not os.path.exists(it[0]+'.jpg')]
 icon=F+'''<style>body{margin:0}.i{width:512px;height:512px;border-radius:0;background:#1f3a2e;display:grid;place-items:center;font:600 230px/1 Geist,sans-serif;letter-spacing:-.05em;color:#cfe2d2}</style><div class="i">IA</div>'''
 async def main():

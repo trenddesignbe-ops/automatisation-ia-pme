@@ -2,10 +2,10 @@
  {
   "slug": "agent-ia-24-7-pme",
   "cat": "Guide",
-  "title_tag": "Agent IA 24/7 pour PME : rôle, limites et mise en place",
-  "meta": "Un agent IA 24/7 pour PME répond, trie et prépare vos réponses la nuit et le week-end. Ce qu'il fait, ses limites, son coût et comment le mettre en place.",
-  "h1": "Agent IA 24/7 pour PME : ce qu'il fait vraiment, et ce qu'il ne doit pas faire",
-  "short": "Agent IA 24/7 pour PME : ce qu'il fait vraiment",
+  "title_tag": "Agent IA 24/7 : définition, exemples et limites en PME",
+  "meta": "Qu'est-ce qu'un agent IA 24/7 ? Définition simple, exemples concrets en PME, limites à connaître et règles de l'AI Act. Le guide pour comprendre avant de se lancer.",
+  "h1": "Agent IA 24/7 : ce que c'est, ce qu'il fait vraiment, et ses limites",
+  "short": "Agent IA 24/7 : définition, exemples et limites",
   "eyebrow": "Guide · Agent IA",
   "lead": "Un agent IA qui répond à vos clients la nuit et le week-end : la promesse est séduisante. Voici ce qu'il fait concrètement dans une TPE ou une PME, où sont ses limites, et comment le mettre en place sans perdre la main.",
   "summary": [
@@ -59,10 +59,10 @@
  {
   "slug": "zapier-make-n8n-choisir",
   "cat": "Comparatif",
-  "title_tag": "Zapier, Make ou n8n : lequel choisir pour votre PME ?",
-  "meta": "Zapier, Make ou n8n pour automatiser une TPE ou une PME ? Comparatif honnête : prise en main, prix au volume, IA, RGPD, et quand passer par une agence n8n.",
-  "h1": "Zapier, Make ou n8n : lequel choisir pour automatiser votre PME ?",
-  "short": "Zapier, Make ou n8n : lequel choisir pour votre PME ?",
+  "title_tag": "n8n vs Make vs Zapier : lequel choisir pour votre PME ?",
+  "meta": "n8n vs Make, n8n vs Zapier : prise en main, prix, IA et RGPD comparés simplement. Le bon outil d'automatisation selon votre volume et vos données.",
+  "h1": "n8n vs Make vs Zapier : lequel choisir pour automatiser votre PME ?",
+  "short": "n8n vs Make vs Zapier : lequel choisir ?",
   "eyebrow": "Comparatif · Outils d'automatisation",
   "lead": "Trois outils dominent l'automatisation des PME, et tous savent désormais intégrer l'intelligence artificielle. Leurs différences portent sur la simplicité, le coût quand le volume augmente et l'hébergement des données. Voici comment choisir sans vous tromper.",
   "summary": [
@@ -177,10 +177,10 @@
  {
   "slug": "agence-n8n-pme",
   "cat": "Guide",
-  "title_tag": "Agence n8n : rôle, prix et quand un freelance suffit",
-  "meta": "Agence n8n ou freelance pour automatiser votre PME ? Ce que fait une agence n8n, ce qui compose son prix et les 7 questions à poser avant de signer.",
-  "h1": "Agence n8n : ce qu'elle fait, combien ça coûte, et quand un freelance suffit",
-  "short": "Agence n8n : ce qu'elle fait et quand un freelance suffit",
+  "title_tag": "Agence n8n ou freelance : prix et comment choisir",
+  "meta": "Agence n8n ou freelance n8n ? Ce que coûte une automatisation n8n, ce qui est inclus et les 5 questions à poser avant de signer. Guide honnête pour PME.",
+  "h1": "Agence n8n ou freelance : combien ça coûte et comment choisir",
+  "short": "Agence n8n ou freelance : prix et choix",
   "eyebrow": "Guide · Prestataire n8n",
   "lead": "Vous voulez automatiser une partie de votre activité avec n8n et vous cherchez une agence n8n ? Voici ce qu'un tel prestataire fait vraiment, ce qui compose son prix, les questions à poser avant de signer, et les cas où un freelance spécialisé suffit largement.",
   "summary": [

@@ -43,3 +43,10 @@
 .mega__2col { grid-template-columns: repeat(2, minmax(0,1fr)); column-gap: 32px; }
 #cas-artisans, #cas-coachs, #cas-cabinets { scroll-margin-top: 80px; }
 .tool__a { display: contents; color: inherit; }
+.foot__cols { grid-template-columns: repeat(5, minmax(0, auto)); gap: 40px; }
+.foot__cols ul { gap: 16px; }
+.foot__cols a { line-height: 1.25; }
+.foot__cols ul + .foot__h { margin-top: 32px; }
+@media (max-width: 1199.98px) { .foot__cols { grid-template-columns: repeat(5, minmax(0,1fr)); gap: 24px; } }
+@media (max-width: 809.98px) { .foot__cols { grid-template-columns: 1fr 1fr; gap: 32px; } }
+@media (min-width: 1200px) { .foot__brand { flex: 0 0 220px; } .foot__cols { flex: 1; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 32px; } }
