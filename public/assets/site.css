@@ -329,3 +329,4 @@ img { max-width: 100%; height: auto; }
 @media (max-width: 1199.98px) { .foot__cols { grid-template-columns: repeat(5, minmax(0,1fr)); gap: 24px; } }
 @media (max-width: 809.98px) { .foot__cols { grid-template-columns: 1fr 1fr; gap: 32px; } }
 @media (min-width: 1200px) { .foot__brand { flex: 0 0 220px; } .foot__cols { flex: 1; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 32px; } }
+.fcard p a, .fnote a { color: var(--deep); text-decoration: underline; text-underline-offset: 3px; }

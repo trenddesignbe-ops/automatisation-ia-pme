@@ -82,7 +82,7 @@ def header(p, home=False):
     form = p + FORMATION
     need = [(x['menu'][0], x['menu'][1], p + x['slug'] + '.html') for x in SOLUTIONS[:6]]
     tools = [(x['menu'][0], x['menu'][1], p + x['slug'] + '.html') for x in TOOLS[:4]] + [(f'Tous les outils ({len(TOOLS)})', 'Notion, HubSpot, Excel, WhatsApp, Gmail…', p + 'integrations.html')]
-    jobs = [(x['menu'][0], x['menu'][1], p + x['slug'] + '.html') for x in METIERS] + [('E-commerce', 'Commandes, factures et stock', p + 'integrateur-make.html#cas-pratiques')]
+    jobs = [(x['menu'][0], x['menu'][1], p + x['slug'] + '.html') for x in METIERS]
     col = lambda items: ''.join(f'<li><a href="{u}"><b>{t}</b><span>{d}</span></a></li>' for t, d, u in items)
     mega = f'''<div class="mega" id="mega" hidden><div class="mega__in">
     <div class="mega__col"><p class="mega__h">Par besoin</p><ul>{col(need)}</ul></div>
@@ -369,6 +369,9 @@ def tool_page(t):
 '''
     out += sec('usages', 'Cas d\'usage', t['uses_h2'], t['uses_lead'],
                '<div class="grid3">' + ''.join(f'<div class="fcard"><h3>{a}</h3><p>{b}</p></div>' for a, b in t['uses']) + '</div>')
+    if t.get('more'):
+        out += sec('plus', "Cas d'usage", t['more_h2'], t.get('more_lead'),
+                   '<div class="grid3">' + ''.join(f'<div class="fcard"><h3>{a}</h3><p>{b}</p></div>' for a, b in t['more']) + '</div>')
     cases = ''.join(f'''<article class="case"><h3>{ti}</h3><p class="case__ctx">{ctx}</p><ul class="timeline">{''.join(f"<li><b>{s}</b>{d}</li>" for s, d in steps)}</ul><p class="case__res">✓ {res}</p></article>''' for ti, ctx, steps, res in t['cases'])
     out += sec('cas-pratiques', 'Cas pratiques', t.get('cases_h2', 'Trois cas pratiques, étape par étape'), "Des scénarios types, construits sur des besoins réels de TPE et PME. Les vôtres seront adaptés à vos outils.",
                f'<div class="cases">{cases}</div>')
