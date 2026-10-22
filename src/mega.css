@@ -38,3 +38,4 @@
 @media (min-width: 1080px) { .mnav { display: none !important; } }
 .qa p a { color: var(--deep); text-decoration: underline; text-underline-offset: 3px; }
 .mnav-open .fab, .mnav-open .wa { display: none !important; }
+.logo-item__a { display: flex; align-items: center; gap: 6px; color: inherit; text-decoration: none; }

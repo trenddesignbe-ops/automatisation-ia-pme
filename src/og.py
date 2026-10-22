@@ -17,6 +17,8 @@ h1{{margin:0;font:400 84px/1 "EB Garamond",serif;letter-spacing:-.04em;max-width
 ARTS = json.load(open(os.path.join(HERE, 'articles.json')))
 items=[('og-home',"L'automatisation IA qui gère vos demandes de A à Z","Agents IA · n8n, Make, Zapier"),('og-blog',"Guides sur l'automatisation IA en PME","Blog"),('og-formation',"Formation automatisation IA sur mesure","Formation · IA et automatisation")]
 items+=[('og-'+a['slug'], a['short'], a['cat']) for a in ARTS]
+import sys as _s; _s.path.insert(0, HERE); from tools_data import TOOLS
+items+=[('og-'+t['slug'], t['menu'][0], t['eyebrow']) for t in TOOLS]
 items=[it for it in items if ALL or not os.path.exists(it[0]+'.jpg')]
 icon=F+'''<style>body{margin:0}.i{width:512px;height:512px;border-radius:0;background:#1f3a2e;display:grid;place-items:center;font:600 230px/1 Geist,sans-serif;letter-spacing:-.05em;color:#cfe2d2}</style><div class="i">IA</div>'''
 async def main():

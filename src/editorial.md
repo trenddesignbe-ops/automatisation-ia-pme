@@ -25,7 +25,7 @@ Note du 20/10/2026 : revérification Semrush impossible (unités API Semrush ép
 | 11 | à faire | n8n c'est quoi (n8n c est quoi) | 590 (+210) | 19 % | n8n, c'est quoi ? L'explication simple pour les dirigeants |
 | 12 | à faire | agent ia claude | 260 | 15 % | Créer un agent IA avec Claude : exemples concrets pour une PME |
 | 13 | à faire | installer n8n | 170 | 11 % | Installer n8n : cloud, serveur ou hébergeur français ? |
-| 14 | à faire | formation automatisation ia | 320 | 18 % | Formation automatisation IA : apprendre n8n, Make ou Zapier en PME |
+| 14 | fait 22/10/2026 (page dédiée) | formation automatisation ia | 320 | 18 % | Formation automatisation IA : apprendre n8n, Make ou Zapier en PME |
 | 15 | à faire | n8n alternative (zapier alternative) | 210 (+50) | 19 % (12 %) | Alternatives à n8n et Zapier : lesquelles valent le coup pour une PME |
 | 16 | à faire | créer un agent ia n8n | 170 | 19 % | Créer un agent IA avec n8n : les étapes, sans jargon |
 | 17 | à faire | formation zapier | 140 | 16 % | Formation Zapier : ce qu'on apprend en une journée |
@@ -37,3 +37,5 @@ Réserve (volume non mesuré, à vérifier avec Semrush avant de les traiter) : 
 Écartés : requêtes de marque ou locales hors cible (linknova, julien ctr, Madagascar, Toulouse), affiliation, « formation n8n » (KD 24 %, à reprendre plus tard), « automatisation ia » (KD 40 %, visée par la page d'accueil).
 
 Bonus hors cible (22/10/2026) : « vinted automatisation » (590, KD 6 %). À traiter seulement en fin de liste, sous l'angle « vendeurs professionnels » (suivi des ventes, stock, comptabilité, réponses types), et jamais comme un tutoriel de bot : les conditions d'utilisation de Vinted interdisent les outils automatisés (republication, likes, abonnements), avec un risque de suspension du compte.
+
+Idée du 22/10/2026 : un article « automatisation artisan : relances clients et devis » (automatisation artisan 20, tpe artisan automatisation relance client + villes, environ 70 au total). Petit volume : un article suffit, pas de page dédiée.

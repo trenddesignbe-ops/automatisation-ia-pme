@@ -70,6 +70,8 @@ def head(title, desc, path, p, og_img, og_type='website', extra=''):
 <body>
 '''
 
+sys.path.insert(0, SRC)
+from tools_data import TOOLS
 CHEV = '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg>'
 FORMATION = 'formation-automatisation-ia.html'
 
@@ -81,9 +83,7 @@ def header(p, home=False):
             ('Devis automatisés', 'Un brouillon prêt en quelques minutes', h + '#solutions-devis'),
             ('Relances et avis Google', 'Plus aucune relance oubliée', h + '#solutions-relances'),
             ('Factures et documents', "Lus, classés et saisis par l'IA", h + '#solutions-documents')]
-    tools = [('Agence n8n ou freelance', 'Agents IA, données hébergées en Europe', p + 'blog/agence-n8n-pme.html'),
-             ('Zapier, Make ou n8n', 'Le bon outil selon votre volume', p + 'blog/zapier-make-n8n-choisir.html'),
-             ('Toutes les intégrations', 'Claude, ChatGPT, HubSpot, Airtable…', h + '#integrations')]
+    tools = [(x['menu'][0], x['menu'][1], p + x['slug'] + '.html') for x in TOOLS] + [('Toutes les intégrations', 'Claude, ChatGPT, Excel, HubSpot…', h + '#integrations')]
     col = lambda items: ''.join(f'<li><a href="{u}"><b>{t}</b><span>{d}</span></a></li>' for t, d, u in items)
     mega = f'''<div class="mega" id="mega" hidden><div class="mega__in">
     <div class="mega__col"><p class="mega__h">Par besoin</p><ul>{col(need)}</ul></div>
@@ -140,7 +140,7 @@ def footer(p, band=True, band_title='Et si vos demandes se traitaient toutes seu
   <div class="foot">
     <div class="foot__brand"><p>L'intelligence artificielle qui traite vos demandes de A à Z</p></div>
     <nav class="foot__cols" aria-label="Pied de page">
-      <div><h2 class="foot__h">Offre</h2><ul><li><a href="{h}#solutions">Solutions</a></li><li><a href="{h}#methode">Méthode</a></li><li><a href="{h}#cas">Cas d'usage</a></li><li><a href="{p}formation-automatisation-ia.html">Formation IA</a></li><li><a href="{p}blog.html">Blog</a></li></ul></div>
+      <div><h2 class="foot__h">Offre</h2><ul><li><a href="{h}#solutions">Solutions</a></li><li><a href="{h}#methode">Méthode</a></li><li><a href="{p}agence-automatisation-n8n.html">Automatisation n8n</a></li><li><a href="{p}integrateur-make.html">Intégrateur Make</a></li><li><a href="{p}integrateur-zapier.html">Intégrateur Zapier</a></li><li><a href="{p}formation-automatisation-ia.html">Formation IA</a></li><li><a href="{p}blog.html">Blog</a></li></ul></div>
       <div><h2 class="foot__h">Trend Design</h2><ul><li><a href="https://www.trend-design.fr/">Création de sites</a></li><li><a href="https://www.trend-design.fr/">Référencement SEO</a></li><li><a href="{h}#contact">Contact</a></li></ul></div>
       <div><h2 class="foot__h">Réseaux</h2><ul><li><a href="{MALT}" rel="noopener">Malt</a></li><li><a href="{LINKEDIN}" rel="noopener">LinkedIn</a></li></ul></div>
       <div><h2 class="foot__h">Légal</h2><ul><li><a href="{p}mentions-legales.html">Mentions légales</a></li><li><a href="{p}mentions-legales.html#confidentialite">Confidentialité</a></li><li><a href="{p}mentions-legales.html#cookies">Cookies</a></li><li><a href="#" data-cc-open>Gérer les cookies</a></li></ul></div>
@@ -320,6 +320,64 @@ def legal_page():
 </div></div>
 '''
     out += '</main>\n' + footer(p, band=False).replace('<div class="fab">', '</div></div>\n<div class="fab">', 1)
+    return out
+
+sys.path.insert(0, SRC)
+from tools_data import TOOLS
+TICONS = json.load(open(os.path.join(SRC, 'tool_icons.json')))
+
+def tool_page(t):
+    p = ''
+    path = t['slug'] + '.html'
+    url = SITE + '/' + path
+    items = [('Accueil', ''), (t['menu'][0], path)]
+    strip = lambda s: re.sub(r'<[^>]+>', '', s)
+    graph = {"@context": "https://schema.org", "@graph": [
+        {"@type": "Service", "@id": url + "#service", "name": t['h1'], "url": url, "serviceType": "Automatisation " + t['tool'],
+         "description": t['desc'], "provider": {"@id": SITE + "/#entreprise"}, "areaServed": {"@type": "Country", "name": "France"},
+         "offers": {"@type": "Offer", "price": "590", "priceCurrency": "EUR", "description": "Automatisation simple, prix fixe à partir de 590 €"}},
+        {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": strip(a)}} for q, a in t['faq']]},
+        crumbs_ld(items)]}
+    out = head(t['title'], t['desc'], path, p, 'og-' + t['slug'] + '.jpg', 'website', ld(graph))
+    out += header(p)
+    sec = lambda id_, eb, h2, lead, body: f'<section class="fsec" id="{id_}"><div class="fsec__head"><p class="eyebrow">{eb}</p><h2 class="fh2">{h2}</h2>' + (f'<p class="fsec__lead">{lead}</p>' if lead else '') + f'</div>{body}</section>\n'
+    icon = TICONS.get(t['tool'], '').replace('<svg', '<svg class="pcard__logo"', 1)
+    flow = ''.join(f'<li><span>{a}</span>{b}</li>' for a, b in t['flow'])
+    out += f'''<div class="content"><div class="content__frame"><main>
+<header class="fhero">
+<div class="fhero__txt">
+<nav aria-label="Fil d'Ariane">{crumbs_html([('Accueil', './'), (t['menu'][0], None)])}</nav>
+<p class="eyebrow">{t['eyebrow']}</p>
+<h1 class="page-title">{t['h1']}</h1>
+<p class="lead">{t['lead']}</p>
+<div class="fhero__btns"><a class="btn btn--primary" href="{CAL}" rel="noopener">Réserver un audit offert</a><a class="btn btn--ghost" href="#cas-pratiques">Voir les cas pratiques</a></div>
+<ul class="trust"><li><b>★ 4,97/5</b> · 91 avis Malt</li><li><b>Dès 590 €</b> · prix fixe</li><li><b>Comptes à votre nom</b></li></ul>
+</div>
+<div class="fhero__art" aria-hidden="true"><div class="pcard"><p class="pcard__h">{icon}Exemple de scénario {t['tool']}</p><ol class="pcard__flow">{flow}</ol><div class="pcard__ok">✓ {t['flow_ok']}</div></div></div>
+</header>
+'''
+    out += sec('usages', 'Cas d\'usage', t['uses_h2'], t['uses_lead'],
+               '<div class="grid3">' + ''.join(f'<div class="fcard"><h3>{a}</h3><p>{b}</p></div>' for a, b in t['uses']) + '</div>')
+    cases = ''.join(f'''<article class="case"><h3>{ti}</h3><p class="case__ctx">{ctx}</p><ul class="timeline">{''.join(f"<li><b>{s}</b>{d}</li>" for s, d in steps)}</ul><p class="case__res">✓ {res}</p></article>''' for ti, ctx, steps, res in t['cases'])
+    out += sec('cas-pratiques', 'Cas pratiques', t['cases_h2'], "Des scénarios types, construits sur des besoins réels de TPE et PME. Les vôtres seront adaptés à vos outils.",
+               f'<div class="cases">{cases}</div>')
+    out += sec('pourquoi', 'Pourquoi ' + t['tool'], t['why_h2'], None,
+               '<div class="grid3">' + ''.join(f'<div class="fcard"><h3>{a}</h3><p>{b}</p></div>' for a, b in t['why']) + f'</div><p class="fnote">{t["limit"]}</p>')
+    rows = t['table']
+    tbl = '<div class="tbl"><table><thead><tr>' + ''.join(f'<th scope="col">{c}</th>' for c in rows[0]) + '</tr></thead><tbody>' + ''.join('<tr><th scope="row">' + r[0] + '</th>' + ''.join(f'<td>{c}</td>' for c in r[1:]) + '</tr>' for r in rows[1:]) + '</tbody></table></div>'
+    out += sec('comparatif', 'Comparatif', t['table_h2'], None, tbl + '<p class="fnote">Le détail des différences est dans le guide <a href="blog/zapier-make-n8n-choisir.html">Zapier, Make ou n8n : lequel choisir</a>.</p>')
+    steps = [("01", "Audit offert", "20 minutes pour repérer la tâche qui vous coûte le plus de temps et vérifier qu'elle s'automatise."),
+             ("02", "Prix fixe", "Dès 590 € pour une automatisation simple. Périmètre, outils et délai annoncés par écrit."),
+             ("03", "Mise en production", f"Construction sur {t['tool']}, tests sur vos vrais cas, documentation simple."),
+             ("04", "Suivi", "Surveillance et ajustements chaque mois si vous le souhaitez. Vous restez propriétaire de tout.")]
+    out += sec('methode', 'Méthode', 'Comment on travaille ensemble', None,
+               '<ol class="steps">' + ''.join(f'<li><b>{n}</b><h3>{a}</h3><p>{b}</p></li>' for n, a, b in steps) + '</ol>')
+    out += sec('faq', 'Questions fréquentes', f"Vos questions sur l'automatisation {t['tool']}", None,
+               '<div class="faq">' + ''.join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q, a in t['faq']) + '</div>')
+    others = [x for x in TOOLS if x['slug'] != t['slug']]
+    rel = ''.join(f'<a href="{x["slug"]}.html"><span>Outil</span>{x["menu"][0]}</a>' for x in others) + f'<a href="{FORMATION}"><span>Formation</span>Formation automatisation IA</a>'
+    out += sec('voir-aussi', 'Voir aussi', 'Les autres outils', None, f'<div class="related">{rel}</div>')
+    out += '</main>\n' + footer(p, band_title=f"Un scénario {t['tool']} en tête ?").replace('<div class="fab">', '</div></div>\n<div class="fab">', 1)
     return out
 
 FORMATION_DATE = '2026-10-22'
@@ -553,13 +611,15 @@ def main():
     open(os.path.join(OUT, 'blog.html'), 'w').write(blog_page())
     open(os.path.join(OUT, 'mentions-legales.html'), 'w').write(legal_page())
     open(os.path.join(OUT, FORMATION), 'w').write(formation_page())
+    for t in TOOLS:
+        open(os.path.join(OUT, t['slug'] + '.html'), 'w').write(tool_page(t))
     open(os.path.join(OUT, 'index.html'), 'w').write(build_index())
     if FONTS == 'self':
         open(os.path.join(OUT, '404.html'), 'w').write(notfound_page())
         open(os.path.join(OUT, INDEXNOW_KEY + '.txt'), 'w').write(INDEXNOW_KEY)
         open(os.path.join(OUT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n')
         last = max(a['date'] for a in ARTICLES)
-        urls = [('', '1.0', last), ('blog.html', '0.7', last), ('mentions-legales.html', '0.2', LEGAL_DATE), (FORMATION, '0.9', FORMATION_DATE)] + [(f'blog/{a["slug"]}.html', '0.8', a['date']) for a in ARTICLES]
+        urls = [('', '1.0', last), ('blog.html', '0.7', last), ('mentions-legales.html', '0.2', LEGAL_DATE), (FORMATION, '0.9', FORMATION_DATE)] + [(t['slug'] + '.html', '0.9', t['date']) for t in TOOLS] + [(f'blog/{a["slug"]}.html', '0.8', a['date']) for a in ARTICLES]
         sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(
             f'  <url><loc>{SITE}/{u}</loc><lastmod>{d}</lastmod><priority>{pr}</priority></url>\n' for u, pr, d in urls) + '</urlset>\n'
         open(os.path.join(OUT, 'sitemap.xml'), 'w').write(sm)

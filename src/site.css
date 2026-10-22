@@ -250,3 +250,13 @@ img { max-width: 100%; height: auto; }
 .trainer__stats b { display: block; font: 400 40px/1 var(--serif); letter-spacing: -.03em; color: var(--brown); }
 .trainer__stats span { display: block; margin-top: 6px; font-size: 14px; line-height: 1.35; color: var(--taupe); }
 @media (max-width: 809.98px) { .trainer { grid-template-columns: minmax(0,1fr); gap: 24px; } .trainer img { max-width: 280px; } .trainer__stats b { font-size: 32px; } }
+.pcard__h { display: flex; align-items: center; gap: 8px; }
+.pcard__logo { width: 18px; height: 18px; fill: var(--brown); flex: none; }
+.pcard__flow li span { width: 92px; }
+.cases { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; }
+.case { display: flex; flex-direction: column; gap: 14px; padding: 28px; border-radius: 10px; background: var(--white); border: 1px solid var(--cream-line); }
+.case h3 { margin: 0; font: 400 26px/1.15 var(--serif); letter-spacing: -.02em; }
+.case__ctx { margin: 0; font-size: 15px; line-height: 1.5; color: var(--taupe); }
+.case .timeline { margin: 4px 0 0; display: grid; gap: 12px; font-size: 15px; line-height: 1.45; }
+.case__res { margin: auto 0 0; padding: 12px 14px; border-radius: 8px; background: var(--blue); font-size: 15px; font-weight: 500; line-height: 1.4; }
+@media (max-width: 1079.98px) { .cases { grid-template-columns: minmax(0,1fr); max-width: 640px; } }
