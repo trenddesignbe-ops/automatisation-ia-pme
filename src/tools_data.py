@@ -1,7 +1,7 @@
 # Pages services par outil (n8n, Make, Zapier). Textes sans tiret cadratin ni demi-cadratin.
 TOOLS = [
 {
- 'slug': 'agence-automatisation-n8n', 'tool': 'n8n', 'date': '2026-10-22',
+ 'slug': 'agence-automatisation-n8n', 'tool': 'n8n', 'group': "Plateformes d'automatisation", 'date': '2026-10-22',
  'menu': ('Agence automatisation n8n', 'Agents IA, données hébergées en Europe'),
  'title': "Agence automatisation n8n : agents IA pour TPE et PME",
  'desc': "Automatisation n8n pour TPE et PME : agents IA, lecture de factures, reporting Excel, relances. Hébergement en Europe possible, prix fixe dès 590 €.",
@@ -51,7 +51,7 @@ TOOLS = [
  ],
 },
 {
- 'slug': 'integrateur-make', 'tool': 'Make', 'date': '2026-10-22',
+ 'slug': 'integrateur-make', 'tool': 'Make', 'group': "Plateformes d'automatisation", 'date': '2026-10-22',
  'menu': ('Intégrateur Make', 'Scénarios visuels avec conditions'),
  'title': "Intégrateur Make (ex-Integromat) : automatisation pour PME",
  'desc': "Intégrateur Make (Integromat) pour TPE et PME : commandes, factures, CRM, reporting Excel et IA reliés en scénarios clairs. Audit offert, prix fixe dès 590 €.",
@@ -101,7 +101,7 @@ TOOLS = [
  ],
 },
 {
- 'slug': 'integrateur-zapier', 'tool': 'Zapier', 'date': '2026-10-22',
+ 'slug': 'integrateur-zapier', 'tool': 'Zapier', 'group': "Plateformes d'automatisation", 'date': '2026-10-22',
  'menu': ('Intégrateur Zapier', 'Le plus simple pour démarrer'),
  'title': "Intégrateur Zapier : automatisations sur mesure pour PME",
  'desc': "Intégrateur Zapier pour TPE et PME : formulaires, CRM, rendez-vous, paiements et IA reliés sans code. Zaps testés et documentés, prix fixe dès 590 €.",
@@ -151,3 +151,6 @@ TOOLS = [
  ],
 },
 ]
+
+from tools_data2 import TOOLS2
+TOOLS = TOOLS + TOOLS2

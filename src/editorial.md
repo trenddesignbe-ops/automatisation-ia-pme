@@ -6,6 +6,8 @@ Règle de choix : prendre le premier sujet « à faire ». Difficulté (KD Semru
 
 Source des chiffres : captures Semrush (base France, octobre 2026) fournies par Alexandre. Volume = recherches mensuelles.
 
+Note du 22/10/2026 (2) : 14 pages outils créées (n8n, Make, Zapier, Claude, ChatGPT, HubSpot, Airtable, Notion, Google Sheets, Excel, WhatsApp, Gmail, Wix, Claude Code et Codex). Chaque nouvel article doit renvoyer vers la page outil concernée et ne pas viser le même mot-clé principal.
+
 Note du 22/10/2026 : sujets « automatisation reporting excel » et « automatisation crm » ajoutés en tête à partir des captures Semrush d'Alexandre.
 
 Note du 20/10/2026 : revérification Semrush impossible (unités API Semrush épuisées), chiffres du plan conservés pour le sujet 4.
@@ -16,7 +18,7 @@ Note du 20/10/2026 : revérification Semrush impossible (unités API Semrush ép
 | 2 | publié 18/10/2026 | problèmes crm ia pour pme | 210 | 6 % | CRM mal rempli : 5 problèmes que l'IA règle |
 | 3 | publié 18/10/2026 | zapier make (comparatif) | 70 | 20 % | Zapier, Make ou n8n : lequel choisir |
 | 4 | publié 20/10/2026 | agence n8n (agence automatisation n8n) | 390 (+320) | 13 % (11 %) | Agence n8n : ce qu'elle fait, combien ça coûte, et quand un freelance suffit |
-| 5 | à faire | automatisation reporting excel | 390 | 6 % | Automatiser un reporting Excel : de la saisie à la mise à jour automatique (Power Query, Make, n8n, IA) |
+| 5 | fait 22/10/2026 (page dédiée /automatisation-excel.html, ne pas écrire d'article sur ce mot-clé) | automatisation reporting excel | 390 | 6 % | Automatiser un reporting Excel : de la saisie à la mise à jour automatique (Power Query, Make, n8n, IA) |
 | 6 | à faire | automatisation crm (crm gestion leads pipeline automatisation 590 / KD 17) | 390 | 18 % | Automatisation CRM : alimenter le pipeline et suivre les leads sans ressaisie |
 | 7 | à faire | devis automatisé (automatiser les devis 50, devis automatisés 40, devis automatisé sur excel 20) | 320 | 19 % | Devis automatisé : préparer ses devis en quelques minutes avec l'IA (Excel, logiciel de devis, n8n) |
 | 8 | à faire | prospection automatisée (automatisation prospection 110 / KD 17, automatisation suivi prospects 390 / KD 18) | 260 | 15 % | Prospection automatisée : ce qu'une PME peut automatiser sans spammer |
@@ -26,7 +28,7 @@ Note du 20/10/2026 : revérification Semrush impossible (unités API Semrush ép
 | 12 | à faire | pme france automatisation problèmes répétitifs | 210 | 7 % | Tâches répétitives en PME : les 10 à automatiser en premier |
 | 13 | à faire | standard téléphonique automatisé ia (appel automatisé ia) | 260 (+260) | 15 % (19 %) | Standard téléphonique automatisé par IA : ce qu'il peut faire pour une TPE |
 | 14 | à faire | n8n c'est quoi (n8n c est quoi) | 590 (+210) | 19 % | n8n, c'est quoi ? L'explication simple pour les dirigeants |
-| 15 | à faire | agent ia claude | 260 | 15 % | Créer un agent IA avec Claude : exemples concrets pour une PME |
+| 15 | fait 22/10/2026 (page dédiée /agent-ia-claude.html, ne pas écrire d'article sur ce mot-clé) | agent ia claude | 260 | 15 % | Créer un agent IA avec Claude : exemples concrets pour une PME |
 | 16 | à faire | installer n8n | 170 | 11 % | Installer n8n : cloud, serveur ou hébergeur français ? |
 | 17 | fait 22/10/2026 (page dédiée) | formation automatisation ia | 320 | 18 % | Formation automatisation IA : apprendre n8n, Make ou Zapier en PME |
 | 18 | à faire | n8n alternative (zapier alternative) | 210 (+50) | 19 % (12 %) | Alternatives à n8n et Zapier : lesquelles valent le coup pour une PME |

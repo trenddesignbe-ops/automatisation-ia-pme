@@ -42,3 +42,4 @@
 .mega__col--wide { grid-column: span 2; }
 .mega__2col { grid-template-columns: repeat(2, minmax(0,1fr)); column-gap: 32px; }
 #cas-artisans, #cas-coachs, #cas-cabinets { scroll-margin-top: 80px; }
+.tool__a { display: contents; color: inherit; }

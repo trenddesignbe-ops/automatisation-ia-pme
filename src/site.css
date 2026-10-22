@@ -260,3 +260,19 @@ img { max-width: 100%; height: auto; }
 .case .timeline { margin: 4px 0 0; display: grid; gap: 12px; font-size: 15px; line-height: 1.45; }
 .case__res { margin: auto 0 0; padding: 12px 14px; border-radius: 8px; background: var(--blue); font-size: 15px; font-weight: 500; line-height: 1.4; }
 @media (max-width: 1079.98px) { .cases { grid-template-columns: minmax(0,1fr); max-width: 640px; } }
+.tcards { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.tcard { display: flex; flex-direction: column; gap: 6px; padding: 24px; border-radius: 10px; background: var(--white); border: 1px solid var(--cream-line); color: var(--brown); text-decoration: none; transition: border-color .2s ease, transform .2s ease; }
+.tcard:hover { border-color: var(--deep); transform: translateY(-2px); }
+.tcard__logo { width: 28px; height: 28px; fill: var(--brown); margin-bottom: 8px; }
+.tcard b { font-size: 18px; font-weight: 500; }
+.tcard span { font-size: 15px; line-height: 1.45; color: var(--taupe); }
+@media (prefers-reduced-motion: no-preference) {
+  .fl { opacity: 0; transform: translateY(8px); animation: flIn .5s ease forwards; animation-delay: var(--d, 0s); }
+  .fl-ok { opacity: 0; transform: scale(.94); animation: flOk .5s ease forwards, flGlow 1.6s ease 1; animation-delay: var(--d, 0s), calc(var(--d, 0s) + .5s); }
+}
+@keyframes flIn { to { opacity: 1; transform: none; } }
+@keyframes flOk { to { opacity: 1; transform: none; } }
+@keyframes flGlow { 0%, 100% { box-shadow: 0 0 0 0 rgba(36,81,61,0); } 40% { box-shadow: 0 0 0 6px rgba(36,81,61,.15); } }
+.tgroups { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+.tgroup { display: flex; flex-direction: column; gap: 16px; }
+.tgroups .tcards { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
