@@ -15,7 +15,7 @@ h1{{margin:0;font:400 84px/1 "EB Garamond",serif;letter-spacing:-.04em;max-width
 .f{{font-size:22px;color:#56635b;font-weight:500}}</style>
 <div class="c"><div class="bg"></div><div class="in"><div class="logo">automatisation<span class="tag">IA PME</span></div><div><div class="e">{eyebrow}</div><h1>{title}</h1></div></div></div>'''
 ARTS = json.load(open(os.path.join(HERE, 'articles.json')))
-items=[('og-home',"L'automatisation IA qui gère vos demandes de A à Z","Agents IA · n8n, Make, Zapier"),('og-blog',"Guides sur l'automatisation IA en PME","Blog")]
+items=[('og-home',"L'automatisation IA qui gère vos demandes de A à Z","Agents IA · n8n, Make, Zapier"),('og-blog',"Guides sur l'automatisation IA en PME","Blog"),('og-formation',"Formation automatisation IA sur mesure","Formation · IA et automatisation")]
 items+=[('og-'+a['slug'], a['short'], a['cat']) for a in ARTS]
 items=[it for it in items if ALL or not os.path.exists(it[0]+'.jpg')]
 icon=F+'''<style>body{margin:0}.i{width:512px;height:512px;border-radius:0;background:#1f3a2e;display:grid;place-items:center;font:600 230px/1 Geist,sans-serif;letter-spacing:-.05em;color:#cfe2d2}</style><div class="i">IA</div>'''
