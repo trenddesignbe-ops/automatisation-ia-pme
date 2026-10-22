@@ -84,28 +84,38 @@ def header(p, home=False):
             ('Relances et avis Google', 'Plus aucune relance oubliée', h + '#solutions-relances'),
             ('Factures et documents', "Lus, classés et saisis par l'IA", h + '#solutions-documents')]
     tools = [(x['menu'][0], x['menu'][1], p + x['slug'] + '.html') for x in TOOLS] + [('Toutes les intégrations', 'Claude, ChatGPT, Excel, HubSpot…', h + '#integrations')]
+    jobs = [('Artisans et BTP', 'Devis, relances, avis Google', h + '#cas-artisans'),
+            ('Coachs, salles et instituts', 'Rendez-vous et rappels sur WhatsApp', h + '#cas-coachs'),
+            ('Cabinets et PME de services', 'Factures, documents, reporting', h + '#cas-cabinets'),
+            ('E-commerce', 'Commandes, factures et stock', p + 'integrateur-make.html#cas-pratiques')]
     col = lambda items: ''.join(f'<li><a href="{u}"><b>{t}</b><span>{d}</span></a></li>' for t, d, u in items)
     mega = f'''<div class="mega" id="mega" hidden><div class="mega__in">
     <div class="mega__col"><p class="mega__h">Par besoin</p><ul>{col(need)}</ul></div>
     <div class="mega__col"><p class="mega__h">Par outil</p><ul>{col(tools)}</ul></div>
     <a class="mega__feat" href="{form}"><span class="mega__tag">Nouveau</span><p class="mega__h">Se former</p><b>Formation automatisation IA</b><span>En visio, sur vos propres outils : vous repartez avec votre première automatisation.</span><span class="mega__more">Voir le programme et les tarifs →</span></a>
+  </div></div>
+  <div class="mega" id="mega-cas" hidden><div class="mega__in">
+    <div class="mega__col mega__col--wide"><p class="mega__h">Par métier</p><ul class="mega__2col">{col(jobs)}</ul></div>
+    <a class="mega__feat" href="{CAL}" rel="noopener"><p class="mega__h">Votre métier n'est pas listé ?</p><b>Audit offert de 20 minutes</b><span>On regarde ensemble la tâche qui vous coûte le plus de temps, et si elle s'automatise.</span><span class="mega__more">Réserver un créneau →</span></a>
   </div></div>'''
-    rest = [('Méthode', h + '#methode'), ("Cas d'usage", h + '#cas'), ('FAQ', h + '#faq'), ('Blog', p + 'blog.html')]
+    rest = [('Formation', form), ('Blog', p + 'blog.html')]
     li = ''.join(f'<li><a href="{u}">{t}</a></li>' for t, u in rest)
     sub = ('<li class="mnav__lab">Par besoin</li>' + ''.join(f'<li><a href="{u}">{t}</a></li>' for t, d, u in need)
            + '<li class="mnav__lab">Par outil</li>' + ''.join(f'<li><a href="{u}">{t}</a></li>' for t, d, u in tools)
            + f'<li class="mnav__lab">Se former</li><li><a class="mnav__feat" href="{form}">Formation automatisation IA</a></li>')
+    subcas = ''.join(f'<li><a href="{u}">{t}</a></li>' for t, d, u in jobs)
+    trig = lambda label, target: f'<li class="nav__dd"><button class="nav__trigger" type="button" aria-expanded="false" aria-controls="{target}">{label}{CHEV}</button></li>'
     return f'''<header class="nav">
   <div class="nav__inner">
     <a class="logo" href="{logo}">automatisation <span class="logo__tag">IA PME</span></a>
     <div class="nav__right">
-      <ul class="nav__links"><li class="nav__dd"><button class="nav__trigger" type="button" aria-expanded="false" aria-controls="mega">Solutions{CHEV}</button></li>{li}</ul>
+      <ul class="nav__links">{trig('Solutions', 'mega')}{trig("Cas d'usage", 'mega-cas')}{li}</ul>
       <a class="btn btn--ghost" href="{h}#contact">Contact</a>
     </div>
     <button class="nav__menu" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mnav"><svg viewBox="0 0 20 20" aria-hidden="true"><path class="l1" d="M3 7h14"/><path class="l2" d="M3 13h14"/></svg></button>
   </div>
   {mega}
-  <nav class="mnav" id="mnav" aria-label="Menu mobile" hidden><ul><li><details class="mnav__dd"><summary>Solutions{CHEV}</summary><ul class="mnav__sub">{sub}</ul></details></li>{li}</ul><a class="btn btn--primary" href="{CAL}" rel="noopener">Réserver un audit</a></nav>
+  <nav class="mnav" id="mnav" aria-label="Menu mobile" hidden><ul><li><details class="mnav__dd"><summary>Solutions{CHEV}</summary><ul class="mnav__sub">{sub}</ul></details></li><li><details class="mnav__dd"><summary>Cas d'usage{CHEV}</summary><ul class="mnav__sub"><li class="mnav__lab">Par métier</li>{subcas}</ul></details></li>{li}<li><a href="{h}#contact">Contact</a></li></ul><a class="btn btn--primary" href="{CAL}" rel="noopener">Réserver un audit</a></nav>
 </header>
 '''
 
@@ -117,14 +127,16 @@ var b=document.querySelector('.nav__menu'),m=document.getElementById('mnav');
 if(b&&m){var set=function(o){m.hidden=!o;b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Fermer le menu':'Ouvrir le menu');document.documentElement.classList.toggle('mnav-open',o);};
 b.addEventListener('click',function(){set(m.hidden)});m.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){set(false);b.focus()}});}
-var t=document.querySelector('.nav__trigger'),g=document.getElementById('mega');
-if(t&&g){var dd=t.parentNode,tm,hov=false,fine=window.matchMedia('(hover: hover) and (pointer: fine)');
-var op=function(o){clearTimeout(tm);g.hidden=!o;t.setAttribute('aria-expanded',o);if(!o)hov=false;};
-t.addEventListener('click',function(){if(hov&&!g.hidden){hov=false;return}op(g.hidden)});
-[dd,g].forEach(function(el){el.addEventListener('mouseenter',function(){if(fine.matches){if(g.hidden)hov=true;op(true)}});el.addEventListener('mouseleave',function(){if(fine.matches){tm=setTimeout(function(){op(false)},200)}})});
-g.addEventListener('click',function(e){if(e.target.closest('a'))op(false)});
-document.addEventListener('click',function(e){if(!g.hidden&&!g.contains(e.target)&&!t.contains(e.target))op(false)});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!g.hidden){op(false);t.focus()}});}
+var ts=[].slice.call(document.querySelectorAll('.nav__trigger')),fine=window.matchMedia('(hover: hover) and (pointer: fine)'),tm,hov=false;
+var pan=function(t){return document.getElementById(t.getAttribute('aria-controls'))};
+var op=function(t,o){clearTimeout(tm);ts.forEach(function(x){var g=pan(x),on=o&&x===t;if(g){g.hidden=!on}x.setAttribute('aria-expanded',on)});if(!o)hov=false;};
+var cur=function(){for(var k=0;k<ts.length;k++){if(ts[k].getAttribute('aria-expanded')==='true')return ts[k]}return null};
+ts.forEach(function(t){var g=pan(t);if(!g)return;
+t.addEventListener('click',function(){var open=t.getAttribute('aria-expanded')==='true';if(hov&&open){hov=false;return}op(t,!open)});
+[t.parentNode,g].forEach(function(el){el.addEventListener('mouseenter',function(){if(fine.matches){if(t.getAttribute('aria-expanded')!=='true')hov=true;op(t,true)}});el.addEventListener('mouseleave',function(){if(fine.matches){tm=setTimeout(function(){op(t,false)},200)}})});
+g.addEventListener('click',function(e){if(e.target.closest('a'))op(t,false)});});
+document.addEventListener('click',function(e){var c=cur();if(c&&!pan(c).contains(e.target)&&!c.contains(e.target))op(c,false)});
+document.addEventListener('keydown',function(e){var c=cur();if(e.key==='Escape'&&c){op(c,false);c.focus()}});
 var hs=function(){var r=location.hash.match(/^#solutions-([a-z]+)$/);if(!r)return;var tb=document.getElementById('tab-'+r[1]),sc=document.getElementById('solutions');if(tb)tb.click();if(sc)sc.scrollIntoView();};
 window.addEventListener('hashchange',hs);hs();
 })();

@@ -302,3 +302,6 @@ img { max-width: 100%; height: auto; }
 .qa p a { color: var(--deep); text-decoration: underline; text-underline-offset: 3px; }
 .mnav-open .fab, .mnav-open .wa { display: none !important; }
 .logo-item__a { display: flex; align-items: center; gap: 6px; color: inherit; text-decoration: none; }
+.mega__col--wide { grid-column: span 2; }
+.mega__2col { grid-template-columns: repeat(2, minmax(0,1fr)); column-gap: 32px; }
+#cas-artisans, #cas-coachs, #cas-cabinets { scroll-margin-top: 80px; }
