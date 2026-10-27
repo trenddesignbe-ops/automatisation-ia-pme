@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>n8n gratuit : ce qui l&#x27;est vraiment, ce que ça coûte</title>
+<meta name="description" content="n8n gratuit ? L&#x27;édition communautaire l&#x27;est, n8n Cloud non. Licence, limites, prix officiels et vrai coût pour une PME : le guide clair pour bien choisir.">
+<link rel="canonical" href="https://www.automatisation-ia-pme.fr/blog/n8n-gratuit-pme.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Alexandre Cottret">
+<meta name="theme-color" content="#f7f5ee">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Automatisation IA PME">
+<meta property="og:title" content="n8n gratuit : ce qui l&#x27;est vraiment, ce que ça coûte">
+<meta property="og:description" content="n8n gratuit ? L&#x27;édition communautaire l&#x27;est, n8n Cloud non. Licence, limites, prix officiels et vrai coût pour une PME : le guide clair pour bien choisir.">
+<meta property="og:url" content="https://www.automatisation-ia-pme.fr/blog/n8n-gratuit-pme.html">
+<meta property="og:image" content="https://www.automatisation-ia-pme.fr/assets/og-n8n-gratuit-pme.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="../assets/fonts/Geist-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/EBGaramond-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/GeistMono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face { font-family: 'EB Garamond'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/EBGaramond-400-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; } @font-face { font-family: 'EB Garamond'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/EBGaramond-400-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } @font-face { font-family: 'EB Garamond'; font-style: normal; font-weight: 500; font-display: swap; src: url(../assets/fonts/EBGaramond-400-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; } @font-face { font-family: 'EB Garamond'; font-style: normal; font-weight: 500; font-display: swap; src: url(../assets/fonts/EBGaramond-400-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } @font-face { font-family: 'Geist'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/Geist-400-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; } @font-face { font-family: 'Geist'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/Geist-400-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } @font-face { font-family: 'Geist'; font-style: normal; font-weight: 500; font-display: swap; src: url(../assets/fonts/Geist-400-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; } @font-face { font-family: 'Geist'; font-style: normal; font-weight: 500; font-display: swap; src: url(../assets/fonts/Geist-400-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } @font-face { font-family: 'Geist'; font-style: normal; font-weight: 600; font-display: swap; src: url(../assets/fonts/Geist-400-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; } @font-face { font-family: 'Geist'; font-style: normal; font-weight: 600; font-display: swap; src: url(../assets/fonts/Geist-400-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } @font-face { font-family: 'Geist Mono'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/GeistMono-400-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; } @font-face { font-family: 'Geist Mono'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/GeistMono-400-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } </style>
+<link rel="stylesheet" href="../assets/site.css">
+<meta property="article:published_time" content="2026-10-27">
+<meta property="article:modified_time" content="2026-10-27">
+<meta property="article:author" content="Alexandre Cottret">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://www.automatisation-ia-pme.fr/blog/n8n-gratuit-pme.html#article", "headline": "n8n gratuit : ce qui l'est vraiment, et ce que ça coûte à une PME", "description": "n8n gratuit ? L'édition communautaire l'est, n8n Cloud non. Licence, limites, prix officiels et vrai coût pour une PME : le guide clair pour bien choisir.", "image": "https://www.automatisation-ia-pme.fr/assets/og-n8n-gratuit-pme.jpg", "datePublished": "2026-10-27", "dateModified": "2026-10-27", "inLanguage": "fr-FR", "wordCount": 1576, "author": {"@type": "Person", "@id": "https://www.automatisation-ia-pme.fr/#alexandre", "name": "Alexandre Cottret", "jobTitle": "Intégrateur en automatisation IA et webdesigner", "url": "https://www.automatisation-ia-pme.fr/", "image": "https://www.automatisation-ia-pme.fr/assets/alexandre.webp", "sameAs": ["https://www.linkedin.com/in/alexandre-cottret-designer-web/", "https://www.malt.fr/profile/alexandrecottret-zapier", "https://www.malt.fr/profile/alexcottret-webdesigner", "https://www.trend-design.fr/"]}, "publisher": {"@type": "Organization", "@id": "https://www.automatisation-ia-pme.fr/#entreprise", "name": "Automatisation IA PME", "url": "https://www.automatisation-ia-pme.fr/", "logo": {"@type": "ImageObject", "url": "https://www.automatisation-ia-pme.fr/assets/logo-512.png", "width": 512, "height": 512}}, "mainEntityOfPage": "https://www.automatisation-ia-pme.fr/blog/n8n-gratuit-pme.html", "articleSection": "Guide"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.automatisation-ia-pme.fr/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.automatisation-ia-pme.fr/blog.html"}, {"@type": "ListItem", "position": 3, "name": "n8n gratuit : ce qui l'est vraiment", "item": "https://www.automatisation-ia-pme.fr/blog/n8n-gratuit-pme.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "n8n est-il vraiment gratuit ?", "acceptedAnswer": {"@type": "Answer", "text": "L'édition communautaire de n8n est gratuite si vous l'installez sur votre propre serveur : vous payez seulement l'hébergement et la maintenance. La version cloud, hébergée par n8n, est payante après un essai gratuit."}}, {"@type": "Question", "name": "Quelles sont les limites de la version gratuite de n8n ?", "acceptedAnswer": {"@type": "Answer", "text": "n8n ne fixe pas de limite de workflows ni d'exécutions sur l'édition communautaire. Il manque surtout des fonctions d'équipe : le partage de workflows entre utilisateurs, les projets, le suivi des versions avec Git et la connexion unique (SSO)."}}, {"@type": "Question", "name": "Puis-je utiliser n8n gratuitement dans mon entreprise ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. La licence de n8n autorise son usage pour les besoins internes de votre entreprise, et un prestataire peut construire vos workflows. Il faut en revanche un accord commercial avec n8n pour proposer l'outil à vos propres clients ou le revendre."}}, {"@type": "Question", "name": "Combien coûte une automatisation n8n pour une PME ?", "acceptedAnswer": {"@type": "Answer", "text": "Il faut additionner l'outil (abonnement cloud ou serveur), la consommation du modèle d'IA et la mise en place. Chez moi, la mise en place démarre à 590 €, avec un prix fixe annoncé avant de commencer."}}]}]}</script>
+</head>
+<body>
+<header class="nav">
+  <div class="nav__inner">
+    <a class="logo" href="../">automatisation <span class="logo__tag">IA PME</span></a>
+    <div class="nav__right">
+      <ul class="nav__links"><li class="nav__dd"><button class="nav__trigger" type="button" aria-expanded="false" aria-controls="mega">Solutions<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></button></li><li class="nav__dd"><button class="nav__trigger" type="button" aria-expanded="false" aria-controls="mega-cas">Cas d'usage<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></button></li><li><a href="../formation-automatisation-ia.html">Formation</a></li><li><a href="../tarifs.html">Tarifs</a></li><li><a href="../blog.html">Blog</a></li></ul>
+      <a class="btn btn--ghost" href="../#contact">Contact</a>
+    </div>
+    <button class="nav__menu" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mnav"><svg viewBox="0 0 20 20" aria-hidden="true"><path class="l1" d="M3 7h14"/><path class="l2" d="M3 13h14"/></svg></button>
+  </div>
+  <div class="mega" id="mega" hidden><div class="mega__in">
+    <div class="mega__col"><p class="mega__h">Par besoin</p><ul><li><a href="../agent-ia-service-client.html"><b>Agent IA 24/7 et service client</b><span>Chaque demande lue, classée, préparée</span></a></li><li><a href="../devis-automatise.html"><b>Devis automatisé</b><span>Un brouillon prêt en quelques minutes</span></a></li><li><a href="../automatisation-crm.html"><b>Automatisation CRM</b><span>Leads et pipeline suivis sans saisie</span></a></li><li><a href="../prospection-automatisee.html"><b>Prospection automatisée</b><span>Plus de rendez-vous, sans spam</span></a></li><li><a href="../automatisation-facturation-relances.html"><b>Factures, relances, archivage</b><span>Lus, relancés et classés seuls</span></a></li><li><a href="../creation-contenu-ia.html"><b>Création de contenu IA</b><span>Blog, LinkedIn, newsletter, visuels</span></a></li></ul></div>
+    <div class="mega__col"><p class="mega__h">Par outil</p><ul><li><a href="../agence-automatisation-n8n.html"><b>Agence automatisation n8n</b><span>Agents IA, données hébergées en Europe</span></a></li><li><a href="../integrateur-make.html"><b>Agence automatisation Make</b><span>Scénarios visuels avec conditions</span></a></li><li><a href="../integrateur-zapier.html"><b>Intégrateur Zapier</b><span>Le plus simple pour démarrer</span></a></li><li><a href="../agent-ia-claude.html"><b>Agent IA Claude</b><span>L'IA qui lit, trie et rédige</span></a></li><li><a href="../integrations.html"><b>Tous les outils (15)</b><span>Notion, HubSpot, Excel, WhatsApp, Gmail…</span></a></li></ul></div>
+    <a class="mega__feat" href="../formation-automatisation-ia.html"><span class="mega__tag">Nouveau</span><p class="mega__h">Se former</p><b>Formation automatisation IA</b><span>En visio, sur vos propres outils : vous repartez avec votre première automatisation.</span><span class="mega__more">Voir le programme et les tarifs →</span></a>
+  </div></div>
+  <div class="mega" id="mega-cas" hidden><div class="mega__in">
+    <div class="mega__col mega__col--wide"><p class="mega__h">Par métier</p><ul class="mega__2col"><li><a href="../automatisation-artisan.html"><b>Artisans et BTP</b><span>Devis, relances, avis Google</span></a></li><li><a href="../automatisation-coach-institut.html"><b>Coachs, salles et instituts</b><span>Rendez-vous et rappels sur WhatsApp</span></a></li><li><a href="../automatisation-cabinet-pme-services.html"><b>Cabinets et PME de services</b><span>Factures, documents, reporting</span></a></li><li><a href="../automatisation-e-commerce.html"><b>E-commerce</b><span>Boutique, paniers abandonnés, SAV</span></a></li></ul></div>
+    <a class="mega__feat" href="https://calendly.com/alexandre-cottret/audit-automatisation-ia-20-min" rel="noopener"><p class="mega__h">Votre métier n'est pas listé ?</p><b>Audit offert de 20 minutes</b><span>On regarde ensemble la tâche qui vous coûte le plus de temps, et si elle s'automatise.</span><span class="mega__more">Réserver un créneau →</span></a>
+  </div></div>
+  <nav class="mnav" id="mnav" aria-label="Menu mobile" hidden><ul><li><details class="mnav__dd"><summary>Solutions<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></summary><ul class="mnav__sub"><li class="mnav__lab">Par besoin</li><li><a href="../agent-ia-service-client.html">Agent IA 24/7 et service client</a></li><li><a href="../devis-automatise.html">Devis automatisé</a></li><li><a href="../automatisation-crm.html">Automatisation CRM</a></li><li><a href="../prospection-automatisee.html">Prospection automatisée</a></li><li><a href="../automatisation-facturation-relances.html">Factures, relances, archivage</a></li><li><a href="../creation-contenu-ia.html">Création de contenu IA</a></li><li class="mnav__lab">Par outil</li><li><a href="../agence-automatisation-n8n.html">Agence automatisation n8n</a></li><li><a href="../integrateur-make.html">Agence automatisation Make</a></li><li><a href="../integrateur-zapier.html">Intégrateur Zapier</a></li><li><a href="../agent-ia-claude.html">Agent IA Claude</a></li><li><a href="../integrations.html">Tous les outils (15)</a></li><li class="mnav__lab">Se former</li><li><a class="mnav__feat" href="../formation-automatisation-ia.html">Formation automatisation IA</a></li></ul></details></li><li><details class="mnav__dd"><summary>Cas d'usage<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg></summary><ul class="mnav__sub"><li class="mnav__lab">Par métier</li><li><a href="../automatisation-artisan.html">Artisans et BTP</a></li><li><a href="../automatisation-coach-institut.html">Coachs, salles et instituts</a></li><li><a href="../automatisation-cabinet-pme-services.html">Cabinets et PME de services</a></li><li><a href="../automatisation-e-commerce.html">E-commerce</a></li></ul></details></li><li><a href="../formation-automatisation-ia.html">Formation</a></li><li><a href="../tarifs.html">Tarifs</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../#contact">Contact</a></li></ul><a class="btn btn--primary" href="https://calendly.com/alexandre-cottret/audit-automatisation-ia-20-min" rel="noopener">Réserver un audit</a></nav>
+</header>
+<main>
+<article>
+<div class="content"><div class="content__frame">
+<header class="page-head"><div class="page-head__in">
+<nav aria-label="Fil d'Ariane"><ol class="crumbs"><li><a href="../">Accueil</a></li><li><a href="../blog.html">Blog</a></li><li aria-current="page">n8n gratuit : ce qui l&#x27;est vraiment</li></ol></nav>
+<p class="eyebrow">Guide · Prix de n8n</p>
+<h1 class="page-title">n8n gratuit : ce qui l&#x27;est vraiment, et ce que ça coûte à une PME</h1>
+<p class="lead">n8n gratuit, vraiment ? L&#x27;édition communautaire de n8n ne coûte rien en licence, mais elle se paie en serveur et en temps. Voici ce qu&#x27;elle contient, ce que sa licence autorise, ce que coûte n8n Cloud selon les tarifs officiels, et comment choisir la bonne version pour votre PME.</p>
+<div class="byline"><img src="../assets/alexandre-160.webp" alt="" width="44" height="44"><div><b>Alexandre Cottret</b>Publié le <time datetime="2026-10-27">27 octobre 2026</time></div></div>
+</div></header>
+<div class="art-wrap"><div class="art">
+<div class="box summary"><p class="box__t">En bref</p><ul><li>L&#x27;édition communautaire de n8n est gratuite, à condition de l&#x27;héberger sur votre propre serveur.</li><li>n8n Cloud est payant : un essai gratuit, puis une formule à partir de 20 € par mois en facturation annuelle.</li><li>La licence autorise l&#x27;usage pour les besoins internes de votre entreprise, pas la revente de n8n à vos clients.</li><li>Le vrai coût d&#x27;un n8n gratuit, c&#x27;est le serveur, la maintenance et le temps de mise en place.</li></ul></div>
+<nav class="box toc" aria-label="Sommaire"><p class="box__t">Sommaire</p><ol><li><a href="#reponse-courte">n8n gratuit : la réponse courte</a></li><li><a href="#edition-communautaire">Ce que contient l'édition communautaire gratuite</a></li><li><a href="#licence">Ce que la licence vous autorise (et ce qu'elle interdit)</a></li><li><a href="#n8n-cloud">n8n Cloud : un essai gratuit, pas une offre gratuite</a></li><li><a href="#vrai-cout">Le vrai coût d'un n8n gratuit pour une PME</a></li><li><a href="#exemple">Exemple : deux PME, deux choix différents</a></li><li><a href="#choisir">Version gratuite ou payante : comment choisir</a></li><li><a href="#demarrer">Par où commencer</a></li><li><a href="#faq">Questions fréquentes</a></li></ol></nav>
+<h2 id="reponse-courte">n8n gratuit : la réponse courte</h2>
+<p>Oui, n8n peut être gratuit. Mais pas dans toutes ses versions, et jamais tout à fait sans frais pour une entreprise. Il existe deux façons d'utiliser n8n :</p>
+<ul>
+<li><strong>L'édition communautaire</strong>, que vous installez sur votre propre serveur. Le logiciel est gratuit, sans limite de workflows ni d'exécutions fixée par n8n. Vous payez en revanche le serveur, et quelqu'un doit l'installer et l'entretenir.</li>
+<li><strong>n8n Cloud</strong>, hébergé par l'éditeur. Rien à installer, mais c'est un abonnement payant. Il existe un essai gratuit, pas de formule gratuite permanente.</li>
+</ul>
+<p>La vraie question pour un dirigeant de TPE ou de PME n'est donc pas « n8n est-il gratuit ? », mais « quelle version me coûte le moins cher, en argent et en temps ? ». C'est ce que nous allons voir, chiffres officiels à l'appui. Si vous hésitez encore entre plusieurs outils, lisez d'abord mon <a href="zapier-make-n8n-choisir.html">comparatif Zapier, Make et n8n</a>.</p>
+
+<h2 id="edition-communautaire">Ce que contient l'édition communautaire gratuite</h2>
+<p>La documentation de n8n présente l'édition communautaire comme gratuite et dotée de presque toutes les fonctions. Pour une petite structure, c'est vrai : vous avez l'éditeur de workflows, toutes les connexions aux applications, les nœuds d'intelligence artificielle pour construire un agent, les déclencheurs par formulaire, e-mail ou horaire, et l'historique des exécutions.</p>
+<p>Ce qui manque concerne surtout les équipes et les grandes organisations. Selon la documentation officielle, l'édition communautaire n'inclut pas :</p>
+<ul>
+<li>le partage de workflows et d'identifiants entre plusieurs utilisateurs (seuls le propriétaire de l'instance et le créateur y ont accès) ;</li>
+<li>les projets, les environnements et le suivi des versions avec Git ;</li>
+<li>la connexion unique (SSO) et l'annuaire LDAP ;</li>
+<li>les variables personnalisées, les coffres de secrets externes et l'envoi des journaux vers un outil tiers.</li>
+</ul>
+<p>Bon à savoir : en enregistrant gratuitement votre instance avec une adresse e-mail, vous débloquez trois fonctions utiles au quotidien. Les dossiers pour ranger vos workflows, le débogage dans l'éditeur, et les données d'exécution personnalisées pour annoter et retrouver une exécution. L'instance reste sur l'édition communautaire, donc gratuite.</p>
+<div class="note"><p><strong>En clair :</strong> si une ou deux personnes construisent les automatisations de l'entreprise, l'édition communautaire suffit dans la plupart des cas. Si cinq collaborateurs doivent modifier les mêmes workflows avec des droits différents, il faudra une offre payante.</p></div>
+
+<h2 id="licence">Ce que la licence vous autorise (et ce qu'elle interdit)</h2>
+<p>n8n n'est pas un logiciel libre au sens strict. Il est publié sous une licence propre, la Sustainable Use License. Elle vous autorise à utiliser et modifier n8n pour les besoins internes de votre entreprise, ou pour un usage personnel ou non commercial.</p>
+<p>Concrètement, pour une PME :</p>
+<ul>
+<li><strong>Autorisé :</strong> automatiser vos devis, vos relances, votre CRM ou votre reporting interne.</li>
+<li><strong>Autorisé :</strong> faire construire vos workflows par un prestataire. La licence ne l'empêche pas de vendre ses services de conseil et de mise en place.</li>
+<li><strong>Non autorisé sans accord commercial :</strong> proposer n8n à vos propres clients pour qu'ils y connectent leurs comptes et créent leurs workflows, ou le revendre.</li>
+</ul>
+<p>Si votre projet consiste à intégrer n8n dans un produit que vous vendez, lisez la licence en détail ou posez la question à n8n avant de vous lancer.</p>
+
+<div class="cta-inline"><p>Vous voulez savoir si une de vos tâches s'automatise avec l'IA ? 20 minutes suffisent.</p><a class="btn btn--primary" href="https://calendly.com/alexandre-cottret/audit-automatisation-ia-20-min" rel="noopener">Réserver l'audit offert</a></div>
+<h2 id="n8n-cloud">n8n Cloud : un essai gratuit, pas une offre gratuite</h2>
+<p>La version cloud évite toute gestion de serveur : n8n s'occupe de l'hébergement et des mises à jour. Voici ce qu'affiche la page tarifs de n8n en octobre 2026, en facturation annuelle :</p>
+<div class="tbl"><table>
+<thead><tr><th scope="col">Formule</th><th scope="col">Prix affiché</th><th scope="col">Exécutions par mois</th></tr></thead>
+<tbody>
+<tr><th scope="row">Starter</th><td>20 € par mois</td><td>2 500</td></tr>
+<tr><th scope="row">Pro</th><td>50 € par mois</td><td>10 000</td></tr>
+<tr><th scope="row">Business (auto-hébergé)</th><td>667 € par mois</td><td>40 000</td></tr>
+<tr><th scope="row">Enterprise</th><td>Sur devis</td><td>Sur mesure</td></tr>
+</tbody>
+</table></div>
+<p>Toutes les formules incluent un nombre illimité d'utilisateurs et de workflows. Une exécution correspond à un passage complet d'un workflow, quel que soit son nombre d'étapes. L'essai gratuit ne demande pas de carte bancaire et donne droit à 1 000 exécutions. n8n indique aussi une remise de 50 % sur l'offre Business pour les entreprises de moins de 20 salariés qui remplissent ses conditions.</p>
+<p>Pour vous situer : un workflow qui traite chaque demande de devis reçue et tourne 300 fois par mois consomme 300 exécutions. Une TPE avec trois ou quatre automatisations de ce type reste en général dans la première formule.</p>
+
+<h2 id="vrai-cout">Le vrai coût d'un n8n gratuit pour une PME</h2>
+<p>Le logiciel est gratuit, l'automatisation ne l'est pas. Avec l'édition communautaire, la documentation de n8n est claire : l'infrastructure et la maintenance sont à votre charge. Voici les postes à prévoir, quelle que soit la version choisie.</p>
+<div class="tbl"><table>
+<thead><tr><th scope="col">Poste</th><th scope="col">Édition communautaire</th><th scope="col">n8n Cloud</th></tr></thead>
+<tbody>
+<tr><th scope="row">Logiciel n8n</th><td>Gratuit</td><td>Abonnement mensuel</td></tr>
+<tr><th scope="row">Serveur</th><td>À louer chez un hébergeur</td><td>Inclus</td></tr>
+<tr><th scope="row">Installation</th><td>Docker, nom de domaine, certificat HTTPS</td><td>Aucune</td></tr>
+<tr><th scope="row">Mises à jour et sauvegardes</th><td>À faire vous-même ou à confier</td><td>Assurées par n8n</td></tr>
+<tr><th scope="row">Sécurité</th><td>À surveiller (accès, mots de passe, correctifs)</td><td>Gérée par n8n</td></tr>
+<tr><th scope="row">Modèle d'IA</th><td>À l'usage, chez l'éditeur du modèle</td><td>À l'usage, chez l'éditeur du modèle</td></tr>
+<tr><th scope="row">Construction des workflows</th><td>Votre temps ou un prestataire</td><td>Votre temps ou un prestataire</td></tr>
+</tbody>
+</table></div>
+<p>Le poste le plus sous-estimé, c'est le temps. Un serveur qui tombe un vendredi soir, une mise à jour qui casse un workflow, une sauvegarde jamais testée : sans personne pour s'en occuper, le « gratuit » devient vite cher. À l'inverse, pour une entreprise qui traite des données sensibles ou de gros volumes, l'auto-hébergement sur un serveur en France ou en Europe reste un vrai avantage, à condition que la maintenance soit prévue.</p>
+<p>Le choix de l'hébergement et l'installation pas à pas feront l'objet d'un prochain guide. Pour comprendre qui peut s'en charger et ce que cela coûte, voyez mon article <a href="agence-n8n-pme.html">Agence n8n ou freelance : combien ça coûte et comment choisir</a>.</p>
+
+<h2 id="exemple">Exemple : deux PME, deux choix différents</h2>
+<p>Voici deux scénarios types, pour illustrer le raisonnement.</p>
+<ul class="timeline">
+<li><b>Un institut de beauté, trois personnes</b> Il veut confirmer les rendez-vous, relancer les clientes absentes et demander un avis Google après chaque soin. Personne en interne ne sait gérer un serveur. Le bon choix : n8n Cloud, formule Starter. Pas d'installation, pas de maintenance, et le volume reste modeste.</li>
+<li><b>Un cabinet de services, douze personnes</b> Il veut trier les e-mails entrants, préparer des brouillons de réponse avec l'IA et alimenter son CRM. Les messages contiennent des informations confidentielles et le volume augmente. Le bon choix : l'édition communautaire gratuite sur un serveur en Europe, avec un contrat de maintenance pour les mises à jour et les sauvegardes.</li>
+</ul>
+<p>Dans les deux cas, ce qui coûte le plus n'est pas l'outil, mais la mise en place : comprendre la tâche, connecter les bons logiciels, tester sur de vrais cas. Pour le cabinet, c'est aussi l'occasion de régler <a href="crm-mal-rempli-pme-ia.html">les problèmes d'un CRM mal rempli</a>.</p>
+
+<h2 id="choisir">Version gratuite ou payante : comment choisir</h2>
+<div class="tbl"><table>
+<thead><tr><th scope="col">Votre situation</th><th scope="col">Plutôt</th></tr></thead>
+<tbody>
+<tr><th scope="row">Vous voulez tester n8n quelques jours</th><td>Essai gratuit de n8n Cloud</td></tr>
+<tr><th scope="row">Personne en interne pour gérer un serveur</th><td>n8n Cloud</td></tr>
+<tr><th scope="row">Petit volume, quelques automatisations</th><td>n8n Cloud, formule Starter</td></tr>
+<tr><th scope="row">Données sensibles, hébergement en France ou en Europe exigé</th><td>Édition communautaire auto-hébergée</td></tr>
+<tr><th scope="row">Gros volume d'exécutions</th><td>Édition communautaire auto-hébergée</td></tr>
+<tr><th scope="row">Plusieurs collaborateurs qui modifient les mêmes workflows</th><td>Offre payante avec partage</td></tr>
+</tbody>
+</table></div>
+<p>Un conseil : ne choisissez pas l'auto-hébergement uniquement parce qu'il est gratuit. Choisissez-le parce que vous avez besoin de contrôler vos données ou votre volume, et parce que quelqu'un s'occupera du serveur.</p>
+
+<h2 id="demarrer">Par où commencer</h2>
+<p>Notez la tâche qui vous prend le plus de temps chaque semaine, les outils qu'elle touche et le nombre de fois où elle se répète. Avec ces trois informations, vous saurez vite si la formule cloud suffit ou si l'auto-hébergement se justifie.</p>
+<p>C'est exactement ce que je fais pendant l'audit offert de 20 minutes : on choisit la première tâche à automatiser, la version de n8n adaptée et le prix. Je travaille au prix fixe, annoncé avant de commencer, à partir de 590 € pour une mise en place. Les comptes sont ouverts à votre nom, et vous payez directement n8n et le modèle d'IA. Pour en savoir plus, voyez <a href="../tarifs.html">mes tarifs</a> ou revenez à <a href="../">l'offre Automatisation IA PME</a>.</p>
+<div class="cta-inline"><p>Vous voulez savoir quelle version de n8n convient à votre entreprise ? Voyez mes cas pratiques n8n.</p><a class="btn btn--primary" href="../agence-automatisation-n8n.html">Automatisation n8n</a></div>
+
+<h2 id="faq">Questions fréquentes</h2>
+<div class="faq"><details><summary>n8n est-il vraiment gratuit ?</summary><p>L&#x27;édition communautaire de n8n est gratuite si vous l&#x27;installez sur votre propre serveur : vous payez seulement l&#x27;hébergement et la maintenance. La version cloud, hébergée par n8n, est payante après un essai gratuit.</p></details><details><summary>Quelles sont les limites de la version gratuite de n8n ?</summary><p>n8n ne fixe pas de limite de workflows ni d&#x27;exécutions sur l&#x27;édition communautaire. Il manque surtout des fonctions d&#x27;équipe : le partage de workflows entre utilisateurs, les projets, le suivi des versions avec Git et la connexion unique (SSO).</p></details><details><summary>Puis-je utiliser n8n gratuitement dans mon entreprise ?</summary><p>Oui. La licence de n8n autorise son usage pour les besoins internes de votre entreprise, et un prestataire peut construire vos workflows. Il faut en revanche un accord commercial avec n8n pour proposer l&#x27;outil à vos propres clients ou le revendre.</p></details><details><summary>Combien coûte une automatisation n8n pour une PME ?</summary><p>Il faut additionner l&#x27;outil (abonnement cloud ou serveur), la consommation du modèle d&#x27;IA et la mise en place. Chez moi, la mise en place démarre à 590 €, avec un prix fixe annoncé avant de commencer.</p></details></div>
+<h2 id="auteur">À propos de l'auteur</h2>
+<div class="box author"><img src="../assets/alexandre-160.webp" alt="Alexandre Cottret" width="96" height="96" loading="lazy">
+<div><p class="author__name">Alexandre Cottret</p>
+<p>Intégrateur en automatisation IA (Make, Zapier, n8n) et webdesigner indépendant depuis 2021. J'ai créé plus de 165 sites pour des TPE et PME, avec une note de 4,97/5 sur 91 avis Malt. Aujourd'hui, j'automatise avec l'IA ce qui se passe après le formulaire de contact : demandes, devis, relances et documents.</p>
+<p><a href="https://www.linkedin.com/in/alexandre-cottret-designer-web/" rel="noopener">LinkedIn</a> · <a href="https://www.malt.fr/profile/alexcottret-webdesigner" rel="noopener">Avis Malt</a> · <a href="../">Mon offre d'automatisation IA</a></p></div></div>
+<h2 id="sources">Sources</h2>
+<ul class="sources"><li><a href="https://n8n.io/pricing/" rel="noopener">Tarifs n8n</a></li><li><a href="https://docs.n8n.io/choose-n8n/" rel="noopener">Documentation n8n : choisir sa version de n8n</a></li><li><a href="https://docs.n8n.io/deploy/host-n8n/community-edition-features/" rel="noopener">Documentation n8n : fonctions de l&#x27;édition communautaire</a></li><li><a href="https://docs.n8n.io/n8n-community-license/sustainable-use-license" rel="noopener">Documentation n8n : Sustainable Use License</a></li><li><a href="https://docs.n8n.io/deploy/host-n8n/install-options/install-with-docker" rel="noopener">Documentation n8n : installer n8n avec Docker</a></li></ul>
+<p class="small">Article publié le 27 octobre 2026. Les informations sur les outils et la réglementation sont vérifiées à cette date ; les tarifs des éditeurs évoluent régulièrement.</p>
+<h2 id="a-lire">À lire aussi</h2>
+<div class="related"><a href="agence-n8n-pme.html"><span>Guide</span>Agence n8n ou freelance : prix et choix</a><a href="zapier-make-n8n-choisir.html"><span>Comparatif</span>n8n vs Make vs Zapier : lequel choisir ?</a></div>
+</div></div>
+</div></div>
+</article>
+</main>
+<div class="content"><div class="content__frame">
+<section class="band"><h2>Et si vos demandes se traitaient toutes seules ?</h2><div class="band__btns"><a class="btn btn--ghost" href="https://wa.me/33767463870?text=Bonjour%20Alexandre%2C%20j%27aimerais%20automatiser%20une%20t%C3%A2che." rel="noopener">Écrire sur WhatsApp</a><a class="btn btn--primary" href="https://calendly.com/alexandre-cottret/audit-automatisation-ia-20-min" rel="noopener">Réserver un audit offert</a></div></section>
+<footer>
+  <div class="foot">
+    <div class="foot__brand"><p>L'intelligence artificielle qui traite vos demandes de A à Z</p></div>
+    <nav class="foot__cols" aria-label="Pied de page">
+      <div><h2 class="foot__h">Offre</h2><ul><li><a href="../#solutions">Solutions</a></li><li><a href="../tarifs.html">Tarifs</a></li><li><a href="../formation-automatisation-ia.html">Formation IA</a></li><li><a href="../a-propos.html">À propos</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../#contact">Contact</a></li></ul></div>
+      <div><h2 class="foot__h">Solutions</h2><ul><li><a href="../agent-ia-service-client.html">Agent IA service client</a></li><li><a href="../devis-automatise.html">Devis automatisé</a></li><li><a href="../automatisation-crm.html">Automatisation CRM</a></li><li><a href="../prospection-automatisee.html">Prospection automatisée</a></li><li><a href="../automatisation-facturation-relances.html">Factures et relances</a></li><li><a href="../creation-contenu-ia.html">Création de contenu IA</a></li><li><a href="../automatisation-recrutement.html">Recrutement</a></li></ul></div>
+      <div><h2 class="foot__h">Outils</h2><ul><li><a href="../agence-automatisation-n8n.html">Agence n8n</a></li><li><a href="../integrateur-make.html">Agence Make</a></li><li><a href="../integrateur-zapier.html">Intégrateur Zapier</a></li><li><a href="../agent-ia-claude.html">Agent IA Claude</a></li><li><a href="../creation-site-ia-claude-code-codex.html">Agence Claude Code</a></li><li><a href="../integrations.html">Toutes les intégrations</a></li></ul></div>
+      <div><h2 class="foot__h">Trend Design</h2><ul><li><a href="https://www.trend-design.fr/">Création de sites internet</a></li><li><a href="https://www.trend-design.fr/">Référencement SEO</a></li></ul><h2 class="foot__h">Réseaux</h2><ul><li><a href="https://www.malt.fr/profile/alexandrecottret-zapier" rel="noopener">Malt</a></li><li><a href="https://www.linkedin.com/in/alexandre-cottret-designer-web/" rel="noopener">LinkedIn</a></li></ul></div>
+      <div><h2 class="foot__h">Légal</h2><ul><li><a href="../mentions-legales.html">Mentions légales</a></li><li><a href="../mentions-legales.html#confidentialite">Confidentialité</a></li><li><a href="../mentions-legales.html#cookies">Cookies</a></li><li><a href="#" data-cc-open>Gérer les cookies</a></li></ul></div>
+    </nav>
+  </div>
+  <svg class="wordmark" viewBox="0 0 1280 186" role="img" aria-label="Automatisation IA PME"><text x="0" y="141" font-size="136">automatisation ia pme</text></svg>
+  <div class="foot__bar"><span>© 2026 Automatisation IA PME · Alexandre Cottret</span><span>Automatisation IA pour PME et TPE, partout en France</span></div>
+</footer>
+</div></div>
+<div class="fab"><a class="wa" href="https://wa.me/33767463870?text=Bonjour%20Alexandre%2C%20j%27aimerais%20automatiser%20une%20t%C3%A2che." rel="noopener" aria-label="Me contacter sur WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a><div class="fab__menu"><div class="fab__card"><p>Une question ?</p><a class="fab__wa" href="https://wa.me/33767463870?text=Bonjour%20Alexandre%2C%20j%27aimerais%20automatiser%20une%20t%C3%A2che." rel="noopener">Écrire sur WhatsApp</a><a class="fab__cal" href="https://calendly.com/alexandre-cottret/audit-automatisation-ia-20-min" rel="noopener">Réserver un appel de 20 min</a></div></div></div>
+<script>
+(function(){
+var b=document.querySelector('.nav__menu'),m=document.getElementById('mnav');
+if(b&&m){var set=function(o){m.hidden=!o;b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Fermer le menu':'Ouvrir le menu');document.documentElement.classList.toggle('mnav-open',o);};
+b.addEventListener('click',function(){set(m.hidden)});m.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){set(false);b.focus()}});}
+var ts=[].slice.call(document.querySelectorAll('.nav__trigger')),fine=window.matchMedia('(hover: hover) and (pointer: fine)'),tm,hov=false;
+var pan=function(t){return document.getElementById(t.getAttribute('aria-controls'))};
+var op=function(t,o){clearTimeout(tm);ts.forEach(function(x){var g=pan(x),on=o&&x===t;if(g){g.hidden=!on}x.setAttribute('aria-expanded',on)});if(!o)hov=false;};
+var cur=function(){for(var k=0;k<ts.length;k++){if(ts[k].getAttribute('aria-expanded')==='true')return ts[k]}return null};
+ts.forEach(function(t){var g=pan(t);if(!g)return;
+t.addEventListener('click',function(){var open=t.getAttribute('aria-expanded')==='true';if(hov&&open){hov=false;return}op(t,!open)});
+[t.parentNode,g].forEach(function(el){el.addEventListener('mouseenter',function(){if(fine.matches){if(t.getAttribute('aria-expanded')!=='true')hov=true;op(t,true)}});el.addEventListener('mouseleave',function(){if(fine.matches){tm=setTimeout(function(){op(t,false)},200)}})});
+g.addEventListener('click',function(e){if(e.target.closest('a'))op(t,false)});});
+document.addEventListener('click',function(e){var c=cur();if(c&&!pan(c).contains(e.target)&&!c.contains(e.target))op(c,false)});
+document.addEventListener('keydown',function(e){var c=cur();if(e.key==='Escape'&&c){op(c,false);c.focus()}});
+var hs=function(){var r=location.hash.match(/^#solutions-([a-z]+)$/);if(!r)return;var tb=document.getElementById('tab-'+r[1]),sc=document.getElementById('solutions');if(tb)tb.click();if(sc)sc.scrollIntoView();};
+window.addEventListener('hashchange',hs);hs();
+})();
+</script>
+<div class="cc" id="cc" role="dialog" aria-label="Cookies de mesure d'audience" hidden><p>Mesure d'audience (Google Analytics), uniquement avec votre accord. <a href="../mentions-legales.html#cookies">En savoir plus</a></p><div class="cc__btns"><button type="button" class="cc__b" data-c="denied">Refuser</button><button type="button" class="cc__b" data-c="granted">Accepter</button></div></div>
+<style>.cc{position:fixed;z-index:30;left:calc(16px + env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));width:300px;max-width:calc(100% - 104px);padding:12px 14px;border-radius:10px;background:#f7f5ee;border:1px solid #e4e1d3;box-shadow:0 6px 18px rgba(31,58,46,.08);font:400 13px/1.45 "Geist",system-ui,sans-serif;color:#1f3a2e}.cc p{margin:0 0 10px}.cc a{color:#24513d;text-decoration:underline;text-underline-offset:2px}.cc__btns{display:flex;gap:6px}.cc__b{flex:1;padding:8px 10px;border-radius:6px;border:0;background:#cfe2d2;color:#1f3a2e;font:500 13px/1 "Geist",system-ui,sans-serif;cursor:pointer;transition:opacity .2s ease}.cc__b:hover{opacity:.8}.cc__b:focus-visible{outline:2px solid #1f3a2e;outline-offset:2px}</style>
+<script>
+(function(){var ID='G-BDYMJXXYKJ',K='aip_consent',MAX=15552000000,loaded=false,b=document.getElementById('cc');if(!b)return;
+function get(){try{var v=JSON.parse(localStorage.getItem(K));if(v&&Date.now()-v.t<MAX)return v.c;}catch(e){}return null;}
+function save(c){try{localStorage.setItem(K,JSON.stringify({c:c,t:Date.now()}));}catch(e){}}
+function load(){window['ga-disable-'+ID]=false;if(loaded)return;loaded=true;window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config',ID);var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+ID;document.head.appendChild(s);}
+function wipe(){window['ga-disable-'+ID]=true;document.cookie.split(';').forEach(function(x){var n=x.split('=')[0].trim();if(n.indexOf('_ga')===0){document.cookie=n+'=; Max-Age=0; path=/';document.cookie=n+'=; Max-Age=0; path=/; domain=.automatisation-ia-pme.fr';}});}
+b.addEventListener('click',function(e){var t=e.target.closest('[data-c]');if(!t)return;var c=t.getAttribute('data-c');save(c);b.hidden=true;if(c==='granted')load();else wipe();});
+var c=get();if(c==='granted')load();else if(c===null)b.hidden=false;
+document.addEventListener('click',function(e){var o=e.target.closest('[data-cc-open]');if(o){e.preventDefault();b.hidden=false;b.querySelector('.cc__b').focus();return;}
+var a=e.target.closest('a[href]');if(!a||!loaded||!window.gtag)return;var h=a.getAttribute('href')||'',m=h.indexOf('calendly.com')>-1?'calendly':h.indexOf('wa.me')>-1?'whatsapp':h.indexOf('tel:')===0?'telephone':null;
+if(m)gtag('event','generate_lead',{method:m,link_text:(a.textContent||'').trim().slice(0,60),page_path:location.pathname});});})();
+</script>
+</body>
+</html>

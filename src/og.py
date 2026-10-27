@@ -26,7 +26,8 @@ items=[it for it in items if ALL or not os.path.exists(it[0]+'.jpg')]
 icon=F+'''<style>body{margin:0}.i{width:512px;height:512px;border-radius:0;background:#1f3a2e;display:grid;place-items:center;font:600 230px/1 Geist,sans-serif;letter-spacing:-.05em;color:#cfe2d2}</style><div class="i">IA</div>'''
 async def main():
     async with async_playwright() as p:
-        b=await p.chromium.launch(executable_path='/opt/pw-browsers/chromium-1194/chrome-linux/chrome')
+        _x='/opt/pw-browsers/chromium-1194/chrome-linux/chrome'
+        b=await (p.chromium.launch(executable_path=_x) if os.path.exists(_x) else p.chromium.launch())
         pg=await b.new_page(viewport={'width':1200,'height':630})
         for name,t,e in items:
             await pg.set_content(og(t,e)); await pg.wait_for_timeout(1500)

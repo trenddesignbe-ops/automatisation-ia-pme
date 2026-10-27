@@ -234,5 +234,66 @@
    "crm-mal-rempli-pme-ia"
   ],
   "date": "2026-10-20"
+ },
+ {
+  "slug": "n8n-gratuit-pme",
+  "cat": "Guide",
+  "title_tag": "n8n gratuit : ce qui l'est vraiment, ce que ça coûte",
+  "meta": "n8n gratuit ? L'édition communautaire l'est, n8n Cloud non. Licence, limites, prix officiels et vrai coût pour une PME : le guide clair pour bien choisir.",
+  "h1": "n8n gratuit : ce qui l'est vraiment, et ce que ça coûte à une PME",
+  "short": "n8n gratuit : ce qui l'est vraiment",
+  "eyebrow": "Guide · Prix de n8n",
+  "lead": "n8n gratuit, vraiment ? L'édition communautaire de n8n ne coûte rien en licence, mais elle se paie en serveur et en temps. Voici ce qu'elle contient, ce que sa licence autorise, ce que coûte n8n Cloud selon les tarifs officiels, et comment choisir la bonne version pour votre PME.",
+  "summary": [
+   "L'édition communautaire de n8n est gratuite, à condition de l'héberger sur votre propre serveur.",
+   "n8n Cloud est payant : un essai gratuit, puis une formule à partir de 20 € par mois en facturation annuelle.",
+   "La licence autorise l'usage pour les besoins internes de votre entreprise, pas la revente de n8n à vos clients.",
+   "Le vrai coût d'un n8n gratuit, c'est le serveur, la maintenance et le temps de mise en place."
+  ],
+  "faq": [
+   [
+    "n8n est-il vraiment gratuit ?",
+    "L'édition communautaire de n8n est gratuite si vous l'installez sur votre propre serveur : vous payez seulement l'hébergement et la maintenance. La version cloud, hébergée par n8n, est payante après un essai gratuit."
+   ],
+   [
+    "Quelles sont les limites de la version gratuite de n8n ?",
+    "n8n ne fixe pas de limite de workflows ni d'exécutions sur l'édition communautaire. Il manque surtout des fonctions d'équipe : le partage de workflows entre utilisateurs, les projets, le suivi des versions avec Git et la connexion unique (SSO)."
+   ],
+   [
+    "Puis-je utiliser n8n gratuitement dans mon entreprise ?",
+    "Oui. La licence de n8n autorise son usage pour les besoins internes de votre entreprise, et un prestataire peut construire vos workflows. Il faut en revanche un accord commercial avec n8n pour proposer l'outil à vos propres clients ou le revendre."
+   ],
+   [
+    "Combien coûte une automatisation n8n pour une PME ?",
+    "Il faut additionner l'outil (abonnement cloud ou serveur), la consommation du modèle d'IA et la mise en place. Chez moi, la mise en place démarre à 590 €, avec un prix fixe annoncé avant de commencer."
+   ]
+  ],
+  "sources": [
+   [
+    "Tarifs n8n",
+    "https://n8n.io/pricing/"
+   ],
+   [
+    "Documentation n8n : choisir sa version de n8n",
+    "https://docs.n8n.io/choose-n8n/"
+   ],
+   [
+    "Documentation n8n : fonctions de l'édition communautaire",
+    "https://docs.n8n.io/deploy/host-n8n/community-edition-features/"
+   ],
+   [
+    "Documentation n8n : Sustainable Use License",
+    "https://docs.n8n.io/n8n-community-license/sustainable-use-license"
+   ],
+   [
+    "Documentation n8n : installer n8n avec Docker",
+    "https://docs.n8n.io/deploy/host-n8n/install-options/install-with-docker"
+   ]
+  ],
+  "related": [
+   "agence-n8n-pme",
+   "zapier-make-n8n-choisir"
+  ],
+  "date": "2026-10-27"
  }
 ]

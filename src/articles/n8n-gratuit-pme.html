@@ -1,0 +1,87 @@
+<h2 id="reponse-courte">n8n gratuit : la réponse courte</h2>
+<p>Oui, n8n peut être gratuit. Mais pas dans toutes ses versions, et jamais tout à fait sans frais pour une entreprise. Il existe deux façons d'utiliser n8n :</p>
+<ul>
+<li><strong>L'édition communautaire</strong>, que vous installez sur votre propre serveur. Le logiciel est gratuit, sans limite de workflows ni d'exécutions fixée par n8n. Vous payez en revanche le serveur, et quelqu'un doit l'installer et l'entretenir.</li>
+<li><strong>n8n Cloud</strong>, hébergé par l'éditeur. Rien à installer, mais c'est un abonnement payant. Il existe un essai gratuit, pas de formule gratuite permanente.</li>
+</ul>
+<p>La vraie question pour un dirigeant de TPE ou de PME n'est donc pas « n8n est-il gratuit ? », mais « quelle version me coûte le moins cher, en argent et en temps ? ». C'est ce que nous allons voir, chiffres officiels à l'appui. Si vous hésitez encore entre plusieurs outils, lisez d'abord mon <a href="zapier-make-n8n-choisir.html">comparatif Zapier, Make et n8n</a>.</p>
+
+<h2 id="edition-communautaire">Ce que contient l'édition communautaire gratuite</h2>
+<p>La documentation de n8n présente l'édition communautaire comme gratuite et dotée de presque toutes les fonctions. Pour une petite structure, c'est vrai : vous avez l'éditeur de workflows, toutes les connexions aux applications, les nœuds d'intelligence artificielle pour construire un agent, les déclencheurs par formulaire, e-mail ou horaire, et l'historique des exécutions.</p>
+<p>Ce qui manque concerne surtout les équipes et les grandes organisations. Selon la documentation officielle, l'édition communautaire n'inclut pas :</p>
+<ul>
+<li>le partage de workflows et d'identifiants entre plusieurs utilisateurs (seuls le propriétaire de l'instance et le créateur y ont accès) ;</li>
+<li>les projets, les environnements et le suivi des versions avec Git ;</li>
+<li>la connexion unique (SSO) et l'annuaire LDAP ;</li>
+<li>les variables personnalisées, les coffres de secrets externes et l'envoi des journaux vers un outil tiers.</li>
+</ul>
+<p>Bon à savoir : en enregistrant gratuitement votre instance avec une adresse e-mail, vous débloquez trois fonctions utiles au quotidien. Les dossiers pour ranger vos workflows, le débogage dans l'éditeur, et les données d'exécution personnalisées pour annoter et retrouver une exécution. L'instance reste sur l'édition communautaire, donc gratuite.</p>
+<div class="note"><p><strong>En clair :</strong> si une ou deux personnes construisent les automatisations de l'entreprise, l'édition communautaire suffit dans la plupart des cas. Si cinq collaborateurs doivent modifier les mêmes workflows avec des droits différents, il faudra une offre payante.</p></div>
+
+<h2 id="licence">Ce que la licence vous autorise (et ce qu'elle interdit)</h2>
+<p>n8n n'est pas un logiciel libre au sens strict. Il est publié sous une licence propre, la Sustainable Use License. Elle vous autorise à utiliser et modifier n8n pour les besoins internes de votre entreprise, ou pour un usage personnel ou non commercial.</p>
+<p>Concrètement, pour une PME :</p>
+<ul>
+<li><strong>Autorisé :</strong> automatiser vos devis, vos relances, votre CRM ou votre reporting interne.</li>
+<li><strong>Autorisé :</strong> faire construire vos workflows par un prestataire. La licence ne l'empêche pas de vendre ses services de conseil et de mise en place.</li>
+<li><strong>Non autorisé sans accord commercial :</strong> proposer n8n à vos propres clients pour qu'ils y connectent leurs comptes et créent leurs workflows, ou le revendre.</li>
+</ul>
+<p>Si votre projet consiste à intégrer n8n dans un produit que vous vendez, lisez la licence en détail ou posez la question à n8n avant de vous lancer.</p>
+
+<h2 id="n8n-cloud">n8n Cloud : un essai gratuit, pas une offre gratuite</h2>
+<p>La version cloud évite toute gestion de serveur : n8n s'occupe de l'hébergement et des mises à jour. Voici ce qu'affiche la page tarifs de n8n en octobre 2026, en facturation annuelle :</p>
+<div class="tbl"><table>
+<thead><tr><th scope="col">Formule</th><th scope="col">Prix affiché</th><th scope="col">Exécutions par mois</th></tr></thead>
+<tbody>
+<tr><th scope="row">Starter</th><td>20 € par mois</td><td>2 500</td></tr>
+<tr><th scope="row">Pro</th><td>50 € par mois</td><td>10 000</td></tr>
+<tr><th scope="row">Business (auto-hébergé)</th><td>667 € par mois</td><td>40 000</td></tr>
+<tr><th scope="row">Enterprise</th><td>Sur devis</td><td>Sur mesure</td></tr>
+</tbody>
+</table></div>
+<p>Toutes les formules incluent un nombre illimité d'utilisateurs et de workflows. Une exécution correspond à un passage complet d'un workflow, quel que soit son nombre d'étapes. L'essai gratuit ne demande pas de carte bancaire et donne droit à 1 000 exécutions. n8n indique aussi une remise de 50 % sur l'offre Business pour les entreprises de moins de 20 salariés qui remplissent ses conditions.</p>
+<p>Pour vous situer : un workflow qui traite chaque demande de devis reçue et tourne 300 fois par mois consomme 300 exécutions. Une TPE avec trois ou quatre automatisations de ce type reste en général dans la première formule.</p>
+
+<h2 id="vrai-cout">Le vrai coût d'un n8n gratuit pour une PME</h2>
+<p>Le logiciel est gratuit, l'automatisation ne l'est pas. Avec l'édition communautaire, la documentation de n8n est claire : l'infrastructure et la maintenance sont à votre charge. Voici les postes à prévoir, quelle que soit la version choisie.</p>
+<div class="tbl"><table>
+<thead><tr><th scope="col">Poste</th><th scope="col">Édition communautaire</th><th scope="col">n8n Cloud</th></tr></thead>
+<tbody>
+<tr><th scope="row">Logiciel n8n</th><td>Gratuit</td><td>Abonnement mensuel</td></tr>
+<tr><th scope="row">Serveur</th><td>À louer chez un hébergeur</td><td>Inclus</td></tr>
+<tr><th scope="row">Installation</th><td>Docker, nom de domaine, certificat HTTPS</td><td>Aucune</td></tr>
+<tr><th scope="row">Mises à jour et sauvegardes</th><td>À faire vous-même ou à confier</td><td>Assurées par n8n</td></tr>
+<tr><th scope="row">Sécurité</th><td>À surveiller (accès, mots de passe, correctifs)</td><td>Gérée par n8n</td></tr>
+<tr><th scope="row">Modèle d'IA</th><td>À l'usage, chez l'éditeur du modèle</td><td>À l'usage, chez l'éditeur du modèle</td></tr>
+<tr><th scope="row">Construction des workflows</th><td>Votre temps ou un prestataire</td><td>Votre temps ou un prestataire</td></tr>
+</tbody>
+</table></div>
+<p>Le poste le plus sous-estimé, c'est le temps. Un serveur qui tombe un vendredi soir, une mise à jour qui casse un workflow, une sauvegarde jamais testée : sans personne pour s'en occuper, le « gratuit » devient vite cher. À l'inverse, pour une entreprise qui traite des données sensibles ou de gros volumes, l'auto-hébergement sur un serveur en France ou en Europe reste un vrai avantage, à condition que la maintenance soit prévue.</p>
+<p>Le choix de l'hébergement et l'installation pas à pas feront l'objet d'un prochain guide. Pour comprendre qui peut s'en charger et ce que cela coûte, voyez mon article <a href="agence-n8n-pme.html">Agence n8n ou freelance : combien ça coûte et comment choisir</a>.</p>
+
+<h2 id="exemple">Exemple : deux PME, deux choix différents</h2>
+<p>Voici deux scénarios types, pour illustrer le raisonnement.</p>
+<ul class="timeline">
+<li><b>Un institut de beauté, trois personnes</b> Il veut confirmer les rendez-vous, relancer les clientes absentes et demander un avis Google après chaque soin. Personne en interne ne sait gérer un serveur. Le bon choix : n8n Cloud, formule Starter. Pas d'installation, pas de maintenance, et le volume reste modeste.</li>
+<li><b>Un cabinet de services, douze personnes</b> Il veut trier les e-mails entrants, préparer des brouillons de réponse avec l'IA et alimenter son CRM. Les messages contiennent des informations confidentielles et le volume augmente. Le bon choix : l'édition communautaire gratuite sur un serveur en Europe, avec un contrat de maintenance pour les mises à jour et les sauvegardes.</li>
+</ul>
+<p>Dans les deux cas, ce qui coûte le plus n'est pas l'outil, mais la mise en place : comprendre la tâche, connecter les bons logiciels, tester sur de vrais cas. Pour le cabinet, c'est aussi l'occasion de régler <a href="crm-mal-rempli-pme-ia.html">les problèmes d'un CRM mal rempli</a>.</p>
+
+<h2 id="choisir">Version gratuite ou payante : comment choisir</h2>
+<div class="tbl"><table>
+<thead><tr><th scope="col">Votre situation</th><th scope="col">Plutôt</th></tr></thead>
+<tbody>
+<tr><th scope="row">Vous voulez tester n8n quelques jours</th><td>Essai gratuit de n8n Cloud</td></tr>
+<tr><th scope="row">Personne en interne pour gérer un serveur</th><td>n8n Cloud</td></tr>
+<tr><th scope="row">Petit volume, quelques automatisations</th><td>n8n Cloud, formule Starter</td></tr>
+<tr><th scope="row">Données sensibles, hébergement en France ou en Europe exigé</th><td>Édition communautaire auto-hébergée</td></tr>
+<tr><th scope="row">Gros volume d'exécutions</th><td>Édition communautaire auto-hébergée</td></tr>
+<tr><th scope="row">Plusieurs collaborateurs qui modifient les mêmes workflows</th><td>Offre payante avec partage</td></tr>
+</tbody>
+</table></div>
+<p>Un conseil : ne choisissez pas l'auto-hébergement uniquement parce qu'il est gratuit. Choisissez-le parce que vous avez besoin de contrôler vos données ou votre volume, et parce que quelqu'un s'occupera du serveur.</p>
+
+<h2 id="demarrer">Par où commencer</h2>
+<p>Notez la tâche qui vous prend le plus de temps chaque semaine, les outils qu'elle touche et le nombre de fois où elle se répète. Avec ces trois informations, vous saurez vite si la formule cloud suffit ou si l'auto-hébergement se justifie.</p>
+<p>C'est exactement ce que je fais pendant l'audit offert de 20 minutes : on choisit la première tâche à automatiser, la version de n8n adaptée et le prix. Je travaille au prix fixe, annoncé avant de commencer, à partir de 590 € pour une mise en place. Les comptes sont ouverts à votre nom, et vous payez directement n8n et le modèle d'IA. Pour en savoir plus, voyez <a href="../tarifs.html">mes tarifs</a> ou revenez à <a href="../">l'offre Automatisation IA PME</a>.</p>
+<div class="cta-inline"><p>Vous voulez savoir quelle version de n8n convient à votre entreprise ? Voyez mes cas pratiques n8n.</p><a class="btn btn--primary" href="../agence-automatisation-n8n.html">Automatisation n8n</a></div>

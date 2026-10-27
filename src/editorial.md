@@ -12,6 +12,8 @@ Note du 22/10/2026 (2) : 14 pages outils créées (n8n, Make, Zapier, Claude, Ch
 
 Note du 22/10/2026 : sujets « automatisation reporting excel » et « automatisation crm » ajoutés en tête à partir des captures Semrush d'Alexandre.
 
+Note du 27/10/2026 : revérification Semrush impossible (unités API Semrush épuisées), chiffres du plan conservés pour le sujet 10.
+
 Note du 20/10/2026 : revérification Semrush impossible (unités API Semrush épuisées), chiffres du plan conservés pour le sujet 4.
 
 | # | Statut | Mot-clé principal (secondaires) | Volume | KD | Angle / titre de travail |
@@ -25,7 +27,7 @@ Note du 20/10/2026 : revérification Semrush impossible (unités API Semrush ép
 | 7 | fait 22/10/2026 (page dédiée /devis-automatise.html, ne pas écrire d'article sur ce mot-clé) | devis automatisé (automatiser les devis 50, devis automatisés 40, devis automatisé sur excel 20) | 320 | 19 % | Devis automatisé : préparer ses devis en quelques minutes avec l'IA (Excel, logiciel de devis, n8n) |
 | 8 | fait 22/10/2026 (page dédiée /prospection-automatisee.html, ne pas écrire d'article sur ce mot-clé) | prospection automatisée (automatisation prospection 110 / KD 17, automatisation suivi prospects 390 / KD 18) | 260 | 15 % | Prospection automatisée : ce qu'une PME peut automatiser sans spammer |
 | 9 | fait 22/10/2026 (page dédiée /automatisation-facturation-relances.html, ne pas écrire d'article sur ce mot-clé) | automatisation des relances clients (relances factures 70, relances de paiements automatisés 70, comment automatiser demande avis 70) | 50 | n/d | Relances clients et factures : les automatiser sans froisser (inclut artisans et avis Google) |
-| 10 | à faire | n8n gratuit | 480 | 13 % | n8n gratuit : ce qui est vraiment gratuit, et ce que ça coûte vraiment à une PME |
+| 10 | publié 27/10/2026 (/blog/n8n-gratuit-pme.html) | n8n gratuit | 480 | 13 % | n8n gratuit : ce qui est vraiment gratuit, et ce que ça coûte vraiment à une PME |
 | 11 | à faire | meilleure plateforme d'automatisation marketing pour pme | 3 600 | 14 % | Quelle plateforme d'automatisation marketing pour une PME ? Comparatif honnête |
 | 12 | à faire | pme france automatisation problèmes répétitifs | 210 | 7 % | Tâches répétitives en PME : les 10 à automatiser en premier |
 | 13 | à faire | standard téléphonique automatisé ia (appel automatisé ia) | 260 (+260) | 15 % (19 %) | Standard téléphonique automatisé par IA : ce qu'il peut faire pour une TPE |
