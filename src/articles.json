@@ -295,5 +295,66 @@
    "zapier-make-n8n-choisir"
   ],
   "date": "2026-10-27"
+ },
+ {
+  "slug": "plateforme-automatisation-marketing-pme",
+  "cat": "Comparatif",
+  "title_tag": "Meilleure plateforme d'automatisation marketing pour PME",
+  "meta": "Meilleure plateforme d'automatisation marketing pour PME : Brevo, HubSpot, Mailchimp ou n8n ? Critères, cas concrets et règles CNIL pour bien choisir.",
+  "h1": "Meilleure plateforme d'automatisation marketing pour PME : le comparatif honnête",
+  "short": "Quelle plateforme d'automatisation marketing pour une PME ?",
+  "eyebrow": "Comparatif · Automatisation marketing",
+  "lead": "Vous cherchez la meilleure plateforme d'automatisation marketing pour PME ? Plutôt qu'une liste de douze logiciels, voici les trois familles d'outils, les cinq questions à vous poser, des scénarios types pour un institut, un artisan et un cabinet, et les règles à respecter avant d'envoyer le moindre e-mail.",
+  "summary": [
+   "Trois familles d'outils : plateformes d'e-mailing (Brevo, Mailchimp), CRM tout-en-un (HubSpot) et outils qui relient vos logiciels (n8n, Make, Zapier).",
+   "Le bon choix dépend de l'endroit où vivent vos contacts, de votre clientèle (particuliers ou professionnels) et du temps dont vous disposez.",
+   "Commencez par une seule automatisation : bienvenue, relance de devis ou demande d'avis, puis mesurez ce qu'elle rapporte.",
+   "Automatiser ne dispense pas des règles de la CNIL : consentement des particuliers, désinscription simple dans chaque message."
+  ],
+  "faq": [
+   [
+    "Quelle est la meilleure plateforme d'automatisation marketing pour une PME ?",
+    "Il n'y en a pas une seule. Une plateforme d'e-mailing comme Brevo ou Mailchimp convient aux commerces, instituts et artisans. Un CRM tout-en-un comme HubSpot convient aux PME de services qui suivent des prospects sur plusieurs semaines. Un outil comme n8n relie le tout et ajoute l'IA."
+   ],
+   [
+    "Existe-t-il une plateforme d'automatisation marketing gratuite ?",
+    "Plusieurs éditeurs proposent une formule gratuite, mais l'automatisation y est souvent absente ou limitée. Chez Mailchimp, les flux d'automatisation ne sont pas inclus dans la formule gratuite. Chez Brevo, l'automatisation marketing apparaît à partir de la formule Standard. Vérifiez toujours les conditions à jour sur la page tarifs de l'éditeur."
+   ],
+   [
+    "Quelles automatisations marketing mettre en place en premier ?",
+    "Le message de bienvenue, la relance des devis sans réponse et la demande d'avis Google après une prestation. Ce sont les plus simples à construire et celles qui rapportent le plus vite à une TPE ou une PME."
+   ],
+   [
+    "Combien coûte la mise en place d'une automatisation marketing ?",
+    "Il faut compter l'abonnement à la plateforme, éventuellement l'outil de liaison et le modèle d'IA, plus la construction des scénarios. Chez moi, la mise en place démarre à 590 €, avec un prix fixe annoncé avant de commencer."
+   ]
+  ],
+  "sources": [
+   [
+    "CNIL : la prospection commerciale par courrier électronique, SMS-MMS et automate d'appel",
+    "https://cnil.fr/fr/la-prospection-commerciale-par-courrier-electronique-sms-mms-et-automate-dappel"
+   ],
+   [
+    "Tarifs Brevo",
+    "https://www.brevo.com/fr/pricing/"
+   ],
+   [
+    "Tarifs Mailchimp",
+    "https://mailchimp.com/fr/pricing/marketing/"
+   ],
+   [
+    "Tarifs HubSpot Marketing Hub",
+    "https://www.hubspot.fr/pricing/marketing"
+   ],
+   [
+    "Tarifs n8n",
+    "https://n8n.io/pricing/"
+   ]
+  ],
+  "related": [
+   "zapier-make-n8n-choisir",
+   "crm-mal-rempli-pme-ia"
+  ],
+  "date": "2026-11-01"
  }
 ]
