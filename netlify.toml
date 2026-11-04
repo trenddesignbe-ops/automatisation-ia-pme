@@ -33,7 +33,229 @@
   force = true
 
 [[redirects]]
+  from = "/a-propos.html"
+  to = "/a-propos"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/agence-automatisation-n8n.html"
+  to = "/agence-automatisation-n8n"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/agent-ia-claude.html"
+  to = "/agent-ia-claude"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/agent-ia-service-client.html"
+  to = "/agent-ia-service-client"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-airtable.html"
+  to = "/automatisation-airtable"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-artisan.html"
+  to = "/automatisation-artisan"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-cabinet-pme-services.html"
+  to = "/automatisation-cabinet-pme-services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-chatgpt.html"
+  to = "/automatisation-chatgpt"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-coach-institut.html"
+  to = "/automatisation-coach-institut"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-crm.html"
+  to = "/automatisation-crm"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-e-commerce.html"
+  to = "/automatisation-e-commerce"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-excel.html"
+  to = "/automatisation-excel"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-facturation-relances.html"
+  to = "/automatisation-facturation-relances"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-gmail.html"
+  to = "/automatisation-gmail"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-google-sheets.html"
+  to = "/automatisation-google-sheets"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-hubspot.html"
+  to = "/automatisation-hubspot"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-linkedin.html"
+  to = "/automatisation-linkedin"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-notion.html"
+  to = "/automatisation-notion"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-recrutement.html"
+  to = "/automatisation-recrutement"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-whatsapp.html"
+  to = "/automatisation-whatsapp"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/automatisation-wix.html"
+  to = "/automatisation-wix"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog.html"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/agence-n8n-pme.html"
+  to = "/blog/agence-n8n-pme"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/agent-ia-24-7-pme.html"
+  to = "/blog/agent-ia-24-7-pme"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/crm-mal-rempli-pme-ia.html"
+  to = "/blog/crm-mal-rempli-pme-ia"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/n8n-gratuit-pme.html"
+  to = "/blog/n8n-gratuit-pme"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/plateforme-automatisation-marketing-pme.html"
+  to = "/blog/plateforme-automatisation-marketing-pme"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/zapier-make-n8n-choisir.html"
+  to = "/blog/zapier-make-n8n-choisir"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/creation-contenu-ia.html"
+  to = "/creation-contenu-ia"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/creation-site-ia-claude-code-codex.html"
+  to = "/creation-site-ia-claude-code-codex"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/devis-automatise.html"
+  to = "/devis-automatise"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/formation-automatisation-ia.html"
+  to = "/formation-automatisation-ia"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/integrateur-make.html"
+  to = "/integrateur-make"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/integrateur-zapier.html"
+  to = "/integrateur-zapier"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/integrations.html"
+  to = "/integrations"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/mentions-legales.html"
   to = "/mentions-legales"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/prospection-automatisee.html"
+  to = "/prospection-automatisee"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tarifs.html"
+  to = "/tarifs"
   status = 301
   force = true

@@ -853,8 +853,9 @@ def main():
         sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(
             f'  <url><loc>{SITE}/{u}</loc><lastmod>{d}</lastmod><priority>{pr}</priority></url>\n' for u, pr, d in urls) + '</urlset>\n'
         open(os.path.join(OUT, 'sitemap.xml'), 'w').write(clean_urls(sm))
-        # étape de test : une seule règle (mentions légales) pour vérifier l'absence de boucle sur Netlify
-        pages = ['mentions-legales.html']
+        # une règle 301 par page : /page.html vers /page (testé sans boucle sur Netlify le 04/11/2026)
+        pages = sorted(os.path.relpath(os.path.join(r, f), OUT).replace(os.sep, '/') for r, _, fs in os.walk(OUT) for f in fs
+                       if f.endswith('.html') and f not in ('index.html', '404.html'))
         open(os.path.join(REPO, 'netlify.toml'), 'w').write(NETLIFY + html_redirects(pages))
     else:
         os.remove(os.path.join(OUT, 'assets', 'fonts.css'))
