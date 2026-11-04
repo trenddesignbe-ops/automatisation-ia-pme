@@ -3,7 +3,7 @@
   "slug": "agent-ia-24-7-pme",
   "cat": "Guide",
   "title_tag": "Agent IA 24/7 : définition, exemples et limites en PME",
-  "meta": "Qu'est-ce qu'un agent IA 24/7 ? Définition simple, exemples concrets en PME, limites à connaître et règles de l'AI Act. Le guide pour comprendre avant de se lancer.",
+  "meta": "Qu'est-ce qu'un agent IA 24/7 ? Définition simple, exemples concrets en PME, limites et règles de l'AI Act. Le guide pour comprendre avant de se lancer.",
   "h1": "Agent IA 24/7 : ce que c'est, ce qu'il fait vraiment, et ses limites",
   "short": "Agent IA 24/7 : définition, exemples et limites",
   "eyebrow": "Guide · Agent IA",
@@ -177,12 +177,12 @@
  {
   "slug": "agence-n8n-pme",
   "cat": "Guide",
-  "title_tag": "Agence n8n ou freelance : prix et comment choisir",
-  "meta": "Agence n8n ou freelance n8n ? Ce que coûte une automatisation n8n, ce qui est inclus et les 5 questions à poser avant de signer. Guide honnête pour PME.",
-  "h1": "Agence n8n ou freelance : combien ça coûte et comment choisir",
-  "short": "Agence n8n ou freelance : prix et choix",
-  "eyebrow": "Guide · Prestataire n8n",
-  "lead": "Vous voulez automatiser une partie de votre activité avec n8n et vous cherchez une agence n8n ? Voici ce qu'un tel prestataire fait vraiment, ce qui compose son prix, les questions à poser avant de signer, et les cas où un freelance spécialisé suffit largement.",
+  "title_tag": "Prix d'une agence n8n ou d'un freelance en 2026",
+  "meta": "Combien coûte une agence n8n ou un freelance n8n en 2026 ? Les postes de coût, ce qui est inclus et les questions à poser avant de signer. Guide pour PME.",
+  "h1": "Prix d'une agence n8n ou d'un freelance en 2026, et comment choisir",
+  "short": "Prix d'une agence n8n ou d'un freelance",
+  "eyebrow": "Guide · Prix n8n",
+  "lead": "Combien coûte une automatisation n8n, et faut-il passer par une agence ou par un freelance ? Voici ce qui compose le prix, les questions à poser avant de signer, et les cas où un freelance spécialisé suffit largement. Vous cherchez directement un prestataire ? Voyez ma page agence n8n.",
   "summary": [
    "Une agence n8n cadre, construit, teste, héberge et maintient vos automatisations.",
    "Un devis complet couvre quatre postes : mise en place, outil n8n, modèle d'IA et maintenance.",
@@ -233,7 +233,8 @@
    "zapier-make-n8n-choisir",
    "crm-mal-rempli-pme-ia"
   ],
-  "date": "2026-10-20"
+  "date": "2026-10-20",
+  "lead_html": "Combien coûte une automatisation n8n, et faut-il passer par une agence ou par un freelance ? Voici ce qui compose le prix, les questions à poser avant de signer, et les cas où un freelance spécialisé suffit largement. Vous cherchez directement un prestataire ? Voyez ma page <a href=\"../agence-automatisation-n8n.html\">agence n8n</a>."
  },
  {
   "slug": "n8n-gratuit-pme",

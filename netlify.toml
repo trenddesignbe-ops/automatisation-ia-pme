@@ -31,3 +31,9 @@
   to = "https://www.automatisation-ia-pme.fr/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/mentions-legales.html"
+  to = "/mentions-legales"
+  status = 301
+  force = true

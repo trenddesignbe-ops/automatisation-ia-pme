@@ -18,6 +18,9 @@ Site statique de l'offre Automatisation IA PME d'Alexandre Cottret. Domaine prin
 2. `python3 src/og.py` puis `python3 src/build.py`
 3. Vérifier : aucun tiret cadratin ou demi-cadratin, pas de « min de lecture », liens internes valides
 
+## Adresses des pages
+Une seule adresse par page : la version sans .html (https://www.automatisation-ia-pme.fr/tarifs). Les fichiers restent en `.html` dans `public/`, mais `build.py` écrit sans .html la canonique, og:url, le JSON-LD, le sitemap et tous les liens internes (`clean_urls`). Dans `src/`, on peut continuer à écrire les liens avec .html : ils sont nettoyés au build. Les redirections 301 de `/page.html` vers `/page` sont générées dans `netlify.toml` (une règle par fichier). Les mentions légales sont en noindex et hors du sitemap.
+
 ## Règles de rédaction
 Vouvoiement, phrases simples, aucun chiffre inventé, sources officielles vérifiées, jamais de tiret cadratin (—) ni demi-cadratin (–).
 

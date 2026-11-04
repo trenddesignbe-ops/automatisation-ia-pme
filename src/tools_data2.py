@@ -53,7 +53,7 @@ TOOLS2 = [
  'slug': 'automatisation-chatgpt', 'tool': 'ChatGPT', 'group': 'Intelligence artificielle', 'date': '2026-10-22',
  'menu': ('Automatisation ChatGPT', 'Réponses et devis préparés'),
  'title': "Automatisation ChatGPT pour PME : l'IA branchée à vos outils",
- 'desc': "Automatisation ChatGPT pour TPE et PME : réponses clients, devis, fiches produits et résumés préparés par l'IA, directement dans vos outils. Prix fixe dès 590 €.",
+ 'desc': "Automatisation ChatGPT pour TPE et PME : réponses clients, devis, fiches produits et résumés préparés par l'IA, dans vos outils. Prix fixe dès 590 €.",
  'eyebrow': 'Automatisation · ChatGPT',
  'h1': "ChatGPT branché à vos outils, pas seulement dans un onglet",
  'lead': "Copier-coller dans ChatGPT fait perdre du temps. Je relie ChatGPT (l'API d'OpenAI) à votre messagerie, votre CRM ou votre boutique, pour qu'il prépare le travail au bon endroit, au bon moment.",
@@ -150,7 +150,7 @@ TOOLS2 = [
 {
  'slug': 'automatisation-airtable', 'tool': 'Airtable', 'group': 'CRM et bases de données', 'date': '2026-10-22',
  'menu': ('Automatisation Airtable', 'Une base clients toujours à jour'),
- 'title': "Automatisation Airtable : votre base clients toujours à jour",
+ 'title': "Agence Airtable pour PME : base clients automatisée",
  'desc': "Automatisation Airtable pour TPE et PME : base clients, stock, commandes et projets mis à jour automatiquement, avec l'IA pour remplir les champs. Dès 590 €.",
  'eyebrow': 'Automatisation · Airtable',
  'h1': "Airtable automatisé : une base à jour sans saisie",
@@ -206,7 +206,7 @@ TOOLS2 = [
  'lead': "Notion centralise vos projets, vos procédures et vos notes. Encore faut-il qu'il soit alimenté. Je l'automatise pour que les tâches, comptes rendus et fiches projets arrivent tout seuls, au bon endroit.",
  'flow': [('Réunion', 'Visio terminée'), ('IA', 'Transcription résumée'), ('Notion', 'Compte rendu créé'), ('Tâches', "Assignées à l'équipe")],
  'flow_ok': 'Rien ne se perd',
- 'uses_h2': "Ce que j'automatise avec Notion",
+ 'uses_h2': "Automatiser Notion : ce que je mets en place",
  'uses_lead': "Notion devient le tableau de bord de l'entreprise quand il se remplit seul. Voici les automatisations les plus demandées.",
  'uses': [
   ("Comptes rendus de réunion", "La réunion est transcrite, résumée par l'IA et rangée dans Notion, avec les tâches."),
@@ -305,7 +305,7 @@ TOOLS2 = [
  'lead': "Copier des chiffres de cinq outils dans un classeur Excel chaque lundi, c'est une demi-journée perdue. J'automatise votre reporting : les données arrivent seules, le classeur se met à jour et le résumé tombe par e-mail.",
  'flow': [('Lundi 7:00', 'Ventes, devis, contacts'), ('Excel', 'Classeur mis à jour'), ('Calcul', 'Indicateurs recalculés'), ('8:00', 'Résumé dans votre boîte')],
  'flow_ok': 'Prêt avant le café',
- 'uses_h2': "Ce que j'automatise dans Excel",
+ 'uses_h2': "Automatisation du reporting Excel : ce que j'automatise",
  'uses_lead': "Le reporting est la tâche répétitive par excellence. Voici ce qu'on peut confier à l'automatisation.",
  'uses': [
   ("Reporting commercial", "Chiffre d'affaires, devis envoyés et signés, taux de transformation : chaque semaine, sans saisie."),

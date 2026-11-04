@@ -73,6 +73,7 @@ def head(title, desc, path, p, og_img, og_type='website', extra=''):
 sys.path.insert(0, SRC)
 from tools_data import TOOLS
 from solutions_data import SOLUTIONS, METIERS
+TH_EMPTY = '<span class="sr-only">Critère</span>'
 CHEV = '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg>'
 FORMATION = 'formation-automatisation-ia.html'
 
@@ -141,23 +142,23 @@ def footer(p, band=True, band_title='Et si vos demandes se traitaient toutes seu
     h = p or './'
     b = ''
     if band:
-        b = f'''<section class="band"><h2>{band_title}</h2><div class="band__btns"><a class="btn btn--ghost" href="{WA}" rel="noopener">Écrire sur WhatsApp</a><a class="btn btn--primary" href="{CAL}" rel="noopener">{band_cta}</a></div></section>
+        b = f'''<section class="band" aria-label="Prendre contact"><h2>{band_title}</h2><div class="band__btns"><a class="btn btn--ghost" href="{WA}" rel="noopener">Écrire sur WhatsApp</a><a class="btn btn--primary" href="{CAL}" rel="noopener">{band_cta}</a></div></section>
 '''
     return f'''{b}<footer>
   <div class="foot">
     <div class="foot__brand"><p>L'intelligence artificielle qui traite vos demandes de A à Z</p></div>
     <nav class="foot__cols" aria-label="Pied de page">
-      <div><h2 class="foot__h">Offre</h2><ul><li><a href="{h}#solutions">Solutions</a></li><li><a href="{p}tarifs.html">Tarifs</a></li><li><a href="{p}formation-automatisation-ia.html">Formation IA</a></li><li><a href="{p}a-propos.html">À propos</a></li><li><a href="{p}blog.html">Blog</a></li><li><a href="{h}#contact">Contact</a></li></ul></div>
-      <div><h2 class="foot__h">Solutions</h2><ul><li><a href="{p}agent-ia-service-client.html">Agent IA service client</a></li><li><a href="{p}devis-automatise.html">Devis automatisé</a></li><li><a href="{p}automatisation-crm.html">Automatisation CRM</a></li><li><a href="{p}prospection-automatisee.html">Prospection automatisée</a></li><li><a href="{p}automatisation-facturation-relances.html">Factures et relances</a></li><li><a href="{p}creation-contenu-ia.html">Création de contenu IA</a></li><li><a href="{p}automatisation-recrutement.html">Recrutement</a></li></ul></div>
-      <div><h2 class="foot__h">Outils</h2><ul><li><a href="{p}agence-automatisation-n8n.html">Agence n8n</a></li><li><a href="{p}integrateur-make.html">Agence Make</a></li><li><a href="{p}integrateur-zapier.html">Intégrateur Zapier</a></li><li><a href="{p}agent-ia-claude.html">Agent IA Claude</a></li><li><a href="{p}creation-site-ia-claude-code-codex.html">Agence Claude Code</a></li><li><a href="{p}integrations.html">Toutes les intégrations</a></li></ul></div>
-      <div><h2 class="foot__h">Trend Design</h2><ul><li><a href="https://www.trend-design.fr/">Création de sites internet</a></li><li><a href="https://www.trend-design.fr/">Référencement SEO</a></li></ul><h2 class="foot__h">Réseaux</h2><ul><li><a href="{MALT}" rel="noopener">Malt</a></li><li><a href="{LINKEDIN}" rel="noopener">LinkedIn</a></li></ul></div>
-      <div><h2 class="foot__h">Légal</h2><ul><li><a href="{p}mentions-legales.html">Mentions légales</a></li><li><a href="{p}mentions-legales.html#confidentialite">Confidentialité</a></li><li><a href="{p}mentions-legales.html#cookies">Cookies</a></li><li><a href="#" data-cc-open>Gérer les cookies</a></li></ul></div>
+      <div><p class="foot__h">Offre</p><ul><li><a href="{h}#solutions">Solutions</a></li><li><a href="{p}tarifs.html">Tarifs</a></li><li><a href="{p}formation-automatisation-ia.html">Formation IA</a></li><li><a href="{p}a-propos.html">À propos</a></li><li><a href="{p}blog.html">Blog</a></li><li><a href="{h}#contact">Contact</a></li></ul></div>
+      <div><p class="foot__h">Solutions</p><ul><li><a href="{p}agent-ia-service-client.html">Agent IA service client</a></li><li><a href="{p}devis-automatise.html">Devis automatisé</a></li><li><a href="{p}automatisation-crm.html">Automatisation CRM</a></li><li><a href="{p}prospection-automatisee.html">Prospection automatisée</a></li><li><a href="{p}automatisation-facturation-relances.html">Factures et relances</a></li><li><a href="{p}creation-contenu-ia.html">Création de contenu IA</a></li><li><a href="{p}automatisation-recrutement.html">Recrutement</a></li></ul></div>
+      <div><p class="foot__h">Outils</p><ul><li><a href="{p}agence-automatisation-n8n.html">Agence n8n</a></li><li><a href="{p}integrateur-make.html">Agence Make</a></li><li><a href="{p}integrateur-zapier.html">Intégrateur Zapier</a></li><li><a href="{p}agent-ia-claude.html">Agent IA Claude</a></li><li><a href="{p}creation-site-ia-claude-code-codex.html">Agence Claude Code</a></li><li><a href="{p}integrations.html">Toutes les intégrations</a></li></ul></div>
+      <div><p class="foot__h">Trend Design</p><ul><li><a href="https://www.trend-design.fr/">Création de sites internet</a></li><li><a href="https://www.trend-design.fr/">Référencement SEO</a></li></ul><p class="foot__h">Réseaux</p><ul><li><a href="{MALT}" rel="noopener">Malt</a></li><li><a href="{LINKEDIN}" rel="noopener">LinkedIn</a></li></ul></div>
+      <div><p class="foot__h">Légal</p><ul><li><a href="{p}mentions-legales.html">Mentions légales</a></li><li><a href="{p}mentions-legales.html#confidentialite">Confidentialité</a></li><li><a href="{p}mentions-legales.html#cookies">Cookies</a></li><li><a href="#" data-cc-open>Gérer les cookies</a></li></ul></div>
     </nav>
   </div>
   <svg class="wordmark" viewBox="0 0 1280 186" role="img" aria-label="Automatisation IA PME"><text x="0" y="141" font-size="136">automatisation ia pme</text></svg>
   <div class="foot__bar"><span>© 2026 Automatisation IA PME · Alexandre Cottret</span><span>Automatisation IA pour PME et TPE, partout en France</span></div>
 </footer>
-<div class="fab"><a class="wa" href="{WA}" rel="noopener" aria-label="Me contacter sur WhatsApp">{WA_SVG}</a><div class="fab__menu"><div class="fab__card"><p>Une question ?</p><a class="fab__wa" href="{WA}" rel="noopener">Écrire sur WhatsApp</a><a class="fab__cal" href="{CAL}" rel="noopener">Réserver un appel de 20 min</a></div></div></div>
+<aside class="fab" aria-label="Contact rapide"><a class="wa" href="{WA}" rel="noopener" aria-label="Me contacter sur WhatsApp">{WA_SVG}</a><div class="fab__menu"><div class="fab__card"><p>Une question ?</p><a class="fab__wa" href="{WA}" rel="noopener">Écrire sur WhatsApp</a><a class="fab__cal" href="{CAL}" rel="noopener">Réserver un appel de 20 min</a></div></div></aside>
 {MENU_JS}
 {open(os.path.join(SRC, 'consent.html')).read().replace('{P}', p)}</body>
 </html>
@@ -200,7 +201,7 @@ def article_page(a):
     cta = f'<div class="cta-inline"><p>Vous voulez savoir si une de vos tâches s\'automatise avec l\'IA ? 20 minutes suffisent.</p><a class="btn btn--primary" href="{CAL}" rel="noopener">Réserver l\'audit offert</a></div>\n'
     if len(parts) > 4:
         parts.insert(4, cta)
-    body = ''.join(parts)
+    body = ''.join(parts).replace('<div class="tbl">', '<div class="tbl" tabindex="0" role="region" aria-label="Tableau comparatif">')
     path = f'blog/{a["slug"]}.html'
     items = [('Accueil', ''), ('Blog', 'blog.html'), (a['short'], path)]
     crumb_links = [('Accueil', '../'), ('Blog', '../blog.html'), (a['short'], None)]
@@ -226,7 +227,7 @@ def article_page(a):
 <nav aria-label="Fil d'Ariane">{crumbs_html(crumb_links)}</nav>
 <p class="eyebrow">{esc(a['eyebrow'])}</p>
 <h1 class="page-title">{esc(a['h1'])}</h1>
-<p class="lead">{esc(a['lead'])}</p>
+<p class="lead">{a.get('lead_html') or esc(a['lead'])}</p>
 <div class="byline"><img src="{p}assets/alexandre-160.webp" alt="" width="44" height="44"><div><b>Alexandre Cottret</b>Publié le <time datetime="{DATE}">{DATE_FR}</time></div></div>
 </div></header>
 <div class="art-wrap"><div class="art">
@@ -238,7 +239,7 @@ def article_page(a):
 <h2 id="auteur">À propos de l'auteur</h2>
 <div class="box author"><img src="{p}assets/alexandre-160.webp" alt="Alexandre Cottret" width="96" height="96" loading="lazy">
 <div><p class="author__name">Alexandre Cottret</p>
-<p>Intégrateur en automatisation IA (Make, Zapier, n8n) et webdesigner indépendant depuis 2021. J'ai créé plus de 165 sites pour des TPE et PME, avec une note de 4,97/5 sur 91 avis Malt. Aujourd'hui, j'automatise avec l'IA ce qui se passe après le formulaire de contact : demandes, devis, relances et documents.</p>
+<p>Intégrateur en automatisation IA (Make, Zapier, n8n) et webdesigner indépendant depuis 2021. J'ai créé plus de 165 sites pour des TPE et PME, avec une note de 4,97/5 sur 91 avis Malt pour ces sites. Aujourd'hui, j'automatise avec l'IA ce qui se passe après le formulaire de contact : demandes, devis, relances et documents.</p>
 <p><a href="{LINKEDIN}" rel="noopener">LinkedIn</a> · <a href="{MALT1}" rel="noopener">Avis Malt</a> · <a href="../">Mon offre d'automatisation IA</a></p></div></div>
 <h2 id="sources">Sources</h2>
 <ul class="sources">{src}</ul>
@@ -253,7 +254,7 @@ def article_page(a):
 '''
     out += footer(p)
     # close frame wrappers before body end: wrap band+footer inside frame
-    out = out.replace('<div class="fab">', '</div></div>\n<div class="fab">', 1)
+    out = out.replace('<aside class="fab"', '</div></div>\n<aside class="fab"', 1)
     return out
 
 def blog_page():
@@ -272,11 +273,11 @@ def blog_page():
 <nav aria-label="Fil d'Ariane">{crumbs_html([('Accueil', './'), ('Blog', None)])}</nav>
 <p class="eyebrow">Ressources</p>
 <h1 class="page-title">Guides sur l'automatisation IA en PME</h1>
-<p class="lead">Des conseils concrets pour automatiser vos demandes, devis, relances et documents avec l'intelligence artificielle, sans jargon et sans perdre la main.</p>
+<p class="lead">Des conseils concrets pour automatiser vos demandes, devis, relances et documents avec l'intelligence artificielle, sans jargon et sans perdre la main. Vous y trouverez des comparatifs d'outils (Zapier, Make, n8n), les vrais prix et les limites à connaître avant de vous lancer. Chaque guide part d'un problème réel de TPE ou de PME et se termine par des étapes simples pour commencer.</p>
 </div></header>
 <div class="art-wrap"><div class="cards">{cards}</div></div>
 '''
-    out += '</main>\n' + footer(p).replace('<div class="fab">', '</div></div>\n<div class="fab">', 1)
+    out += '</main>\n' + footer(p).replace('<aside class="fab"', '</div></div>\n<aside class="fab"', 1)
     return out
 
 def legal_page():
@@ -284,6 +285,7 @@ def legal_page():
     path = 'mentions-legales.html'
     T = '<span class="todo">[À COMPLÉTER]</span>'
     out = head("Mentions légales et confidentialité · Automatisation IA PME", "Mentions légales, politique de confidentialité et cookies du site automatisation-ia-pme.fr, édité par Alexandre Cottret.", path, p, 'og-home.jpg')
+    out = out.replace('content="index, follow, max-image-preview:large"', 'content="noindex, follow"', 1)
     out += header(p)
     out += f'''<div class="content"><div class="content__frame"><main>
 <header class="page-head"><div class="page-head__in">
@@ -327,12 +329,28 @@ def legal_page():
 <p>Les polices de caractères sont hébergées sur le site lui-même, sans appel à un service tiers. Les liens vers Calendly, WhatsApp, Malt ou LinkedIn vous mènent vers des sites qui appliquent leur propre politique de cookies.</p>
 </div></div>
 '''
-    out += '</main>\n' + footer(p, band=False).replace('<div class="fab">', '</div></div>\n<div class="fab">', 1)
+    out += '</main>\n' + footer(p, band=False).replace('<aside class="fab"', '</div></div>\n<aside class="fab"', 1)
     return out
 
 sys.path.insert(0, SRC)
 from tools_data import TOOLS
 TICONS = json.load(open(os.path.join(SRC, 'tool_icons.json')))
+
+# Outils liés affichés dans « Voir aussi » des pages solutions et métiers (maillage vers les pages outils peu reliées)
+TOOL_BY = {x['slug']: x for x in TOOLS}
+RELATED_TOOLS = {
+    'agent-ia-service-client': ['automatisation-gmail', 'automatisation-whatsapp', 'agent-ia-claude'],
+    'devis-automatise': ['automatisation-google-sheets', 'automatisation-gmail', 'automatisation-excel'],
+    'automatisation-crm': ['automatisation-hubspot', 'automatisation-google-sheets', 'automatisation-airtable'],
+    'prospection-automatisee': ['automatisation-linkedin', 'automatisation-hubspot', 'automatisation-chatgpt'],
+    'automatisation-facturation-relances': ['automatisation-gmail', 'automatisation-excel', 'automatisation-google-sheets'],
+    'creation-contenu-ia': ['automatisation-chatgpt', 'automatisation-linkedin', 'automatisation-notion'],
+    'automatisation-recrutement': ['automatisation-gmail', 'automatisation-notion', 'automatisation-airtable'],
+    'automatisation-artisan': ['automatisation-whatsapp', 'automatisation-gmail', 'automatisation-google-sheets'],
+    'automatisation-coach-institut': ['automatisation-whatsapp', 'automatisation-gmail', 'automatisation-notion'],
+    'automatisation-cabinet-pme-services': ['automatisation-excel', 'automatisation-gmail', 'automatisation-notion'],
+    'automatisation-e-commerce': ['automatisation-chatgpt', 'automatisation-gmail', 'automatisation-google-sheets'],
+}
 
 def tool_page(t):
     p = ''
@@ -362,7 +380,7 @@ def tool_page(t):
 <h1 class="page-title">{t['h1']}</h1>
 <p class="lead">{t['lead']}</p>
 <div class="fhero__btns"><a class="btn btn--primary" href="{CAL}" rel="noopener">Réserver un audit offert</a><a class="btn btn--ghost" href="#cas-pratiques">Voir les cas pratiques</a></div>
-<ul class="trust"><li><b>★ 4,97/5</b> · 91 avis Malt</li><li><b>Dès 590 €</b> · prix fixe</li><li><b>Comptes à votre nom</b></li></ul>
+<ul class="trust"><li><b>★ 4,97/5</b> · 91 avis Malt sur mes sites web</li><li><b>Dès 590 €</b> · prix fixe</li><li><b>Comptes à votre nom</b></li></ul>
 </div>
 <div class="fhero__art" aria-hidden="true"><div class="pcard"><p class="pcard__h">{icon}{card_h}</p><ol class="pcard__flow">{flow}</ol><div class="pcard__ok fl-ok" style="--d:{0.4 + len(t['flow']) * 0.7:.1f}s">✓ {t['flow_ok']}</div></div></div>
 </header>
@@ -378,7 +396,7 @@ def tool_page(t):
     out += sec('pourquoi', ('Pourquoi ' + tool) if kind == 'tool' else 'Pourquoi automatiser', t['why_h2'], None,
                '<div class="grid3">' + ''.join(f'<div class="fcard"><h3>{a}</h3><p>{b}</p></div>' for a, b in t['why']) + f'</div><p class="fnote">{t["limit"]}</p>')
     rows = t['table']
-    tbl = '<div class="tbl"><table><thead><tr>' + ''.join(f'<th scope="col">{c}</th>' for c in rows[0]) + '</tr></thead><tbody>' + ''.join('<tr><th scope="row">' + r[0] + '</th>' + ''.join(f'<td>{c}</td>' for c in r[1:]) + '</tr>' for r in rows[1:]) + '</tbody></table></div>'
+    tbl = '<div class="tbl" tabindex="0" role="region" aria-label="Tableau comparatif"><table><thead><tr>' + ''.join(f'<th scope="col">{c or TH_EMPTY}</th>' for c in rows[0]) + '</tr></thead><tbody>' + ''.join('<tr><th scope="row">' + r[0] + '</th>' + ''.join(f'<td>{c}</td>' for c in r[1:]) + '</tr>' for r in rows[1:]) + '</tbody></table></div>'
     cmp_note = '<p class="fnote">Le détail des différences est dans le guide <a href="blog/zapier-make-n8n-choisir.html">n8n vs Make vs Zapier : lequel choisir</a>.</p>' if kind == 'tool' else ''
     out += sec('comparatif', 'Comparatif', t['table_h2'], None, tbl + cmp_note)
     steps = [("01", "Audit offert", "20 minutes pour repérer la tâche qui vous coûte le plus de temps et vérifier qu'elle s'automatise."),
@@ -397,11 +415,12 @@ def tool_page(t):
     else:
         pool = [x for x in SOLUTIONS if x['slug'] != t['slug']][:4] if kind == 'solution' else [x for x in METIERS if x['slug'] != t['slug']] + [x for x in SOLUTIONS[:3]]
         lab = {'solution': 'Solution', 'metier': "Cas d'usage"}
-        rel = ''.join(f'<a href="{x["slug"]}.html"><span>{lab[x["kind"]]}</span>{x["menu"][0]}</a>' for x in pool) + '<a href="agence-automatisation-n8n.html"><span>Outil</span>Agence automatisation n8n</a>' + '<a href="tarifs.html"><span>Prix</span>Tarifs</a>'
+        tools_rel = ''.join(f'<a href="{x["slug"]}.html"><span>Outil</span>{x["menu"][0]}</a>' for x in (TOOL_BY[s] for s in RELATED_TOOLS[t['slug']]))
+        rel = ''.join(f'<a href="{x["slug"]}.html"><span>{lab[x["kind"]]}</span>{x["menu"][0]}</a>' for x in pool) + (('<a href="agence-automatisation-n8n.html"><span>Outil</span>Agence automatisation n8n</a>' + '<a href="tarifs.html"><span>Prix</span>Tarifs</a>') if kind == 'solution' else '') + tools_rel
         rel_h = 'Les autres solutions' if kind == 'solution' else 'Voir aussi'
     out += sec('voir-aussi', 'Voir aussi', rel_h, None, f'<div class="related">{rel}</div>')
     band = f"Un scénario {tool} en tête ?" if kind == 'tool' else ('Une tâche à automatiser ?' if kind == 'solution' else f"Parlons de votre activité ?")
-    out += '</main>\n' + footer(p, band_title=band).replace('<div class="fab">', '</div></div>\n<div class="fab">', 1)
+    out += '</main>\n' + footer(p, band_title=band).replace('<aside class="fab"', '</div></div>\n<aside class="fab"', 1)
     return out
 
 HUB_WHY = [("Vos outils d'abord", "Je relie l'IA aux outils que vous utilisez déjà. Changer de logiciel est rarement nécessaire."),
@@ -424,7 +443,7 @@ def integrations_page():
         {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub(r'<[^>]+>', '', a)}} for q, a in HUB_FAQ]},
         {"@type": "ItemList", "name": "Outils automatisés par Automatisation IA PME", "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": t['menu'][0], "url": SITE + '/' + t['slug'] + '.html'} for i, t in enumerate(TOOLS)]},
         crumbs_ld(items)]}
-    out = head("Intégrations : n8n, Make, Zapier, Claude, Notion, HubSpot, Excel", "Toutes les intégrations d'Automatisation IA PME : n8n, Make, Zapier, Claude, ChatGPT, HubSpot, Airtable, Notion, Google Sheets, Excel, WhatsApp, Gmail, Wix.", path, p, 'og-home.jpg', 'website', ld(graph))
+    out = head("Intégrations IA : n8n, Make, Zapier, Notion, HubSpot", "Toutes les intégrations d'Automatisation IA PME : n8n, Make, Zapier, Claude, ChatGPT, HubSpot, Airtable, Notion, Google Sheets, Excel, WhatsApp, Gmail, Wix.", path, p, 'og-home.jpg', 'website', ld(graph))
     out += header(p)
     blocks = ''
     for g in groups:
@@ -444,7 +463,7 @@ def integrations_page():
     out += sec('par-besoin', 'Par besoin', 'Ou partez de votre besoin', "Vous ne savez pas quel outil choisir ? Partez de la tâche à automatiser : je choisis l'outil le plus adapté, n8n le plus souvent.", f'<div class="tcards">{scards}</div>')
     out += sec('choisir', 'Méthode', 'Comment je choisis les outils', None, '<div class="grid3">' + ''.join(f'<div class="fcard"><h3>{a}</h3><p>{b}</p></div>' for a, b in HUB_WHY) + '</div>')
     out += sec('faq', 'Questions fréquentes', 'Vos questions sur les intégrations', None, '<div class="faq">' + ''.join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q, a in HUB_FAQ) + '</div>')
-    out += '</main>\n' + footer(p).replace('<div class="fab">', '</div></div>\n<div class="fab">', 1)
+    out += '</main>\n' + footer(p).replace('<aside class="fab"', '</div></div>\n<aside class="fab"', 1)
     return out
 
 FORMATION_DATE = '2026-10-22'
@@ -455,7 +474,7 @@ def formation_page():
     url = SITE + '/' + path
     items = [('Accueil', ''), ('Formation automatisation IA', path)]
     title = "Formation automatisation IA sur mesure : n8n, Make, Zapier"
-    desc = "Formation automatisation IA en visio pour TPE et PME : Claude, ChatGPT, Zapier, Make et n8n, sur vos propres outils. Dès 150 €, prix fixe."
+    desc = "Formation automatisation IA en visio pour TPE et PME : Claude, ChatGPT, Zapier, Make et n8n, sur vos propres outils et à votre rythme. Dès 150 €, prix fixe."
     cmp_url = 'blog/zapier-make-n8n-choisir.html'
     faqs = [
         ("La formation est-elle éligible au CPF ?",
@@ -526,7 +545,7 @@ def formation_page():
                 ("Financement", "CPF, France Travail, OPCO", "OPCO, si l'organisme est certifié Qualiopi", "Non finançable, prix fixe"),
                 ("Sur vos outils", "En partie", "Rarement", "Oui, sur vos propres comptes"),
                 ("Idéal si", "Vous visez une certification", "Vous formez plusieurs salariés à la fois", "Vous voulez un résultat concret, vite")]
-    tbl = lambda rows: '<div class="tbl"><table><thead><tr>' + ''.join(f'<th scope="col">{c}</th>' for c in rows[0]) + '</tr></thead><tbody>' + ''.join('<tr><th scope="row">' + r[0] + '</th>' + ''.join(f'<td>{c}</td>' for c in r[1:]) + '</tr>' for r in rows[1:]) + '</tbody></table></div>'
+    tbl = lambda rows: '<div class="tbl" tabindex="0" role="region" aria-label="Tableau comparatif"><table><thead><tr>' + ''.join(f'<th scope="col">{c or TH_EMPTY}</th>' for c in rows[0]) + '</tr></thead><tbody>' + ''.join('<tr><th scope="row">' + r[0] + '</th>' + ''.join(f'<td>{c}</td>' for c in r[1:]) + '</tr>' for r in rows[1:]) + '</tbody></table></div>'
     out += f'''<div class="content"><div class="content__frame"><main>
 <header class="fhero">
 <div class="fhero__txt">
@@ -535,7 +554,7 @@ def formation_page():
 <h1 class="page-title">Formation automatisation IA pour TPE et PME</h1>
 <p class="lead">En visio, sur vos propres outils : apprenez à utiliser Claude et ChatGPT, puis à créer vos automatisations avec Zapier, Make ou n8n. Vous repartez avec une automatisation qui tourne.</p>
 <div class="fhero__btns"><a class="btn btn--primary" href="{CAL}" rel="noopener">Réserver l'appel de cadrage</a><a class="btn btn--ghost" href="#formules">Voir les formules</a></div>
-<ul class="trust"><li><b>★ 4,97/5</b> · 91 avis Malt</li><li><b>Ambassadeur Superprof</b> · 5/5</li><li><b>Dès 150 €</b> · prix fixe</li></ul>
+<ul class="trust"><li><b>★ 4,97/5</b> · 91 avis Malt sur mes sites web</li><li><b>Ambassadeur Superprof</b> · 5/5</li><li><b>Dès 150 €</b> · prix fixe</li></ul>
 </div>
 <div class="fhero__art" aria-hidden="true"><div class="pcard"><p class="pcard__h">Formule Première automatisation</p><ol>
 <li><span>Séance 1</span>Claude et ChatGPT au quotidien</li>
@@ -574,14 +593,14 @@ def formation_page():
 <div class="trainer__txt"><p class="trainer__name">Alexandre Cottret</p><p class="trainer__role">Intégrateur en automatisation IA (n8n, Make, Zapier) et webdesigner</p>
 <p>Je crée des sites internet depuis 2021 et j'automatise aujourd'hui les demandes, devis et relances des TPE et PME avec n8n, Make, Zapier, Claude et ChatGPT. Ce que j'enseigne, je l'utilise chaque semaine chez mes clients : vous apprenez des méthodes testées sur de vrais projets, pas des démonstrations.</p>
 <p>Je donne aussi des cours en visio depuis 2023, avec une règle simple : pas de théorie inutile. On construit ensemble, sur vos outils, et vous repartez avec quelque chose qui fonctionne.</p>
-<ul class="trainer__stats"><li><b>165+</b><span>sites livrés depuis 2021</span></li><li><b>4,97/5</b><span>sur 91 avis Malt</span></li><li><b>5/5</b><span>Professeur Ambassadeur Superprof</span></li></ul>
+<ul class="trainer__stats"><li><b>165+</b><span>sites livrés depuis 2021</span></li><li><b>4,97/5</b><span>sur 91 avis Malt (sites web)</span></li><li><b>5/5</b><span>Professeur Ambassadeur Superprof</span></li></ul>
 </div></div>''')
     out += sec('faq', 'Questions fréquentes', 'Vos questions sur la formation', None,
                '<div class="faq">' + ''.join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q, a in faqs) + '</div>')
     rel = [BY[s] for s in ('agent-ia-24-7-pme', 'zapier-make-n8n-choisir', 'agence-n8n-pme') if s in BY]
     out += sec('guides', 'Pour aller plus loin', 'Guides gratuits', None,
                '<div class="related">' + ''.join(f'<a href="blog/{a["slug"]}.html"><span>{a["cat"]}</span>{esc(a["short"])}</a>' for a in rel) + '</div>')
-    out += '</main>\n' + footer(p, band_title='Prêt à automatiser votre première tâche ?', band_cta="Réserver l'appel de cadrage").replace('<div class="fab">', '</div></div>\n<div class="fab">', 1)
+    out += '</main>\n' + footer(p, band_title='Prêt à automatiser votre première tâche ?', band_cta="Réserver l'appel de cadrage").replace('<aside class="fab"', '</div></div>\n<aside class="fab"', 1)
     return out
 
 PAGES_DATE = '2026-10-22'
@@ -603,7 +622,7 @@ def tarifs_page():
         ("Qu'est-ce qui fait varier le prix ?", "Le nombre d'outils à relier, les cas particuliers à gérer, la part d'IA (lecture de documents, agent qui agit dans vos outils) et l'hébergement de n8n en Europe. C'est pourquoi les agents IA et les projets sur mesure sont sur devis."),
         ("Les abonnements aux outils sont-ils inclus ?", "Non. Les comptes sont ouverts à votre nom, et vous payez directement les outils (n8n, Make, Zapier, Claude, ChatGPT…). Beaucoup ont une version gratuite suffisante pour démarrer."),
         ("Le suivi mensuel est-il obligatoire ?", "Non. Vous restez propriétaire de tout. Le suivi est utile si vos outils changent souvent ou si l'automatisation est critique pour votre activité."),
-        ("Combien coûte une agence d'automatisation IA ?", "Les prix varient beaucoup selon le format. Le guide <a href=\"blog/agence-n8n-pme.html\">agence n8n ou freelance : combien ça coûte</a> détaille les fourchettes observées."),
+        ("Combien coûte une agence d'automatisation IA ?", "Les prix varient beaucoup selon le format. Le guide sur le <a href=\"blog/agence-n8n-pme.html\">prix d'une agence n8n ou d'un freelance</a> détaille les postes de coût."),
     ]
     strip = lambda t: re.sub(r'<[^>]+>', '', t)
     offers = [("Audit offert", "0", "20 minutes pour repérer la tâche à automatiser"),
@@ -620,13 +639,13 @@ def tarifs_page():
     out = head("Tarifs automatisation IA : prix fixes dès 590 €", "Tarifs d'automatisation IA pour TPE et PME : audit offert, automatisation simple dès 590 € prix fixe, agents IA sur devis, formation dès 150 €.", path, p, 'og-tarifs.jpg', 'website', ld(graph))
     out += header(p)
     plans = [("Audit offert", "0 €", "20 min", "Pour savoir si votre tâche s'automatise, et combien ça coûte.",
-              ["La tâche qui vous coûte le plus de temps", "Les outils à relier", "Une estimation claire, sans engagement"], False, "Réserver l'audit"),
+              ["La tâche qui vous coûte le plus de temps", "Les outils à relier", "Une estimation claire"], False, "Réserver l'audit"),
              ("Automatisation simple", "Dès 590 €", "prix fixe", "Pour automatiser une tâche précise dans vos outils.",
               ["Construction sur n8n, Make ou Zapier", "Étape d'IA si utile (lire, classer, rédiger)", "Tests sur vos vrais cas et documentation"], True, "Démarrer par l'audit"),
              ("Agent IA et sur mesure", "Sur devis", "après l'audit", "Pour un agent IA qui agit dans plusieurs outils, ou un projet plus large.",
               ["Agent IA de service client ou de tri", "Plusieurs scénarios reliés", "Hébergement de n8n en Europe possible"], False, "Demander un devis")]
     cards = '<div class="prices">' + ''.join(
-        f'<div class="price{" price--hl" if hl else ""}">' + ('<span class="price__badge">Le plus demandé</span>' if hl else '') +
+        f'<div class="price{" price--hl" if hl else ""}">' + 
         f'<p class="price__name">{n}</p><p class="price__amt">{a}<small>{d}</small></p><p>{tx}</p><ul>' + ''.join(f'<li>{x}</li>' for x in li) +
         f'</ul><a class="btn {"btn--primary" if hl else "btn--ghost"}" href="{CAL}" rel="noopener">{cta}</a></div>'
         for n, a, d, tx, li, hl, cta in plans) + '</div>'
@@ -634,7 +653,7 @@ def tarifs_page():
             ("Prise en main (2 h)", "150 €", "Découvrir Claude et ChatGPT sur vos tâches"),
             ("Première automatisation (5 h)", "350 €", "Repartir avec une automatisation qui tourne"),
             ("Équipe (10 h)", "700 €", "Rendre autonome une équipe, jusqu'à 4 personnes")]
-    tbl = '<div class="tbl"><table><thead><tr>' + ''.join(f'<th scope="col">{c}</th>' for c in rows[0]) + '</tr></thead><tbody>' + ''.join('<tr><th scope="row">' + r[0] + '</th>' + ''.join(f'<td>{c}</td>' for c in r[1:]) + '</tr>' for r in rows[1:]) + '</tbody></table></div>'
+    tbl = '<div class="tbl" tabindex="0" role="region" aria-label="Tableau comparatif"><table><thead><tr>' + ''.join(f'<th scope="col">{c or TH_EMPTY}</th>' for c in rows[0]) + '</tr></thead><tbody>' + ''.join('<tr><th scope="row">' + r[0] + '</th>' + ''.join(f'<td>{c}</td>' for c in r[1:]) + '</tr>' for r in rows[1:]) + '</tbody></table></div>'
     out += f'''<div class="content"><div class="content__frame"><main>
 <header class="page-head"><div class="page-head__in">
 <nav aria-label="Fil d'Ariane">{crumbs_html([('Accueil', './'), ('Tarifs', None)])}</nav>
@@ -650,8 +669,8 @@ def tarifs_page():
                 '<div class="grid3">' + ''.join(f'<div class="fcard"><h3>{a}</h3><p>{b}</p></div>' for a, b in [("Surveillance", "Je vérifie que vos automatisations tournent, et je corrige si un outil change."), ("Ajustements", "Une nouvelle règle, un nouveau cas ? On ajuste au fil des mois."), ("Sur devis", "Le suivi est facultatif et chiffré selon le nombre d'automatisations.")]) + '</div>')
     out += _sec('formation', 'Formation', 'Formation automatisation IA', "En visio, sur vos propres outils, à prix fixe.",
                 tbl + '<p class="fnote">Le programme complet est sur la page <a href="formation-automatisation-ia.html">formation automatisation IA</a>. Formation non éligible au CPF.</p>')
-    out += _sec('faq', 'Questions fréquentes', 'Vos questions sur les prix', None, _faq(faqs))
-    out += '</main>\n' + footer(p, band_title='Combien coûterait votre automatisation ?').replace('<div class="fab">', '</div></div>\n<div class="fab">', 1)
+    out += _sec('faq', 'Questions fréquentes', "Combien coûte une agence d'automatisation IA ?", None, _faq(faqs))
+    out += '</main>\n' + footer(p, band_title='Combien coûterait votre automatisation ?').replace('<aside class="fab"', '</div></div>\n<aside class="fab"', 1)
     return out
 
 def about_page():
@@ -678,7 +697,7 @@ def about_page():
 <p>Je crée des sites internet depuis 2021 avec mon studio <a href="https://www.trend-design.fr/">Trend Design</a>. En accompagnant des artisans, des coachs et des PME de services, j'ai vu la même chose partout : le site attire des demandes, mais leur traitement (réponses, devis, relances, saisie) mange le temps des dirigeants.</p>
 <p>C'est ce qui m'a amené à l'automatisation avec l'IA. Aujourd'hui, je construis des agents IA et des automatisations sur n8n, Make et Zapier, reliés à Claude et ChatGPT, pour que chaque demande soit traitée, sans rien laisser partir sans votre accord.</p>
 <p>Je donne aussi des cours en visio depuis 2023, ce qui a donné la <a href="formation-automatisation-ia.html">formation automatisation IA</a>.</p>
-<ul class="trainer__stats"><li><b>165+</b><span>sites livrés depuis 2021</span></li><li><b>4,97/5</b><span>sur 91 avis Malt</span></li><li><b>5/5</b><span>Professeur Ambassadeur Superprof</span></li></ul>
+<ul class="trainer__stats"><li><b>165+</b><span>sites livrés depuis 2021</span></li><li><b>4,97/5</b><span>sur 91 avis Malt (sites web)</span></li><li><b>5/5</b><span>Professeur Ambassadeur Superprof</span></li></ul>
 </div></div>''')
     out += _sec('principes', 'Principes', 'Ma façon de travailler', None,
                 '<div class="grid3">' + ''.join(f'<div class="fcard"><h3>{a}</h3><p>{b}</p></div>' for a, b in [
@@ -689,8 +708,8 @@ def about_page():
                     ("Honnêteté sur les limites", "Si une tâche ne vaut pas la peine d'être automatisée, je vous le dis pendant l'audit."),
                     ("Simple à comprendre", "Une documentation claire, et des explications sans jargon.")]) + '</div>')
     out += _sec('ailleurs', 'Ailleurs', 'Où me retrouver', None,
-                f'<div class="related"><a href="{MALT}" rel="noopener"><span>Avis clients</span>Profil Malt · 91 avis</a><a href="{LINKEDIN}" rel="noopener"><span>Réseau</span>LinkedIn</a><a href="https://www.trend-design.fr/"><span>Création de sites</span>Trend Design, webdesigner</a><a href="blog.html"><span>Guides</span>Le blog</a></div>')
-    out += '</main>\n' + footer(p, band_title='On en parle 20 minutes ?').replace('<div class="fab">', '</div></div>\n<div class="fab">', 1)
+                f'<div class="related"><a href="{MALT}" rel="noopener"><span>Avis clients</span>Profil Malt · 91 avis sur mes sites web</a><a href="{LINKEDIN}" rel="noopener"><span>Réseau</span>LinkedIn</a><a href="https://www.trend-design.fr/"><span>Création de sites</span>Trend Design, webdesigner</a><a href="blog.html"><span>Guides</span>Le blog</a></div>')
+    out += '</main>\n' + footer(p, band_title='On en parle 20 minutes ?').replace('<aside class="fab"', '</div></div>\n<aside class="fab"', 1)
     return out
 
 def notfound_page():
@@ -706,7 +725,7 @@ def notfound_page():
 <p><a class="btn btn--primary" href="/">Retour à l'accueil</a> <a class="btn btn--ghost" href="/blog.html">Voir le blog</a></p>
 </div></header>
 '''
-    out += '</main>\n' + footer(p, band=False).replace('<div class="fab">', '</div></div>\n<div class="fab">', 1)
+    out += '</main>\n' + footer(p, band=False).replace('<aside class="fab"', '</div></div>\n<aside class="fab"', 1)
     return out
 
 def build_index():
@@ -728,7 +747,7 @@ def build_index():
     fnav = re.search(r'<nav class="foot__cols".*?</nav>', footer(''), flags=re.S).group(0)
     s, n3 = re.subn(r'<nav class="foot__cols".*?</nav>', lambda m: fnav, s, count=1, flags=re.S)
     assert n3 == 1
-    s = s.replace('<title>Automatisation IA PME : agent IA 24/7, n8n, Make, Zapier</title>', '<title>Automatisation IA pour TPE et PME : agents IA, n8n, Make, Zapier</title>')
+    s = s.replace('<title>Automatisation IA PME : agent IA 24/7, n8n, Make, Zapier</title>', '<title>Automatisation IA pour TPE et PME : n8n, Make et Zapier</title>')
     # regenerate the 3 latest articles block
     i = s.find('<div class="posts reveal"')
     j = s.find('</article></div>', i) + len('</article></div>')
@@ -738,6 +757,34 @@ def build_index():
     cards = ''.join(f'<article class="post"><a href="blog/{a["slug"]}.html">{arts[k % len(arts)]}<h3>{esc(a["short"])}</h3><p class="post__meta"><b>{a["cat"]}</b><span>{fr_date(a["date"])}</span></p></a></article>' for k, a in enumerate(ARTICLES[:3]))
     s = s[:i] + open_tag + cards + '</div>' + s[j:]
     return s
+
+def clean_urls(t):
+    """Une seule adresse par page : la version sans .html (canonique, og:url, JSON-LD, sitemap, liens internes)."""
+    t = re.sub(r'(https://www\.automatisation-ia-pme\.fr/[^"\'\s<>#?]*?)\.html(?=[#?"\'\s<>])', r'\1', t)
+    t = re.sub(r'href="(?![a-z]+:|//)([^"#?]*?)\.html(?=[#?"])', r'href="\1', t)
+    return t
+
+def label_tables(t):
+    """Nom unique pour chaque tableau défilant (repère accessible) : le titre H2 qui le précède."""
+    tag = '<div class="tbl" tabindex="0" role="region" aria-label="Tableau comparatif">'
+    out, pos, used = [], 0, {}
+    while True:
+        i = t.find(tag, pos)
+        if i < 0:
+            break
+        h2 = re.findall(r'<h2[^>]*>(.*?)</h2>', t[:i], flags=re.S)
+        name = html.unescape(re.sub(r'<[^>]+>', '', h2[-1]).strip()) if h2 else 'Tableau comparatif'
+        used[name] = used.get(name, 0) + 1
+        if used[name] > 1:
+            name += f' ({used[name]})'
+        out.append(t[pos:i] + f'<div class="tbl" tabindex="0" role="region" aria-label="{esc(name)}">')
+        pos = i + len(tag)
+    out.append(t[pos:])
+    return ''.join(out)
+
+def html_redirects(pages):
+    """Redirection 301 de chaque /page.html vers /page (une règle par fichier)."""
+    return ''.join(f'\n[[redirects]]\n  from = "/{x}"\n  to = "/{x[:-5]}"\n  status = 301\n  force = true\n' for x in pages)
 
 NETLIFY = """[build]
   publish = "public"
@@ -802,14 +849,22 @@ def main():
         open(os.path.join(OUT, INDEXNOW_KEY + '.txt'), 'w').write(INDEXNOW_KEY)
         open(os.path.join(OUT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n')
         last = max(a['date'] for a in ARTICLES)
-        urls = [('', '1.0', last), ('blog.html', '0.7', last), ('mentions-legales.html', '0.2', LEGAL_DATE), (FORMATION, '0.9', FORMATION_DATE)] + [(t['slug'] + '.html', '0.9', t['date']) for t in TOOLS + SOLUTIONS + METIERS] + [('integrations.html', '0.7', FORMATION_DATE), ('tarifs.html', '0.8', PAGES_DATE), ('a-propos.html', '0.5', PAGES_DATE)] + [(f'blog/{a["slug"]}.html', '0.8', a['date']) for a in ARTICLES]
+        urls = [('', '1.0', last), ('blog.html', '0.7', last), (FORMATION, '0.9', FORMATION_DATE)] + [(t['slug'] + '.html', '0.9', t['date']) for t in TOOLS + SOLUTIONS + METIERS] + [('integrations.html', '0.7', FORMATION_DATE), ('tarifs.html', '0.8', PAGES_DATE), ('a-propos.html', '0.5', PAGES_DATE)] + [(f'blog/{a["slug"]}.html', '0.8', a['date']) for a in ARTICLES]
         sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(
             f'  <url><loc>{SITE}/{u}</loc><lastmod>{d}</lastmod><priority>{pr}</priority></url>\n' for u, pr, d in urls) + '</urlset>\n'
-        open(os.path.join(OUT, 'sitemap.xml'), 'w').write(sm)
-        open(os.path.join(REPO, 'netlify.toml'), 'w').write(NETLIFY)
+        open(os.path.join(OUT, 'sitemap.xml'), 'w').write(clean_urls(sm))
+        # étape de test : une seule règle (mentions légales) pour vérifier l'absence de boucle sur Netlify
+        pages = ['mentions-legales.html']
+        open(os.path.join(REPO, 'netlify.toml'), 'w').write(NETLIFY + html_redirects(pages))
     else:
         os.remove(os.path.join(OUT, 'assets', 'fonts.css'))
         shutil.rmtree(os.path.join(OUT, 'assets', 'fonts'))
+    for root, _, files in os.walk(OUT):
+        for f in files:
+            if f.endswith('.html'):
+                fp = os.path.join(root, f)
+                t = open(fp).read()
+                open(fp, 'w').write(label_tables(clean_urls(t)))
     # guard: no em or en dashes in visible text
     for root, _, files in os.walk(OUT):
         for f in files:
