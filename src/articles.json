@@ -357,5 +357,62 @@
    "crm-mal-rempli-pme-ia"
   ],
   "date": "2026-11-01"
+ },
+ {
+  "slug": "taches-repetitives-pme-automatiser",
+  "cat": "Guide",
+  "title_tag": "Tâches répétitives en PME : les 10 à automatiser en premier",
+  "meta": "Automatisation des tâches répétitives en PME : la méthode pour repérer vos problèmes répétitifs et les 10 tâches à automatiser en premier, avec exemples.",
+  "h1": "Tâches répétitives en PME : les 10 à automatiser en premier",
+  "short": "Les 10 tâches répétitives à automatiser en premier dans une PME",
+  "eyebrow": "Guide · Automatisation des tâches",
+  "lead": "Relances, saisies, confirmations, e-mails recopiés : l'automatisation des tâches répétitives en PME commence par savoir lesquelles traiter en premier. Voici une méthode simple pour repérer vos problèmes répétitifs, les dix tâches à automatiser d'abord, trois scénarios types et ce qu'il vaut mieux garder à la main.",
+  "summary": [
+   "Les bonnes tâches à automatiser reviennent chaque semaine, suivent toujours les mêmes étapes et passent d'un logiciel à l'autre.",
+   "Notez vos tâches pendant une semaine, multipliez le nombre de fois par les minutes : les trois plus gros chiffres sont vos priorités.",
+   "En tête de liste : demandes entrantes, relances de devis et de factures, saisie des factures fournisseurs, rappels de rendez-vous et demandes d'avis.",
+   "Gardez la main sur les réclamations et les décisions commerciales, et vérifiez où vos outils hébergent les données de vos clients."
+  ],
+  "faq": [
+   [
+    "Quelles tâches répétitives automatiser en premier dans une PME ?",
+    "Celles qui reviennent le plus souvent et dont l'oubli coûte de l'argent : l'enregistrement des demandes entrantes, la relance des devis et des factures, la saisie des factures fournisseurs, les rappels de rendez-vous et la demande d'avis après une prestation."
+   ],
+   [
+    "Comment savoir si une tâche vaut la peine d'être automatisée ?",
+    "Notez combien de fois par semaine vous la faites et combien de minutes elle prend. Si elle revient souvent, suit toujours les mêmes étapes et passe d'un outil à un autre, c'est une bonne candidate. Une tâche faite deux fois par an ne l'est pas."
+   ],
+   [
+    "Faut-il un outil comme n8n pour automatiser ses tâches répétitives ?",
+    "Pas toujours. Commencez par activer les relances et rappels déjà intégrés à vos logiciels de facturation ou d'agenda. Un outil de liaison comme n8n, Make ou Zapier devient utile quand l'information doit circuler entre plusieurs logiciels ou quand l'IA doit agir dans vos outils."
+   ],
+   [
+    "Combien coûte l'automatisation des tâches répétitives pour une PME ?",
+    "Il faut compter les abonnements aux outils utilisés et la construction des scénarios. Chez moi, la mise en place démarre à 590 €, avec un prix fixe annoncé avant de commencer."
+   ]
+  ],
+  "sources": [
+   [
+    "CNIL et Bpifrance : guide pratique de sensibilisation au RGPD pour les TPE et PME",
+    "https://www.cnil.fr/sites/default/files/atoms/files/bpi-cnil-rgpd_guide-tpe-pme.pdf"
+   ],
+   [
+    "CNIL : ressources pour les TPE et PME",
+    "https://www.cnil.fr/fr/tpe-et-pme"
+   ],
+   [
+    "Service Public Entreprendre : facturation électronique, le calendrier",
+    "https://entreprendre.service-public.gouv.fr/actualites/A17450"
+   ],
+   [
+    "Aide Google : gérer les avis clients de votre fiche d'établissement",
+    "https://support.google.com/business/answer/3474050?hl=fr-FR"
+   ]
+  ],
+  "related": [
+   "agent-ia-24-7-pme",
+   "crm-mal-rempli-pme-ia"
+  ],
+  "date": "2026-11-15"
  }
 ]
