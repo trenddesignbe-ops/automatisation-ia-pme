@@ -156,7 +156,7 @@ def footer(p, band=True, band_title='Et si vos demandes se traitaient toutes seu
     </nav>
   </div>
   <svg class="wordmark" viewBox="0 0 1280 186" role="img" aria-label="Automatisation IA PME"><text x="0" y="141" font-size="136">automatisation ia pme</text></svg>
-  <div class="foot__bar"><span>© 2026 Automatisation IA PME · Alexandre Cottret</span><span>Automatisation IA pour PME et TPE, partout en France</span></div>
+  <div class="foot__bar"><span>© 2026 Automatisation IA PME · Alexandre Cottret · Site édité par <a href="https://www.trend-design.fr/">Trend Design</a></span><span>Automatisation IA pour PME et TPE, partout en France</span></div>
 </footer>
 <aside class="fab" aria-label="Contact rapide"><a class="wa" href="{WA}" rel="noopener" aria-label="Me contacter sur WhatsApp">{WA_SVG}</a><div class="fab__menu"><div class="fab__card"><p>Une question ?</p><a class="fab__wa" href="{WA}" rel="noopener">Écrire sur WhatsApp</a><a class="fab__cal" href="{CAL}" rel="noopener">Réserver un appel de 20 min</a></div></div></aside>
 {MENU_JS}
@@ -239,7 +239,7 @@ def article_page(a):
 <h2 id="auteur">À propos de l'auteur</h2>
 <div class="box author"><img src="{p}assets/alexandre-160.webp" alt="Alexandre Cottret" width="96" height="96" loading="lazy">
 <div><p class="author__name">Alexandre Cottret</p>
-<p>Intégrateur en automatisation IA (Make, Zapier, n8n) et webdesigner indépendant depuis 2021. J'ai créé plus de 165 sites pour des TPE et PME, avec une note de 4,97/5 sur 91 avis Malt pour ces sites. Aujourd'hui, j'automatise avec l'IA ce qui se passe après le formulaire de contact : demandes, devis, relances et documents.</p>
+<p>Intégrateur en automatisation IA (Make, Zapier, n8n) et webdesigner indépendant depuis 2021. J'ai créé plus de 150 sites pour des TPE et PME, avec une note de 5/5 sur 93 avis Malt pour ces sites. Aujourd'hui, j'automatise avec l'IA ce qui se passe après le formulaire de contact : demandes, devis, relances et documents.</p>
 <p><a href="{LINKEDIN}" rel="noopener">LinkedIn</a> · <a href="{MALT1}" rel="noopener">Avis Malt</a> · <a href="../">Mon offre d'automatisation IA</a></p></div></div>
 <h2 id="sources">Sources</h2>
 <ul class="sources">{src}</ul>
@@ -380,7 +380,7 @@ def tool_page(t):
 <h1 class="page-title">{t['h1']}</h1>
 <p class="lead">{t['lead']}</p>
 <div class="fhero__btns"><a class="btn btn--primary" href="{CAL}" rel="noopener">Réserver un audit offert</a><a class="btn btn--ghost" href="#cas-pratiques">Voir les cas pratiques</a></div>
-<ul class="trust"><li><b>★ 4,97/5</b> · 91 avis Malt sur mes sites web</li><li><b>Dès 590 €</b> · prix fixe</li><li><b>Comptes à votre nom</b></li></ul>
+<ul class="trust"><li><b>★ 5/5</b> · 93 avis Malt sur mes sites web</li><li><b>Dès 590 €</b> · prix fixe</li><li><b>Comptes à votre nom</b></li></ul>
 </div>
 <div class="fhero__art" aria-hidden="true"><div class="pcard"><p class="pcard__h">{icon}{card_h}</p><ol class="pcard__flow">{flow}</ol><div class="pcard__ok fl-ok" style="--d:{0.4 + len(t['flow']) * 0.7:.1f}s">✓ {t['flow_ok']}</div></div></div>
 </header>
@@ -554,7 +554,7 @@ def formation_page():
 <h1 class="page-title">Formation automatisation IA pour TPE et PME</h1>
 <p class="lead">En visio, sur vos propres outils : apprenez à utiliser Claude et ChatGPT, puis à créer vos automatisations avec Zapier, Make ou n8n. Vous repartez avec une automatisation qui tourne.</p>
 <div class="fhero__btns"><a class="btn btn--primary" href="{CAL}" rel="noopener">Réserver l'appel de cadrage</a><a class="btn btn--ghost" href="#formules">Voir les formules</a></div>
-<ul class="trust"><li><b>★ 4,97/5</b> · 91 avis Malt sur mes sites web</li><li><b>Ambassadeur Superprof</b> · 5/5</li><li><b>Dès 150 €</b> · prix fixe</li></ul>
+<ul class="trust"><li><b>★ 5/5</b> · 93 avis Malt sur mes sites web</li><li><b>Ambassadeur Superprof</b> · 5/5</li><li><b>Dès 150 €</b> · prix fixe</li></ul>
 </div>
 <div class="fhero__art" aria-hidden="true"><div class="pcard"><p class="pcard__h">Formule Première automatisation</p><ol>
 <li><span>Séance 1</span>Claude et ChatGPT au quotidien</li>
@@ -593,7 +593,7 @@ def formation_page():
 <div class="trainer__txt"><p class="trainer__name">Alexandre Cottret</p><p class="trainer__role">Intégrateur en automatisation IA (n8n, Make, Zapier) et webdesigner</p>
 <p>Je crée des sites internet depuis 2021 et j'automatise aujourd'hui les demandes, devis et relances des TPE et PME avec n8n, Make, Zapier, Claude et ChatGPT. Ce que j'enseigne, je l'utilise chaque semaine chez mes clients : vous apprenez des méthodes testées sur de vrais projets, pas des démonstrations.</p>
 <p>Je donne aussi des cours en visio depuis 2023, avec une règle simple : pas de théorie inutile. On construit ensemble, sur vos outils, et vous repartez avec quelque chose qui fonctionne.</p>
-<ul class="trainer__stats"><li><b>165+</b><span>sites livrés depuis 2021</span></li><li><b>4,97/5</b><span>sur 91 avis Malt (sites web)</span></li><li><b>5/5</b><span>Professeur Ambassadeur Superprof</span></li></ul>
+<ul class="trainer__stats"><li><b>150+</b><span>sites livrés depuis 2021</span></li><li><b>5/5</b><span>sur 93 avis Malt (sites web)</span></li><li><b>5/5</b><span>Professeur Ambassadeur Superprof</span></li></ul>
 </div></div>''')
     out += sec('faq', 'Questions fréquentes', 'Vos questions sur la formation', None,
                '<div class="faq">' + ''.join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q, a in faqs) + '</div>')
@@ -681,7 +681,7 @@ def about_page():
     graph = {"@context": "https://schema.org", "@graph": [
         {"@type": "AboutPage", "@id": url, "url": url, "name": "À propos d'Alexandre Cottret", "isPartOf": {"@id": SITE + "/#site"}, "mainEntity": {"@id": SITE + "/#alexandre"}},
         PERSON, crumbs_ld(items)]}
-    out = head("À propos : Alexandre Cottret, intégrateur automatisation IA", "Alexandre Cottret, intégrateur en automatisation IA (n8n, Make, Zapier) et webdesigner depuis 2021 : 165+ sites livrés, 4,97/5 sur 91 avis Malt.", path, p, 'og-a-propos.jpg', 'profile', ld(graph))
+    out = head("À propos : Alexandre Cottret, intégrateur automatisation IA", "Alexandre Cottret, intégrateur en automatisation IA (n8n, Make, Zapier) et webdesigner depuis 2021 : plus de 150 sites livrés, 5/5 sur 93 avis Malt.", path, p, 'og-a-propos.jpg', 'profile', ld(graph))
     out += header(p)
     out += f'''<div class="content"><div class="content__frame"><main>
 <header class="page-head"><div class="page-head__in">
@@ -697,7 +697,7 @@ def about_page():
 <p>Je crée des sites internet depuis 2021 avec mon studio <a href="https://www.trend-design.fr/">Trend Design</a>. En accompagnant des artisans, des coachs et des PME de services, j'ai vu la même chose partout : le site attire des demandes, mais leur traitement (réponses, devis, relances, saisie) mange le temps des dirigeants.</p>
 <p>C'est ce qui m'a amené à l'automatisation avec l'IA. Aujourd'hui, je construis des agents IA et des automatisations sur n8n, Make et Zapier, reliés à Claude et ChatGPT, pour que chaque demande soit traitée, sans rien laisser partir sans votre accord.</p>
 <p>Je donne aussi des cours en visio depuis 2023, ce qui a donné la <a href="formation-automatisation-ia.html">formation automatisation IA</a>.</p>
-<ul class="trainer__stats"><li><b>165+</b><span>sites livrés depuis 2021</span></li><li><b>4,97/5</b><span>sur 91 avis Malt (sites web)</span></li><li><b>5/5</b><span>Professeur Ambassadeur Superprof</span></li></ul>
+<ul class="trainer__stats"><li><b>150+</b><span>sites livrés depuis 2021</span></li><li><b>5/5</b><span>sur 93 avis Malt (sites web)</span></li><li><b>5/5</b><span>Professeur Ambassadeur Superprof</span></li></ul>
 </div></div>''')
     out += _sec('principes', 'Principes', 'Ma façon de travailler', None,
                 '<div class="grid3">' + ''.join(f'<div class="fcard"><h3>{a}</h3><p>{b}</p></div>' for a, b in [
@@ -708,7 +708,7 @@ def about_page():
                     ("Honnêteté sur les limites", "Si une tâche ne vaut pas la peine d'être automatisée, je vous le dis pendant l'audit."),
                     ("Simple à comprendre", "Une documentation claire, et des explications sans jargon.")]) + '</div>')
     out += _sec('ailleurs', 'Ailleurs', 'Où me retrouver', None,
-                f'<div class="related"><a href="{MALT}" rel="noopener"><span>Avis clients</span>Profil Malt · 91 avis sur mes sites web</a><a href="{LINKEDIN}" rel="noopener"><span>Réseau</span>LinkedIn</a><a href="https://www.trend-design.fr/"><span>Création de sites</span>Trend Design, webdesigner</a><a href="blog.html"><span>Guides</span>Le blog</a></div>')
+                f'<div class="related"><a href="{MALT}" rel="noopener"><span>Avis clients</span>Profil Malt · 93 avis sur mes sites web</a><a href="{LINKEDIN}" rel="noopener"><span>Réseau</span>LinkedIn</a><a href="https://www.trend-design.fr/"><span>Création de sites</span>Trend Design, webdesigner</a><a href="blog.html"><span>Guides</span>Le blog</a></div>')
     out += '</main>\n' + footer(p, band_title='On en parle 20 minutes ?').replace('<aside class="fab"', '</div></div>\n<aside class="fab"', 1)
     return out
 

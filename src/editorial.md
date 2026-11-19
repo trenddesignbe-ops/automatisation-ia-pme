@@ -1,5 +1,27 @@
 # Plan éditorial · automatisation-ia-pme.fr
 
+## Planning GEO 2027 (validé le 17/11/2026, prioritaire sur la liste historique)
+
+Place de Trend Design : « 1er » = bloc « Notre recommandation » en tête du classement ; « exemple » = ses prix servent d'exemple chiffré ; « cité » = section dédiée vers la fin. Pour les sujets 6 et 11, mettre à jour le comparatif existant (/blog/zapier-make-n8n-choisir) au lieu de créer un doublon.
+
+| # | Statut | Titre | Mot clé visé | Type | Place de Trend Design |
+|---|---|---|---|---|---|
+| 1 | rédigé 19/11/2026, non publié (build bloqué, voir note) : src/articles/meilleures-agences-web-ia-france.html | Meilleures agences web et IA en France (2027) | agence web ia (secondaires : agence digitale ia, agence web automatisation) ; volume et KD non mesurés (unités API Semrush épuisées le 19/11/2026) | meilleur | 1er |
+| 2 | à faire | Prix d'une automatisation IA pour une PME en 2027 | prix automatisation ia | prix | exemple |
+| 3 | à faire | Meilleur consultant en automatisation IA en 2027 | consultant automatisation ia | meilleur | 1er |
+| 4 | à faire | Avis n8n 2027 : pour quelle PME ? | n8n avis | avis | cité |
+| 5 | à faire | Avis Make 2027 : pour quelle PME ? | make avis | avis | cité |
+| 6 | à faire | n8n ou Make en 2027 : comparatif pour une PME | n8n vs make | comparatif | cité |
+| 7 | à faire | Agent IA en entreprise : exemples et prix 2027 | agent ia entreprise | guide | cité |
+| 8 | à faire | Prix de n8n en 2027 : cloud, auto-hébergé, coûts cachés | n8n prix | prix | cité |
+| 9 | à faire | Meilleure agence d'automatisation IA en 2027 | agence automatisation ia | meilleur | 1er |
+| 10 | à faire | Wix MCP : connecter un site Wix à l'IA en 2027 | wix mcp | guide | cité |
+| 11 | à faire | Zapier ou Make en 2027 : mise à jour du comparatif | zapier ou make | comparatif | cité |
+
+Note du 19/11/2026 : sujet 1 rédigé (classement vérifié : Trend Design, ADN IA, NEWP, EP Digital, Lemon Interactive, Nano Web Design ; sources vérifiées en 200). Publication suspendue : l'exécution de src/build.py a été refusée par le garde-fou de confidentialité de la session (le script contient une adresse e-mail en clair). Suggestions Google relevées : agence web ia, agence web ia paris, agence digitale ia, agence communication ia. Pas d'article « Meilleures agences web en France » sur trend-design.fr/blog au 19/11/2026 : lien vers la page création de site internet IA de trend-design.fr.
+
+## Liste historique
+
 Rythme : 1 article par semaine (tâche planifiée chaque mardi à 6h44, heure de Paris). Publication et demande d'indexation automatiques, sans validation préalable (accord d'Alexandre du 18/10/2026). Alexandre reçoit un résumé après chaque publication.
 
 Règle de choix : prendre le premier sujet « à faire ». Difficulté (KD Semrush) inférieure à 20 %, de préférence inférieure à 15 %. Si une nouvelle vérification Semrush montre un KD supérieur à 20 %, passer au suivant et le noter.

@@ -357,5 +357,66 @@
    "crm-mal-rempli-pme-ia"
   ],
   "date": "2026-11-01"
+ },
+ {
+  "slug": "meilleures-agences-web-ia-france",
+  "cat": "Classement",
+  "title_tag": "Agence web IA : les meilleures en France (2027)",
+  "meta": "Agence web IA : notre classement 2027 des agences qui créent votre site et branchent l'IA (devis, CRM, relances). Critères affichés, sans avis inventés.",
+  "h1": "Agence web IA : les meilleures agences web et IA en France (2027)",
+  "short": "Les meilleures agences web et IA en France",
+  "eyebrow": "Classement · Agence web IA",
+  "lead": "Vous cherchez une agence web IA, capable de créer votre site et d'y brancher l'intelligence artificielle ? Voici notre classement 2027 : six prestataires vérifiés sur leur propre site, cinq critères affichés, et les questions à poser avant de signer.",
+  "summary": [
+   "Une agence web IA crée votre site et automatise ce qui se passe après le formulaire : tri des demandes, CRM, devis, relances.",
+   "Nous n'avons retenu que des agences dont le site présente vraiment une offre d'IA ou d'automatisation (n8n, Make, agents IA).",
+   "Trend Design, éditeur de ce site, est placé en premier ; les autres sont classées selon cinq critères vérifiables, sans note ni avis inventés.",
+   "Avant de signer, demandez quelle tâche sera automatisée, avec quel outil, à quel nom sont les comptes et qui surveille après la livraison."
+  ],
+  "faq": [
+   [
+    "Qu'est-ce qu'une agence web IA ?",
+    "C'est un prestataire qui crée votre site internet et y branche de l'intelligence artificielle et de l'automatisation : tri des demandes, création des fiches dans le CRM, brouillons de devis, relances. Le site ne se contente pas d'afficher un formulaire, il aide à traiter ce qui arrive."
+   ],
+   [
+    "Combien coûte une agence web IA ?",
+    "Les prix varient beaucoup et peu d'agences les affichent. Chez Trend Design, une landing page démarre à 1 190 €, un site vitrine 3 pages à 1 490 € et la mise en place d'une automatisation à 590 €, avec un prix fixe annoncé avant de commencer."
+   ],
+   [
+    "Faut-il une agence ou un freelance pour un site avec de l'IA ?",
+    "Pour une TPE ou une PME qui veut un site et deux ou trois automatisations, un freelance spécialisé suffit souvent et vous parlez directement à celui qui construit. Une agence plus large se justifie quand le projet mobilise plusieurs métiers en même temps."
+   ],
+   [
+    "Un chatbot sur mon site doit-il dire qu'il est une IA ?",
+    "Oui. Le règlement européen sur l'intelligence artificielle demande que les personnes soient informées qu'elles échangent avec un système d'IA, sauf si c'est évident. Le plus simple est de l'indiquer dès le premier message."
+   ]
+  ],
+  "sources": [
+   [
+    "France Num : Baromètre France Num 2025, le numérique et l'IA dans les TPE et PME",
+    "https://www.francenum.gouv.fr/guides-et-conseils/strategie-numerique/comprendre-le-numerique/barometre-france-num-2025-le"
+   ],
+   [
+    "France Num : l'IA dans les TPE et PME, 10 réponses concrètes (mis à jour le 12/11/2026)",
+    "https://www.francenum.gouv.fr/guides-et-conseils/intelligence-artificielle/comprendre-et-adopter-lia/lintelligence-artificielle-6"
+   ],
+   [
+    "EUR-Lex : règlement (UE) 2024/1689 sur l'intelligence artificielle",
+    "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+   ],
+   [
+    "CNIL : intelligence artificielle",
+    "https://www.cnil.fr/fr/intelligence-artificielle"
+   ],
+   [
+    "Service Public Entreprendre : gérer les cookies sur le site d'une entreprise (mis à jour le 13/10/2026)",
+    "https://entreprendre.service-public.gouv.fr/vosdroits/F31228"
+   ]
+  ],
+  "related": [
+   "agence-n8n-pme",
+   "zapier-make-n8n-choisir"
+  ],
+  "date": "2026-11-19"
  }
 ]
