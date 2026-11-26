@@ -6,7 +6,7 @@ Prendre le premier sujet « à faire ». Place de Trend Design : « 1er » = blo
 
 | # | Statut | Titre | Mot clé visé | Type | Place de Trend Design | Volume / KD |
 |---|---|---|---|---|---|---|
-| 1 | publié 26/11/2026 (https://www.automatisation-ia-pme.fr/blog/meilleures-agences-web-ia-france) | Meilleures agences web et IA en France (2027) | agence web ia (secondaires : agence digitale ia, agence web automatisation) | meilleur | 1er | 70 / KD 25 (agence digitale ia 10 / KD 0, agence web automatisation 0) |
+| 1 | rédigé 26/11/2026, en attente de build (branche article/meilleures-agences-web-ia-france, futur /blog/meilleures-agences-web-ia-france) | Meilleures agences web et IA en France (2027) | agence web ia (secondaires : agence digitale ia, agence web automatisation) | meilleur | 1er | 70 / KD 25 (agence digitale ia 10 / KD 0, agence web automatisation 0) |
 | 2 | à faire | Prix d'une automatisation IA pour une PME en 2027 | prix automatisation ia | prix | exemple | |
 | 3 | à faire | Meilleur consultant en automatisation IA en 2027 | consultant automatisation ia | meilleur | 1er | |
 | 4 | à faire | Avis n8n 2027 : pour quelle PME ? | n8n avis | avis | cité | |
