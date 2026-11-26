@@ -475,7 +475,7 @@ TOOLS2 = [
  ],
  'why_h2': "Pourquoi automatiser votre site Wix ?",
  'why': [
-  ("Un expert Wix", "Plus de 165 sites créés depuis 2021 : je connais Wix Forms, Bookings, Stores et les automatisations natives."),
+  ("Un expert Wix", "Plus de 150 sites créés depuis 2021 : je connais Wix Forms, Bookings, Stores et les automatisations natives."),
   ("Natif et externe", "Les automatisations Wix couvrent l'essentiel ; Make, Zapier ou n8n prennent le relais pour le reste."),
   ("Le site et la suite", "Le site attire les demandes, l'automatisation s'occupe de ce qui se passe ensuite."),
  ],
